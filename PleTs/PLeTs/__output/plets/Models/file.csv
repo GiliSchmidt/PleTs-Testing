@@ -1,0 +1,8 @@
+filename;error;success
+teste1.txt;Error uploading selected file[1];File successfully uploaded[1]
+teste2.xml;Error uploading selected file[2];File successfully uploaded[2]
+teste3.jpg;Error uploading selected file[3];File successfully uploaded[3]
+teste4.png;Error uploading selected file[4];File successfully uploaded[4]
+teste5.exe;Error uploading selected file[5];File successfully uploaded[5]
+teste6.pdf;Error uploading selected file[6];File successfully uploaded[6]
+teste7.zip;Error uploading selected file[7];File successfully uploaded[7]

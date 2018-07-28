@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConfigurationSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Modules>
+    <Module Name="nameee" Type="FeatureModelEditor.FeatureModel" Assembly="FeatureModelEditor.dll" Interface="IFeatureModelEditor" />
+	<Module Name="nameee" Type="UmlComponentDiagramEditor.ComponentDiagram" Assembly="UmlComponentDiagramEditor.dll" Interface="IUmlComponentDiagramEditor" />
+	<Module Name="nameee" Type="ComponentPoolManager.PoolManager" Assembly="ComponentPoolManager.dll" Interface="IComponentPoolManager" />
+	<Module Name="nameee" Type="ClassicProductConfigurator.ProductConfigurator" Assembly="ClassicProductConfigurator.dll" Interface="IProductConfigurator" />
+	<Module Name="nameee" Type="ProductInstantiator.Instantiator" Assembly="ProductInstantiator.dll" Interface="IProductInstantiator" />
+  </Modules>
+</ConfigurationSet>

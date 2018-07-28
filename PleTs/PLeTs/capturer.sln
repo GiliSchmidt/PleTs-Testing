@@ -1,0 +1,126 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coc.Apps.Capturer", "__projects\Coc.Apps.Capturer\Coc.Apps.Capturer.csproj", "{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coc.Modeling.Uml", "__projects\Coc.Modeling.Uml\Coc.Modeling.Uml.csproj", "{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coc.Data.Xmi", "__projects\Coc.Data.Xmi\Coc.Data.Xmi.csproj", "{FC478C4A-96D8-4B28-8890-17FD4C367C8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Capturer - Debug|Any CPU = Capturer - Debug|Any CPU
+		Capturer - Debug|Mixed Platforms = Capturer - Debug|Mixed Platforms
+		Capturer - Debug|x86 = Capturer - Debug|x86
+		Debug - Coc.Uml.Xmi|Any CPU = Debug - Coc.Uml.Xmi|Any CPU
+		Debug - Coc.Uml.Xmi|Mixed Platforms = Debug - Coc.Uml.Xmi|Mixed Platforms
+		Debug - Coc.Uml.Xmi|x86 = Debug - Coc.Uml.Xmi|x86
+		Debug - Coc.Uml|Any CPU = Debug - Coc.Uml|Any CPU
+		Debug - Coc.Uml|Mixed Platforms = Debug - Coc.Uml|Mixed Platforms
+		Debug - Coc.Uml|x86 = Debug - Coc.Uml|x86
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		PlugSPL - Debug|Any CPU = PlugSPL - Debug|Any CPU
+		PlugSPL - Debug|Mixed Platforms = PlugSPL - Debug|Mixed Platforms
+		PlugSPL - Debug|x86 = PlugSPL - Debug|x86
+		UCML - Designer|Any CPU = UCML - Designer|Any CPU
+		UCML - Designer|Mixed Platforms = UCML - Designer|Mixed Platforms
+		UCML - Designer|x86 = UCML - Designer|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.Capturer - Debug|Any CPU.ActiveCfg = Capturer - Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.Capturer - Debug|Mixed Platforms.ActiveCfg = Capturer - Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.Capturer - Debug|Mixed Platforms.Build.0 = Capturer - Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.Capturer - Debug|x86.ActiveCfg = Capturer - Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.Capturer - Debug|x86.Build.0 = Capturer - Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.Debug - Coc.Uml.Xmi|Any CPU.ActiveCfg = Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.Debug - Coc.Uml.Xmi|Mixed Platforms.ActiveCfg = Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.Debug - Coc.Uml.Xmi|Mixed Platforms.Build.0 = Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.Debug - Coc.Uml.Xmi|x86.ActiveCfg = Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.Debug - Coc.Uml.Xmi|x86.Build.0 = Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.Debug - Coc.Uml|Any CPU.ActiveCfg = Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.Debug - Coc.Uml|Mixed Platforms.ActiveCfg = Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.Debug - Coc.Uml|Mixed Platforms.Build.0 = Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.Debug - Coc.Uml|x86.ActiveCfg = Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.Debug - Coc.Uml|x86.Build.0 = Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.Debug|x86.ActiveCfg = Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.Debug|x86.Build.0 = Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.PlugSPL - Debug|Any CPU.ActiveCfg = PlugSPL - Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.PlugSPL - Debug|Mixed Platforms.ActiveCfg = PlugSPL - Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.PlugSPL - Debug|Mixed Platforms.Build.0 = PlugSPL - Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.PlugSPL - Debug|x86.ActiveCfg = PlugSPL - Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.PlugSPL - Debug|x86.Build.0 = PlugSPL - Debug|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.UCML - Designer|Any CPU.ActiveCfg = UCML - Designer|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.UCML - Designer|Mixed Platforms.ActiveCfg = UCML - Designer|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.UCML - Designer|Mixed Platforms.Build.0 = UCML - Designer|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.UCML - Designer|x86.ActiveCfg = UCML - Designer|x86
+		{671F915B-35F6-4B5C-B0D0-7BF1E8DA783A}.UCML - Designer|x86.Build.0 = UCML - Designer|x86
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.Capturer - Debug|Any CPU.ActiveCfg = Capturer - Debug|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.Capturer - Debug|Any CPU.Build.0 = Capturer - Debug|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.Capturer - Debug|Mixed Platforms.ActiveCfg = Capturer - Debug|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.Capturer - Debug|Mixed Platforms.Build.0 = Capturer - Debug|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.Capturer - Debug|x86.ActiveCfg = Capturer - Debug|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.Debug - Coc.Uml.Xmi|Any CPU.ActiveCfg = Debug - Coc.Uml|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.Debug - Coc.Uml.Xmi|Any CPU.Build.0 = Debug - Coc.Uml|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.Debug - Coc.Uml.Xmi|Mixed Platforms.ActiveCfg = Debug - Coc.Uml|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.Debug - Coc.Uml.Xmi|Mixed Platforms.Build.0 = Debug - Coc.Uml|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.Debug - Coc.Uml.Xmi|x86.ActiveCfg = Debug - Coc.Uml|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.Debug - Coc.Uml|Any CPU.ActiveCfg = Debug - Coc.Uml|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.Debug - Coc.Uml|Any CPU.Build.0 = Debug - Coc.Uml|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.Debug - Coc.Uml|Mixed Platforms.ActiveCfg = Debug - Coc.Uml|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.Debug - Coc.Uml|Mixed Platforms.Build.0 = Debug - Coc.Uml|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.Debug - Coc.Uml|x86.ActiveCfg = Debug - Coc.Uml|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.PlugSPL - Debug|Any CPU.ActiveCfg = PlugSPL - Debug|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.PlugSPL - Debug|Any CPU.Build.0 = PlugSPL - Debug|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.PlugSPL - Debug|Mixed Platforms.ActiveCfg = PlugSPL - Debug|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.PlugSPL - Debug|Mixed Platforms.Build.0 = PlugSPL - Debug|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.PlugSPL - Debug|x86.ActiveCfg = PlugSPL - Debug|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.UCML - Designer|Any CPU.ActiveCfg = UCML - Designer|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.UCML - Designer|Any CPU.Build.0 = UCML - Designer|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.UCML - Designer|Mixed Platforms.ActiveCfg = UCML - Designer|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.UCML - Designer|Mixed Platforms.Build.0 = UCML - Designer|Any CPU
+		{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}.UCML - Designer|x86.ActiveCfg = UCML - Designer|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.Capturer - Debug|Any CPU.ActiveCfg = Capturer - Debug|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.Capturer - Debug|Any CPU.Build.0 = Capturer - Debug|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.Capturer - Debug|Mixed Platforms.ActiveCfg = Capturer - Debug|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.Capturer - Debug|Mixed Platforms.Build.0 = Capturer - Debug|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.Capturer - Debug|x86.ActiveCfg = Capturer - Debug|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.Debug - Coc.Uml.Xmi|Any CPU.ActiveCfg = Debug - Coc.Uml.Xmi|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.Debug - Coc.Uml.Xmi|Any CPU.Build.0 = Debug - Coc.Uml.Xmi|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.Debug - Coc.Uml.Xmi|Mixed Platforms.ActiveCfg = Debug - Coc.Uml.Xmi|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.Debug - Coc.Uml.Xmi|Mixed Platforms.Build.0 = Debug - Coc.Uml.Xmi|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.Debug - Coc.Uml.Xmi|x86.ActiveCfg = Debug - Coc.Uml.Xmi|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.Debug - Coc.Uml|Any CPU.ActiveCfg = Debug - Coc.Uml.Xmi|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.Debug - Coc.Uml|Any CPU.Build.0 = Debug - Coc.Uml.Xmi|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.Debug - Coc.Uml|Mixed Platforms.ActiveCfg = Debug - Coc.Uml.Xmi|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.Debug - Coc.Uml|Mixed Platforms.Build.0 = Debug - Coc.Uml.Xmi|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.Debug - Coc.Uml|x86.ActiveCfg = Debug - Coc.Uml.Xmi|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.PlugSPL - Debug|Any CPU.ActiveCfg = PlugSPL - Debug|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.PlugSPL - Debug|Any CPU.Build.0 = PlugSPL - Debug|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.PlugSPL - Debug|Mixed Platforms.ActiveCfg = PlugSPL - Debug|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.PlugSPL - Debug|Mixed Platforms.Build.0 = PlugSPL - Debug|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.PlugSPL - Debug|x86.ActiveCfg = PlugSPL - Debug|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.UCML - Designer|Any CPU.ActiveCfg = UCML - Designer|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.UCML - Designer|Any CPU.Build.0 = UCML - Designer|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.UCML - Designer|Mixed Platforms.ActiveCfg = UCML - Designer|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.UCML - Designer|Mixed Platforms.Build.0 = UCML - Designer|Any CPU
+		{FC478C4A-96D8-4B28-8890-17FD4C367C8B}.UCML - Designer|x86.ActiveCfg = UCML - Designer|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

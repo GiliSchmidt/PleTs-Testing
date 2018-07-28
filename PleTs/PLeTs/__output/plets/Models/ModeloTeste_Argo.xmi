@@ -1,0 +1,197 @@
+<?xml version = '1.0' encoding = 'UTF-8' ?>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Tue Feb 10 14:42:53 BRST 2015'>
+  <XMI.header>    <XMI.documentation>
+      <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
+      <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
+    </XMI.documentation>
+    <XMI.metamodel xmi.name="UML" xmi.version="1.4"/></XMI.header>
+  <XMI.content>
+    <UML:Model xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000865'
+      name = 'ModeloFijo' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+      isAbstract = 'false'>
+      <UML:Namespace.ownedElement>
+        <UML:Actor xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000866'
+          name = 'User' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000883'
+              isSpecification = 'false'>
+              <UML:TaggedValue.dataValue>google.com.br</UML:TaggedValue.dataValue>
+              <UML:TaggedValue.type>
+                <UML:TagDefinition xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:000000000000087F'/>
+              </UML:TaggedValue.type>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+        </UML:Actor>
+        <UML:UseCase xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000867'
+          name = 'Cadastrar Usuario' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'/>
+        <UML:Association xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000868'
+          name = '' isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000869'
+              visibility = 'public' isSpecification = 'false' isNavigable = 'true' ordering = 'unordered'
+              aggregation = 'none' targetScope = 'instance' changeability = 'changeable'>
+              <UML:AssociationEnd.participant>
+                <UML:Actor xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000866'/>
+              </UML:AssociationEnd.participant>
+            </UML:AssociationEnd>
+            <UML:AssociationEnd xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:000000000000086A'
+              visibility = 'public' isSpecification = 'false' isNavigable = 'true' ordering = 'unordered'
+              aggregation = 'none' targetScope = 'instance' changeability = 'changeable'>
+              <UML:AssociationEnd.participant>
+                <UML:UseCase xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000867'/>
+              </UML:AssociationEnd.participant>
+            </UML:AssociationEnd>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:ActivityGraph xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:000000000000086B'
+          name = 'Cadastrar Usuario' isSpecification = 'false'>
+          <UML:StateMachine.context>
+            <UML:Model xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000865'/>
+          </UML:StateMachine.context>
+          <UML:StateMachine.top>
+            <UML:CompositeState xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:000000000000086C'
+              name = 'top' isSpecification = 'false' isConcurrent = 'false'>
+              <UML:CompositeState.subvertex>
+                <UML:Pseudostate xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:000000000000086E'
+                  name = 'InitialNode' isSpecification = 'false' kind = 'initial'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000872'/>
+                  </UML:StateVertex.outgoing>
+                </UML:Pseudostate>
+                <UML:ActionState xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:000000000000086F'
+                  name = 'Login' isSpecification = 'false' isDynamic = 'false'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000873'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000872'/>
+                  </UML:StateVertex.incoming>
+                </UML:ActionState>
+                <UML:ActionState xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000870'
+                  name = 'Logout' isSpecification = 'false' isDynamic = 'false'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000874'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000873'/>
+                  </UML:StateVertex.incoming>
+                </UML:ActionState>
+                <UML:FinalState xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000871'
+                  name = 'ActivityFinal' isSpecification = 'false'>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000874'/>
+                  </UML:StateVertex.incoming>
+                </UML:FinalState>
+              </UML:CompositeState.subvertex>
+            </UML:CompositeState>
+          </UML:StateMachine.top>
+          <UML:StateMachine.transitions>
+            <UML:Transition xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000872'
+              isSpecification = 'false'>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:000000000000087B'
+                  isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>Entrar com usuario e senha</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000875'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:000000000000087C'
+                  isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>Login sucedido</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000878'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.source>
+                <UML:Pseudostate xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:000000000000086E'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:ActionState xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:000000000000086F'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000873'
+              isSpecification = 'false'>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:000000000000087D'
+                  isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>Clicar botao logout</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000875'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:000000000000087E'
+                  isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>Saiu do site</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000878'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.source>
+                <UML:ActionState xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:000000000000086F'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:ActionState xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000870'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000874'
+              isSpecification = 'false'>
+              <UML:Transition.source>
+                <UML:ActionState xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000870'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:FinalState xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000871'/>
+              </UML:Transition.target>
+            </UML:Transition>
+          </UML:StateMachine.transitions>
+        </UML:ActivityGraph>
+        <UML:TagDefinition xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000875'
+          name = 'TDaction' isSpecification = 'false'>
+          <UML:TagDefinition.multiplicity>
+            <UML:Multiplicity xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000877'>
+              <UML:Multiplicity.range>
+                <UML:MultiplicityRange xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000876'
+                  lower = '0' upper = '0'/>
+              </UML:Multiplicity.range>
+            </UML:Multiplicity>
+          </UML:TagDefinition.multiplicity>
+        </UML:TagDefinition>
+        <UML:TagDefinition xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000878'
+          name = 'TDexpectedResult' isSpecification = 'false'>
+          <UML:TagDefinition.multiplicity>
+            <UML:Multiplicity xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:000000000000087A'>
+              <UML:Multiplicity.range>
+                <UML:MultiplicityRange xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000879'
+                  lower = '0' upper = '0'/>
+              </UML:Multiplicity.range>
+            </UML:Multiplicity>
+          </UML:TagDefinition.multiplicity>
+        </UML:TagDefinition>
+        <UML:TagDefinition xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:000000000000087F'
+          name = 'TDhost' isSpecification = 'false'>
+          <UML:TagDefinition.multiplicity>
+            <UML:Multiplicity xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000881'>
+              <UML:Multiplicity.range>
+                <UML:MultiplicityRange xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000880'
+                  lower = '0' upper = '0'/>
+              </UML:Multiplicity.range>
+            </UML:Multiplicity>
+          </UML:TagDefinition.multiplicity>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000882'
+              isSpecification = 'false'>
+              <UML:TaggedValue.dataValue></UML:TaggedValue.dataValue>
+              <UML:TaggedValue.type>
+                <UML:TagDefinition xmi.idref = '10-32--121-54--2ae9789a:14b6f16eb31:-8000:0000000000000878'/>
+              </UML:TaggedValue.type>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+        </UML:TagDefinition>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+  </XMI.content>
+</XMI>

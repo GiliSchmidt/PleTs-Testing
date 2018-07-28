@@ -1,0 +1,67 @@
+﻿<Window x:Class="PlugSpl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="PlugSPL v2.0 r1" WindowStartupLocation="CenterScreen" Icon="/PlugSpl;component/Images/plug.ico" 
+        Loaded="Window_Loaded"  Height="600" Width="800" WindowState="Maximized" KeyDown="Window_KeyDown">
+    <!-- MinHeight="600" MinWidth="800" -->
+    <Grid>
+        <TabControl Name="tabControlModules" TabStripPlacement="Top" SelectedIndex="1"
+                    Padding="0" SelectionChanged="tabControlModules_SelectionChanged">
+            <TabItem Name="tabItemWelcome">
+                <TabItem.Header>
+                    <TextBlock Text="Welcome" />
+                </TabItem.Header>
+                <Grid Background="White">
+                    <Viewbox VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="Uniform" Margin="20">
+                        <Image RenderOptions.BitmapScalingMode="Unspecified" 
+                           Source="/PlugSpl;component/Images/plugActivities.png" IsHitTestVisible="False" />
+                    </Viewbox>
+                    <TextBlock Text="Welcome to PlugSPL Environment!" Margin="20 20 0 0" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    <TextBlock Text="Get Started with PlugSPL" Margin="20 60 0 0" FontSize="12" Foreground="Blue"
+                               VerticalAlignment="Top" HorizontalAlignment="Left" TextDecorations="Underline"
+                               Cursor="Hand" />
+                    <TextBlock Text="PlugSPL Project Website" Margin="20 80 0 0" FontSize="12" Foreground="Blue"
+                               VerticalAlignment="Top" HorizontalAlignment="Left" TextDecorations="Underline"
+                               Cursor="Hand" />
+                    <TextBlock Text="PlugSPL Community" Margin="20 100 0 0" FontSize="12" Foreground="Blue"
+                               VerticalAlignment="Top" HorizontalAlignment="Left" TextDecorations="Underline"
+                               Cursor="Hand" />
+                    <TextBlock Text="Get involved" Margin="20 120 0 0" FontSize="12" Foreground="Blue"
+                               VerticalAlignment="Top" HorizontalAlignment="Left" TextDecorations="Underline"
+                               Cursor="Hand" />                  
+                    <Image VerticalAlignment="Bottom"  HorizontalAlignment="Right" 
+                    Source="/PlugSpl;component/Images/EmbedSplash.png" Height="88" Width="178" Margin="20"/>
+                </Grid>                
+            </TabItem>
+            <TabItem Name="tabItemDesign">
+                <TabItem.Header>
+                    <TextBlock Text="SPL Design" Foreground="Blue" />
+                </TabItem.Header>
+                <Grid>
+                    <Grid Name="gridFeatureModelContainer"  Visibility="Collapsed"></Grid>
+                    <Grid Name="gridComponentDiagramContainer"/>
+                </Grid>
+            </TabItem>
+            <TabItem Name="tabItemComponentPool">
+                <TabItem.Header>
+                    <TextBlock Text="Component Management" Foreground="Green"/>
+                </TabItem.Header>
+                <Grid Name="gridComponentPoolContainer" />
+            </TabItem>
+            <TabItem Name="tabItemConfiguration">
+                <TabItem.Header>
+                    <TextBlock Text="Product Configuration" Foreground="Brown" />
+                </TabItem.Header>
+                <Grid Name="gridProductconfiguratorContainer" />
+            </TabItem>
+            <TabItem Name="tabItemInstantiation">
+                <TabItem.Header>
+                    <TextBlock Text="Product Generation" Foreground="Chocolate"/>
+                </TabItem.Header>
+                <Grid Name="gridProductInstantiatorContainer" />
+            </TabItem>
+        </TabControl>
+        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="5" Name="buttonChangeDiagram" 
+                Text="Click (or press TAB) to switch to FODA Feature Model editor" MouseDown="buttonChangeDiagram_Click" Foreground="White"/>
+    </Grid>
+</Window>

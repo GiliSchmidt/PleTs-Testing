@@ -1,0 +1,12 @@
+﻿<Window x:Class="WpfApplication3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="358" Width="624">
+    <Grid Height="314">
+        <Button Content="File .c" Height="23" HorizontalAlignment="Left" Margin="8,198,0,0" Name="button1" VerticalAlignment="Top" Width="588" Click="button1_Click" />
+        <Button Content="File .prm" Height="23" HorizontalAlignment="Left" Margin="8,227,0,0" Name="button2" VerticalAlignment="Top" Width="587" Click="button2_Click" />
+        <Button Content="Start" Height="23" HorizontalAlignment="Left" Margin="9,256,0,0" Name="button3" VerticalAlignment="Top" Width="587" Click="button3_Click" />
+        <Button Content="Clear" Height="23" HorizontalAlignment="Left" Margin="9,284,0,0" Name="button4" VerticalAlignment="Top" Width="589" Click="button4_Click" />
+        <ListBox Height="184" HorizontalAlignment="Left" Margin="7,12,0,0" Name="listBox1" VerticalAlignment="Top" Width="588" IsEnabled="True"  />
+    </Grid>
+</Window>

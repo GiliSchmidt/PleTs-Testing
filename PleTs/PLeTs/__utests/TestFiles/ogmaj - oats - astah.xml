@@ -1,0 +1,1445 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<XMI xmi.version="1.1" xmlns:JUDE="http://objectclub.esm.co.jp/Jude/namespace/" xmlns:UML="org.omg.xmi.namespace.UML">
+  <XMI.header>
+    <XMI.documentation>
+      <XMI.exporter>Jomt XMI writer</XMI.exporter>
+      <XMI.exporterVersion>1.2.0.36</XMI.exporterVersion>
+      <XMI.currentModelVersion>36</XMI.currentModelVersion>
+      <XMI.maxModelVersion>36</XMI.maxModelVersion>
+      <XMI.currentModelProducer>A.P</XMI.currentModelProducer>
+      <XMI.sortedVersionHistories>
+        <XMI.versionEntry productVersion="Professional 6.6.3" modelVersion="36" />
+      </XMI.sortedVersionHistories>
+    </XMI.documentation>
+    <XMI.metamodel xmi.name="UML" xmi.version="1.4" />
+  </XMI.header>
+  <XMI.content>
+    <UML:Model xmi.id="null" name="script" version="0" unSolvedFlag="false" isRoot="true" isLeaf="false" isAbstract="false" xmlns:UML="org.omg.xmi.namespace.UML">
+      <UML:ModelElement.behavior>
+        <UML:ActivityGraph xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dc" />
+      </UML:ModelElement.behavior>
+      <UML:Namespace.ownedElement>
+        <UML:Actor xmi.id="a35d0a90-b2de-4abe-8a40-a7022adec3d7" name="Actor0" version="0" unSolvedFlag="false">
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="81407360-51ac-4224-b0ab-f5dd1eed736f" version="0" tag="TDHOST" value="0">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="a35d0a90-b2de-4abe-8a40-a7022adec3d7" />
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="null" />
+          </UML:ModelElement.namespace>
+        </UML:Actor>
+        <UML:UseCase xmi.id="89bbebf5-6aab-41e0-9e4c-9a3c7ef1eddd" name="UseCase0" version="0" unSolvedFlag="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="null" />
+          </UML:ModelElement.namespace>
+        </UML:UseCase>
+        <UML:Association xmi.id="a8a00397-ff4e-41dd-aed2-1e1f2df3caa0" name="" version="0" unSolvedFlag="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="null" />
+          </UML:ModelElement.namespace>
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="25c7c988-6652-4a72-907f-b5ac7463bdc6" name="" version="0" unSolvedFlag="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="null" />
+              </UML:ModelElement.namespace>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="89bbebf5-6aab-41e0-9e4c-9a3c7ef1eddd" />
+              </UML:Feature.owner>
+              <UML:AssociationEnd.participant>
+                <UML:Classifier xmi.idref="a35d0a90-b2de-4abe-8a40-a7022adec3d7" />
+              </UML:AssociationEnd.participant>
+              <UML:AssociationEnd.association>
+                <UML:Association xmi.idref="a8a00397-ff4e-41dd-aed2-1e1f2df3caa0" />
+              </UML:AssociationEnd.association>
+            </UML:AssociationEnd>
+            <UML:AssociationEnd xmi.id="09eb6311-7db4-42ca-8834-5b9ed116d6da" name="" version="0" unSolvedFlag="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="null" />
+              </UML:ModelElement.namespace>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="a35d0a90-b2de-4abe-8a40-a7022adec3d7" />
+              </UML:Feature.owner>
+              <UML:AssociationEnd.participant>
+                <UML:Classifier xmi.idref="89bbebf5-6aab-41e0-9e4c-9a3c7ef1eddd" />
+              </UML:AssociationEnd.participant>
+              <UML:AssociationEnd.association>
+                <UML:Association xmi.idref="a8a00397-ff4e-41dd-aed2-1e1f2df3caa0" />
+              </UML:AssociationEnd.association>
+            </UML:AssociationEnd>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:AssociationEnd xmi.idref="25c7c988-6652-4a72-907f-b5ac7463bdc6" />
+        <UML:AssociationEnd xmi.idref="09eb6311-7db4-42ca-8834-5b9ed116d6da" />
+        <UML:Stereotype xmi.id="cb8a9ec9-9701-406f-9417-8f45f8bcb325" name="actor" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Actor</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <JUDE:ModelElement xmi.idref="a35d0a90-b2de-4abe-8a40-a7022adec3d7" xmlns:JUDE="http://objectclub.esm.co.jp/Jude/namespace/" />
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:ActivityGraph xmi.id="b584c4cd-0747-4b07-8082-44f98a3f21dc" name="UseCase0" version="0" unSolvedFlag="false">
+          <UML:StateMachine.top>
+            <UML:CompositeState xmi.id="fb1d6285-6ad6-4533-9167-9319b8d36b38" name="" version="0" unSolvedFlag="false" isConcurrent="true" isOrthogonal="false" isRegion="true">
+              <UML:CompositeState.subvertex>
+                <UML:Pseudostate xmi.id="85c3712e-5621-4643-94dd-66a53a506dd5" name="initialState" version="0" unSolvedFlag="false" kind="initial">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="fb1d6285-6ad6-4533-9167-9319b8d36b38" />
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="b3bcbacf-c299-409c-84cc-de2adf0d65c7" />
+                  </UML:StateVertex.outgoing>
+                </UML:Pseudostate>
+                <UML:ActionState xmi.id="b6fd4c8c-e3b3-49eb-b426-deeae88427ba" name="Step0" version="0" unSolvedFlag="false" isDynamic="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="fb1d6285-6ad6-4533-9167-9319b8d36b38" />
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="afe93f3e-665e-43a5-9b0b-a6c853560ac9" />
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="b3bcbacf-c299-409c-84cc-de2adf0d65c7" />
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:Action xmi.id="330a4948-c07c-4dd6-a516-74b3a49d855a" name="Step0" version="0" unSolvedFlag="false" isAsynchronous="false" actionType="5" />
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:ActionState xmi.id="52d93d74-8ec6-4ef9-a477-6ed0252c21d4" name="[1] Support for server sent events  Issue ##1029  square/retrofit  GitHub (/1029)1" version="0" unSolvedFlag="false" isDynamic="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="fb1d6285-6ad6-4533-9167-9319b8d36b38" />
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="75b0a101-5293-4ba1-9cd8-878bd8e021aa" />
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="afe93f3e-665e-43a5-9b0b-a6c853560ac9" />
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:Action xmi.id="4583c99f-df06-45cb-87f2-b157bbe03a87" name="[1] Support for server sent events  Issue ##1029  square/retrofit  GitHub (/1029)1" version="0" unSolvedFlag="false" isAsynchronous="false" actionType="5" />
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:ActionState xmi.id="c7cab658-bb5d-49c3-9575-5ac4f786d489" name="[1] Support for server sent events  Issue ##1029  square/retrofit  GitHub (/1029)2" version="0" unSolvedFlag="false" isDynamic="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="fb1d6285-6ad6-4533-9167-9319b8d36b38" />
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="0950e1e1-3ddb-4ada-9c65-4ee5e137edd2" />
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="75b0a101-5293-4ba1-9cd8-878bd8e021aa" />
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:Action xmi.id="00ca3143-0314-4c47-888e-2bca89151807" name="[1] Support for server sent events  Issue ##1029  square/retrofit  GitHub (/1029)2" version="0" unSolvedFlag="false" isAsynchronous="false" actionType="5" />
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:ActionState xmi.id="08c8b1f9-1fb9-4653-abab-9399ebe43689" name="[1] Support for server sent events  Issue ##1029  square/retrofit  GitHub (/1029)3" version="0" unSolvedFlag="false" isDynamic="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="fb1d6285-6ad6-4533-9167-9319b8d36b38" />
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="7660d80b-bf0a-436a-945f-0287f02e002b" />
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="0950e1e1-3ddb-4ada-9c65-4ee5e137edd2" />
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:Action xmi.id="56af706e-e812-454b-b46c-202c6413bc47" name="[1] Support for server sent events  Issue ##1029  square/retrofit  GitHub (/1029)3" version="0" unSolvedFlag="false" isAsynchronous="false" actionType="5" />
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:ActionState xmi.id="9901b0fe-0b47-4ac2-a5b7-d303e6787373" name="[2] abhishekjamloki  GitHub (/abhishekjamloki)1" version="0" unSolvedFlag="false" isDynamic="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="fb1d6285-6ad6-4533-9167-9319b8d36b38" />
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="c7864cd1-6a29-4158-922a-06f2a975a655" />
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="7660d80b-bf0a-436a-945f-0287f02e002b" />
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:Action xmi.id="b1cd54bd-9071-4b73-bb6e-c7554579e422" name="[2] abhishekjamloki  GitHub (/abhishekjamloki)1" version="0" unSolvedFlag="false" isAsynchronous="false" actionType="5" />
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:ActionState xmi.id="da0fe95c-c392-4772-b81a-2a03640aa531" name="[2] abhishekjamloki  GitHub (/abhishekjamloki)2" version="0" unSolvedFlag="false" isDynamic="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="fb1d6285-6ad6-4533-9167-9319b8d36b38" />
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="2a7ead2e-8866-4efa-868c-1249cad734c9" />
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="c7864cd1-6a29-4158-922a-06f2a975a655" />
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:Action xmi.id="2a74a8df-d966-4184-831a-36e75aab70e9" name="[2] abhishekjamloki  GitHub (/abhishekjamloki)2" version="0" unSolvedFlag="false" isAsynchronous="false" actionType="5" />
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:ActionState xmi.id="9749982b-3ee0-4f55-baf6-4c83596727b1" name="[3] The worlds leading software development platform  GitHub (/github.com/)1" version="0" unSolvedFlag="false" isDynamic="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="fb1d6285-6ad6-4533-9167-9319b8d36b38" />
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="d5b43030-dfe3-4a17-b926-69e257f09c35" />
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="2a7ead2e-8866-4efa-868c-1249cad734c9" />
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:Action xmi.id="bb03624f-6979-4201-a0c7-53b72c18410c" name="[3] The worlds leading software development platform  GitHub (/github.com/)1" version="0" unSolvedFlag="false" isAsynchronous="false" actionType="5" />
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:ActionState xmi.id="6cdb7249-d60a-4c82-bd1d-7f2eda6d8e0f" name="[3] The worlds leading software development platform  GitHub (/github.com/)2" version="0" unSolvedFlag="false" isDynamic="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="fb1d6285-6ad6-4533-9167-9319b8d36b38" />
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="d412c308-6e43-405d-8dd2-8252990b8709" />
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="d5b43030-dfe3-4a17-b926-69e257f09c35" />
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:Action xmi.id="a76bf798-d8ab-4b68-96ab-5b8ad997c360" name="[3] The worlds leading software development platform  GitHub (/github.com/)2" version="0" unSolvedFlag="false" isAsynchronous="false" actionType="5" />
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:ActionState xmi.id="93453c48-07b1-4330-8281-4a36d1aafe08" name="[4] Sign in to GitHub  GitHub (/login)1" version="0" unSolvedFlag="false" isDynamic="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="fb1d6285-6ad6-4533-9167-9319b8d36b38" />
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="87d2532c-10d2-4a59-8e74-5bcea3927b0b" />
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="d412c308-6e43-405d-8dd2-8252990b8709" />
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:Action xmi.id="dc8944f9-a7f8-47ad-9a6b-83b54c417d36" name="[4] Sign in to GitHub  GitHub (/login)1" version="0" unSolvedFlag="false" isAsynchronous="false" actionType="5" />
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:FinalState xmi.id="49c5117d-ff59-4cb0-bb58-9f687633cecc" name="finalState" version="0" unSolvedFlag="false" isDynamic="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="fb1d6285-6ad6-4533-9167-9319b8d36b38" />
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="87d2532c-10d2-4a59-8e74-5bcea3927b0b" />
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:Action xmi.id="3db742bd-ecd8-4f79-82cd-26b555b43f1f" name="finalState" version="0" unSolvedFlag="false" isAsynchronous="false" actionType="5" />
+                  </UML:State.entry>
+                </UML:FinalState>
+              </UML:CompositeState.subvertex>
+            </UML:CompositeState>
+          </UML:StateMachine.top>
+          <UML:StateMachine.context>
+            <UML:ModelElement xmi.idref="null" />
+          </UML:StateMachine.context>
+          <UML:StateMachine.transitions>
+            <UML:Transition xmi.id="b3bcbacf-c299-409c-84cc-de2adf0d65c7" name="" version="0" unSolvedFlag="false">
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="d00360fc-b729-47fe-bf17-80d0a8a7b7eb" version="0" tag="TDOBJECT" value="{browser}">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="b3bcbacf-c299-409c-84cc-de2adf0d65c7" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="f85cdf2d-8652-421a-9d8f-1db5fa3ff1f5" version="0" tag="TDPROPERTIES" value=" ">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="b3bcbacf-c299-409c-84cc-de2adf0d65c7" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="7565dbe6-b95d-44e2-a6fb-339ea2246c84" version="0" tag="TDVERIFY" value="false">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="b3bcbacf-c299-409c-84cc-de2adf0d65c7" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="9724e0f4-2b37-4243-8c1e-9a1822589c0f" version="0" tag="TDWAIT" value="0">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="b3bcbacf-c299-409c-84cc-de2adf0d65c7" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="dd05f9b4-128a-419b-9bb8-726b8f037de7" version="0" tag="TDITERATIONS" value="0">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="b3bcbacf-c299-409c-84cc-de2adf0d65c7" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="2aaf055a-7ac5-48aa-baf7-e939a65226f2" version="0" tag="TDACTION" value="{launch}">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="b3bcbacf-c299-409c-84cc-de2adf0d65c7" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="bb70571f-9077-4d09-bffd-fe18b8af3f92" version="0" tag="TDASSERT" value="">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="b3bcbacf-c299-409c-84cc-de2adf0d65c7" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="ea5c0624-ff7a-471d-9087-566f79c3e512" version="0" tag="TDLOOPCONDITION" value="">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="b3bcbacf-c299-409c-84cc-de2adf0d65c7" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="277438c1-b7ec-4827-8b55-76c27c1db4bc" version="0" tag="TDPROTOCOL" value="browser">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="b3bcbacf-c299-409c-84cc-de2adf0d65c7" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="85c3712e-5621-4643-94dd-66a53a506dd5" />
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="b6fd4c8c-e3b3-49eb-b426-deeae88427ba" />
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dc" />
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+            <UML:Transition xmi.id="afe93f3e-665e-43a5-9b0b-a6c853560ac9" name="" version="0" unSolvedFlag="false">
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="f7b6bcc4-98e5-4abb-bd96-59746baaa00c" version="0" tag="TDOBJECT" value="{window;com/square/retrofit/issues/1029']}">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="afe93f3e-665e-43a5-9b0b-a6c853560ac9" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="741cb0ce-6780-42b8-86ac-52b1ff69caa7" version="0" tag="TDPROPERTIES" value="com/square/retrofit/issues/1029']">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="afe93f3e-665e-43a5-9b0b-a6c853560ac9" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="174cecea-9def-47a6-bdf2-6a7a5925af35" version="0" tag="TDVERIFY" value="false">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="afe93f3e-665e-43a5-9b0b-a6c853560ac9" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="97761773-6f29-4f3b-a6e2-ef2b5f49b482" version="0" tag="TDWAIT" value="0">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="afe93f3e-665e-43a5-9b0b-a6c853560ac9" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="eae672c1-31ef-4f75-9603-b8820bc01980" version="0" tag="TDITERATIONS" value="0">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="afe93f3e-665e-43a5-9b0b-a6c853560ac9" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="0a400043-560a-4f31-8aa1-f51f5cf34856" version="0" tag="TDACTION" value="{navigate;&quot;https://github.com/square/retrofit/issues/1029&quot;}">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="afe93f3e-665e-43a5-9b0b-a6c853560ac9" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="f9b9c7cb-49e5-4f8b-b9bf-3830ed0bcc0e" version="0" tag="TDASSERT" value="">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="afe93f3e-665e-43a5-9b0b-a6c853560ac9" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="74e22b56-3c40-4008-a675-48ff28a48c0c" version="0" tag="TDLOOPCONDITION" value="">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="afe93f3e-665e-43a5-9b0b-a6c853560ac9" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="0f714787-d02c-4050-b35f-8d7cd29de32d" version="0" tag="TDPROTOCOL" value="web">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="afe93f3e-665e-43a5-9b0b-a6c853560ac9" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="b6fd4c8c-e3b3-49eb-b426-deeae88427ba" />
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="52d93d74-8ec6-4ef9-a477-6ed0252c21d4" />
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dc" />
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+            <UML:Transition xmi.id="75b0a101-5293-4ba1-9cd8-878bd8e021aa" name="" version="0" unSolvedFlag="false">
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="aa734b62-dec5-49ce-9c32-3d763c713608" version="0" tag="TDOBJECT" value="{window;/web:window[@index='0' or @title='Support for server sent events  Issue #1029  square/retrofit  GitHub']}">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="75b0a101-5293-4ba1-9cd8-878bd8e021aa" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="995bd21a-6567-46c8-8c85-11aff8f83037" version="0" tag="TDPROPERTIES" value="/web:window[@index='0' or @title='Support for server sent events  Issue #1029  square/retrofit  GitHub']">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="75b0a101-5293-4ba1-9cd8-878bd8e021aa" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="b19b7ec8-5c2e-4ae1-9d74-f503a60e4e35" version="0" tag="TDVERIFY" value="false">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="75b0a101-5293-4ba1-9cd8-878bd8e021aa" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="89ff5e51-6fba-4226-b9df-0acae2e7ca8d" version="0" tag="TDWAIT" value="0">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="75b0a101-5293-4ba1-9cd8-878bd8e021aa" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="679c99a6-8da4-4f85-a9e6-afc137671863" version="0" tag="TDITERATIONS" value="0">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="75b0a101-5293-4ba1-9cd8-878bd8e021aa" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="2a816cc9-87e9-4e95-a9f1-6383c985f2e7" version="0" tag="TDACTION" value="{waitForPage;null}">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="75b0a101-5293-4ba1-9cd8-878bd8e021aa" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="b001406e-6724-44ec-aa3d-96a849b97d62" version="0" tag="TDASSERT" value="">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="75b0a101-5293-4ba1-9cd8-878bd8e021aa" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="bb0dd275-6f3e-4940-88dd-c5d0d7c53a41" version="0" tag="TDLOOPCONDITION" value="">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="75b0a101-5293-4ba1-9cd8-878bd8e021aa" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="20885f12-4bbc-4082-b9cd-036ebaa0f8e3" version="0" tag="TDPROTOCOL" value="web">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="75b0a101-5293-4ba1-9cd8-878bd8e021aa" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="52d93d74-8ec6-4ef9-a477-6ed0252c21d4" />
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="c7cab658-bb5d-49c3-9575-5ac4f786d489" />
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dc" />
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+            <UML:Transition xmi.id="0950e1e1-3ddb-4ada-9c65-4ee5e137edd2" name="" version="0" unSolvedFlag="false">
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="61d8d644-200b-4382-b44d-4d49cb86d262" version="0" tag="TDOBJECT" value="{link;com/abhishekjamloki' or @index='27']}">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="0950e1e1-3ddb-4ada-9c65-4ee5e137edd2" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="f1fb18c7-6582-4e21-85c7-6758a17fdd79" version="0" tag="TDPROPERTIES" value="com/abhishekjamloki' or @index='27']">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="0950e1e1-3ddb-4ada-9c65-4ee5e137edd2" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="2820a321-aaaf-4e9d-b1f5-4ecc2509d8c8" version="0" tag="TDVERIFY" value="false">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="0950e1e1-3ddb-4ada-9c65-4ee5e137edd2" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="72e092bf-3d71-4c78-8958-0507a709aaa7" version="0" tag="TDWAIT" value="0">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="0950e1e1-3ddb-4ada-9c65-4ee5e137edd2" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="8f5fcf83-fede-4271-97f0-a989f7d82628" version="0" tag="TDITERATIONS" value="0">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="0950e1e1-3ddb-4ada-9c65-4ee5e137edd2" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="48a60c3a-2186-4537-a6b8-fc5b8981a639" version="0" tag="TDACTION" value="{click}">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="0950e1e1-3ddb-4ada-9c65-4ee5e137edd2" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="640e0594-68f2-4ca5-9441-8cb3d7b55df3" version="0" tag="TDASSERT" value="">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="0950e1e1-3ddb-4ada-9c65-4ee5e137edd2" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="e41dcac6-5121-4193-939a-b962ca4a3a07" version="0" tag="TDLOOPCONDITION" value="">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="0950e1e1-3ddb-4ada-9c65-4ee5e137edd2" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="5153ef4b-851d-4fb7-8531-4c82c5466ec1" version="0" tag="TDPROTOCOL" value="web">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="0950e1e1-3ddb-4ada-9c65-4ee5e137edd2" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="c7cab658-bb5d-49c3-9575-5ac4f786d489" />
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="08c8b1f9-1fb9-4653-abab-9399ebe43689" />
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dc" />
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+            <UML:Transition xmi.id="7660d80b-bf0a-436a-945f-0287f02e002b" name="" version="0" unSolvedFlag="false">
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="24186f5a-a6aa-461f-af49-73e6d56d0bbd" version="0" tag="TDOBJECT" value="{window;/web:window[@index='0' or @title='abhishekjamloki  GitHub']}">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="7660d80b-bf0a-436a-945f-0287f02e002b" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="480192b3-861d-4ddf-8413-021b9ad41376" version="0" tag="TDPROPERTIES" value="/web:window[@index='0' or @title='abhishekjamloki  GitHub']">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="7660d80b-bf0a-436a-945f-0287f02e002b" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="c564e126-0c72-465b-b7cf-3a408d10fdca" version="0" tag="TDVERIFY" value="false">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="7660d80b-bf0a-436a-945f-0287f02e002b" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="5e121e41-a3ec-4b7b-a631-ab2356204fd0" version="0" tag="TDWAIT" value="0">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="7660d80b-bf0a-436a-945f-0287f02e002b" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="0e551de9-537f-4b08-b2b4-1c48444ef174" version="0" tag="TDITERATIONS" value="0">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="7660d80b-bf0a-436a-945f-0287f02e002b" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="d4aa8342-3a59-42a2-a4da-cd138958cc77" version="0" tag="TDACTION" value="{waitForPage;null}">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="7660d80b-bf0a-436a-945f-0287f02e002b" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="160963a7-d1d3-4fd9-a48a-71073ad5405c" version="0" tag="TDASSERT" value="">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="7660d80b-bf0a-436a-945f-0287f02e002b" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="289533d7-c699-4dd5-b7d1-cd937dff30f8" version="0" tag="TDLOOPCONDITION" value="">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="7660d80b-bf0a-436a-945f-0287f02e002b" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="15c3667a-9ee5-488b-b2f5-43e74396277d" version="0" tag="TDPROTOCOL" value="web">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="7660d80b-bf0a-436a-945f-0287f02e002b" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="08c8b1f9-1fb9-4653-abab-9399ebe43689" />
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="9901b0fe-0b47-4ac2-a5b7-d303e6787373" />
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dc" />
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+            <UML:Transition xmi.id="c7864cd1-6a29-4158-922a-06f2a975a655" name="" version="0" unSolvedFlag="false">
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="9b0e82af-2e3d-4c23-a7d1-945717467e13" version="0" tag="TDOBJECT" value="{element;1' and @viewBox='0 0 16 16' and @height='32' and @tabIndex='-1' and @currentScale='1' and @zoomAndPan='2' and @index='0']}">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="c7864cd1-6a29-4158-922a-06f2a975a655" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="a11ff09d-2cef-4678-8945-701f6d57cac0" version="0" tag="TDPROPERTIES" value="1' and @viewBox='0 0 16 16' and @height='32' and @tabIndex='-1' and @currentScale='1' and @zoomAndPan='2' and @index='0']">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="c7864cd1-6a29-4158-922a-06f2a975a655" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="4134e530-37ac-4d37-9e8e-1e545f2b5ef4" version="0" tag="TDVERIFY" value="false">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="c7864cd1-6a29-4158-922a-06f2a975a655" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="ed5e2299-f422-4d68-836e-25a43c1f66f4" version="0" tag="TDWAIT" value="0">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="c7864cd1-6a29-4158-922a-06f2a975a655" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="4f941e5e-fea5-43eb-a830-778451e84140" version="0" tag="TDITERATIONS" value="0">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="c7864cd1-6a29-4158-922a-06f2a975a655" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="dffc10e5-1229-4d16-98cf-cc17f864cbad" version="0" tag="TDACTION" value="{click}">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="c7864cd1-6a29-4158-922a-06f2a975a655" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="ffc35924-affb-4784-964c-4dbd9ae1dd6b" version="0" tag="TDASSERT" value="">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="c7864cd1-6a29-4158-922a-06f2a975a655" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="33a1ff69-4d4b-4fd4-86ec-d516c36025d6" version="0" tag="TDLOOPCONDITION" value="">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="c7864cd1-6a29-4158-922a-06f2a975a655" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="2f9f7b81-57ad-423d-9f44-c73e2e7308aa" version="0" tag="TDPROTOCOL" value="web">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="c7864cd1-6a29-4158-922a-06f2a975a655" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="9901b0fe-0b47-4ac2-a5b7-d303e6787373" />
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="da0fe95c-c392-4772-b81a-2a03640aa531" />
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dc" />
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+            <UML:Transition xmi.id="2a7ead2e-8866-4efa-868c-1249cad734c9" name="" version="0" unSolvedFlag="false">
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="c539321f-2d6b-444b-8c2a-b157aa2c4a55" version="0" tag="TDOBJECT" value="{window;/web:window[@index='0' or @title='The worlds leading software development platform  GitHub']}">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="2a7ead2e-8866-4efa-868c-1249cad734c9" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="a4cf68ee-0cec-4cce-9dee-4cf45e8bdd38" version="0" tag="TDPROPERTIES" value="/web:window[@index='0' or @title='The worlds leading software development platform  GitHub']">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="2a7ead2e-8866-4efa-868c-1249cad734c9" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="987d3b74-39c8-4826-badf-8a482ef54d7a" version="0" tag="TDVERIFY" value="false">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="2a7ead2e-8866-4efa-868c-1249cad734c9" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="fcfe7908-e90b-49d8-85fe-3594dcc42fdd" version="0" tag="TDWAIT" value="0">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="2a7ead2e-8866-4efa-868c-1249cad734c9" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="85c731ef-adf9-46d3-940f-9754dde86afd" version="0" tag="TDITERATIONS" value="0">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="2a7ead2e-8866-4efa-868c-1249cad734c9" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="c06ba87b-5114-4617-ae30-f0a3f4d7d685" version="0" tag="TDACTION" value="{waitForPage;null}">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="2a7ead2e-8866-4efa-868c-1249cad734c9" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="773eebe4-6ff6-4ed4-b07a-64ea6a47864b" version="0" tag="TDASSERT" value="">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="2a7ead2e-8866-4efa-868c-1249cad734c9" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="6340b201-ac85-4271-bcbc-fc15074fc9b6" version="0" tag="TDLOOPCONDITION" value="">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="2a7ead2e-8866-4efa-868c-1249cad734c9" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="14cbcc5c-3f53-4ea4-8f43-5c0e35119e32" version="0" tag="TDPROTOCOL" value="web">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="2a7ead2e-8866-4efa-868c-1249cad734c9" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="da0fe95c-c392-4772-b81a-2a03640aa531" />
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="9749982b-3ee0-4f55-baf6-4c83596727b1" />
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dc" />
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+            <UML:Transition xmi.id="d5b43030-dfe3-4a17-b926-69e257f09c35" name="" version="0" unSolvedFlag="false">
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="84292e59-0751-4cbf-998a-a482832f5a45" version="0" tag="TDOBJECT" value="{link;com/login' or @index='8']}">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="d5b43030-dfe3-4a17-b926-69e257f09c35" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="37d7a4d4-4a0f-4080-b5e9-c07a7e113e69" version="0" tag="TDPROPERTIES" value="com/login' or @index='8']">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="d5b43030-dfe3-4a17-b926-69e257f09c35" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="4af98756-11e1-4d8c-93a2-c6d3bfb3fa77" version="0" tag="TDVERIFY" value="false">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="d5b43030-dfe3-4a17-b926-69e257f09c35" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="f1c2c0c1-3807-42fe-9151-42a461e30fcc" version="0" tag="TDWAIT" value="0">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="d5b43030-dfe3-4a17-b926-69e257f09c35" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="789692a5-0b24-49a9-8e48-40245b3a70ea" version="0" tag="TDITERATIONS" value="0">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="d5b43030-dfe3-4a17-b926-69e257f09c35" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="6c86b287-bb84-46f4-a771-e75e7fa4720b" version="0" tag="TDACTION" value="{click}">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="d5b43030-dfe3-4a17-b926-69e257f09c35" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="eb61a096-15e3-417c-a4cd-099cc1fc2106" version="0" tag="TDASSERT" value="">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="d5b43030-dfe3-4a17-b926-69e257f09c35" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="64fbacc3-be97-45cf-88c0-3c990d6fafa0" version="0" tag="TDLOOPCONDITION" value="">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="d5b43030-dfe3-4a17-b926-69e257f09c35" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="9d795db5-f294-48f7-8f0e-1fd349c8d721" version="0" tag="TDPROTOCOL" value="web">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="d5b43030-dfe3-4a17-b926-69e257f09c35" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="9749982b-3ee0-4f55-baf6-4c83596727b1" />
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="6cdb7249-d60a-4c82-bd1d-7f2eda6d8e0f" />
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dc" />
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+            <UML:Transition xmi.id="d412c308-6e43-405d-8dd2-8252990b8709" name="" version="0" unSolvedFlag="false">
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="a1d1979f-f5c1-472e-814e-4ffe3fada444" version="0" tag="TDOBJECT" value="{window;/web:window[@index='0' or @title='Sign in to GitHub  GitHub']}">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="d412c308-6e43-405d-8dd2-8252990b8709" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="8f1c755b-b371-4564-8a4f-e7aa8f981800" version="0" tag="TDPROPERTIES" value="/web:window[@index='0' or @title='Sign in to GitHub  GitHub']">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="d412c308-6e43-405d-8dd2-8252990b8709" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="5127a14a-494a-4c59-b495-0af75cabe253" version="0" tag="TDVERIFY" value="false">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="d412c308-6e43-405d-8dd2-8252990b8709" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="61a990f2-a043-43ec-951e-bb44ff790430" version="0" tag="TDWAIT" value="0">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="d412c308-6e43-405d-8dd2-8252990b8709" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="2eb069a0-7615-4af1-951d-f7093a2e98aa" version="0" tag="TDITERATIONS" value="0">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="d412c308-6e43-405d-8dd2-8252990b8709" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="eefa4fea-ad4b-43a7-a1ed-e93e83fae85b" version="0" tag="TDACTION" value="{waitForPage;null}">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="d412c308-6e43-405d-8dd2-8252990b8709" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="48cf6415-f4ff-44a6-8a0a-cc6972810c0d" version="0" tag="TDASSERT" value="">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="d412c308-6e43-405d-8dd2-8252990b8709" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="0e55f8db-7728-4db9-affe-a07453bed44e" version="0" tag="TDLOOPCONDITION" value="">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="d412c308-6e43-405d-8dd2-8252990b8709" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="c280269e-6e3b-4969-a04a-6617b37334e2" version="0" tag="TDPROTOCOL" value="web">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="d412c308-6e43-405d-8dd2-8252990b8709" />
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="6cdb7249-d60a-4c82-bd1d-7f2eda6d8e0f" />
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="93453c48-07b1-4330-8281-4a36d1aafe08" />
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dc" />
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+            <UML:Transition xmi.id="87d2532c-10d2-4a59-8e74-5bcea3927b0b" name="" version="0" unSolvedFlag="false">
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="93453c48-07b1-4330-8281-4a36d1aafe08" />
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="49c5117d-ff59-4cb0-bb58-9f687633cecc" />
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dc" />
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+          </UML:StateMachine.transitions>
+        </UML:ActivityGraph>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <XMI.extension>
+      <JUDE:ActivityDiagram xmi.id="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" name="UseCase0" typeInfo="Activity Diagram" version="0" verticalMaxLevel="-1" horizontalMaxLevel="-1" xmlns:JUDE="http://objectclub.esm.co.jp/Jude/namespace/">
+        <JUDE:StateChartDiagram.semanticModel>
+          <UML:ActivityGraph xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dc" />
+        </JUDE:StateChartDiagram.semanticModel>
+        <JUDE:Diagram.presentations>
+          <JUDE:FramePresentation xmi.id="06a1a1e9-da54-4f24-8a09-cc33b537163e" version="0" depth="2147483646" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="5000.0" height="5000.0" doAutoResize="true" visibility="true" label="UseCase0">
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0</XMI.field>
+              <XMI.field>0</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:FramePresentation>
+          <JUDE:InitialStatePresentation xmi.id="85c3712e-5621-4643-94dd-66a53a506dd5jude" version="0" depth="2147483636" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" width="20.0" height="20.0" doAutoResize="false" label="initialState" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Pseudostate xmi.idref="85c3712e-5621-4643-94dd-66a53a506dd5" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="b3bcbacf-c299-409c-84cc-de2adf0d65c7jude" />
+            </JUDE:UPresentation.clients>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>115</XMI.field>
+              <XMI.field>300</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:InitialStatePresentation>
+          <JUDE:ActionStatePresentation xmi.id="b6fd4c8c-e3b3-49eb-b426-deeae88427bajude" version="0" depth="2147483635" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" width="150.0" height="100.0" doAutoResize="false" label="Step0" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:ActionState xmi.idref="b6fd4c8c-e3b3-49eb-b426-deeae88427ba" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="b3bcbacf-c299-409c-84cc-de2adf0d65c7jude" />
+              <JUDE:TransitionPresentation xmi.idref="afe93f3e-665e-43a5-9b0b-a6c853560ac9jude" />
+            </JUDE:UPresentation.clients>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>50</XMI.field>
+              <XMI.field>450</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ActionStatePresentation>
+          <JUDE:ActionStatePresentation xmi.id="52d93d74-8ec6-4ef9-a477-6ed0252c21d4jude" version="0" depth="2147483634" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" width="150.0" height="100.0" doAutoResize="false" label="[1] Support for server sent events  Issue ##1029  square/retrofit  GitHub (/1029)1" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:ActionState xmi.idref="52d93d74-8ec6-4ef9-a477-6ed0252c21d4" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="afe93f3e-665e-43a5-9b0b-a6c853560ac9jude" />
+              <JUDE:TransitionPresentation xmi.idref="75b0a101-5293-4ba1-9cd8-878bd8e021aajude" />
+            </JUDE:UPresentation.clients>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>50</XMI.field>
+              <XMI.field>600</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ActionStatePresentation>
+          <JUDE:ActionStatePresentation xmi.id="c7cab658-bb5d-49c3-9575-5ac4f786d489jude" version="0" depth="2147483633" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" width="150.0" height="100.0" doAutoResize="false" label="[1] Support for server sent events  Issue ##1029  square/retrofit  GitHub (/1029)2" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:ActionState xmi.idref="c7cab658-bb5d-49c3-9575-5ac4f786d489" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="75b0a101-5293-4ba1-9cd8-878bd8e021aajude" />
+              <JUDE:TransitionPresentation xmi.idref="0950e1e1-3ddb-4ada-9c65-4ee5e137edd2jude" />
+            </JUDE:UPresentation.clients>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>50</XMI.field>
+              <XMI.field>750</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ActionStatePresentation>
+          <JUDE:ActionStatePresentation xmi.id="08c8b1f9-1fb9-4653-abab-9399ebe43689jude" version="0" depth="2147483632" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" width="150.0" height="100.0" doAutoResize="false" label="[1] Support for server sent events  Issue ##1029  square/retrofit  GitHub (/1029)3" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:ActionState xmi.idref="08c8b1f9-1fb9-4653-abab-9399ebe43689" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="0950e1e1-3ddb-4ada-9c65-4ee5e137edd2jude" />
+              <JUDE:TransitionPresentation xmi.idref="7660d80b-bf0a-436a-945f-0287f02e002bjude" />
+            </JUDE:UPresentation.clients>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>50</XMI.field>
+              <XMI.field>900</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ActionStatePresentation>
+          <JUDE:ActionStatePresentation xmi.id="9901b0fe-0b47-4ac2-a5b7-d303e6787373jude" version="0" depth="2147483631" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" width="150.0" height="100.0" doAutoResize="false" label="[2] abhishekjamloki  GitHub (/abhishekjamloki)1" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:ActionState xmi.idref="9901b0fe-0b47-4ac2-a5b7-d303e6787373" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="7660d80b-bf0a-436a-945f-0287f02e002bjude" />
+              <JUDE:TransitionPresentation xmi.idref="c7864cd1-6a29-4158-922a-06f2a975a655jude" />
+            </JUDE:UPresentation.clients>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>50</XMI.field>
+              <XMI.field>1050</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ActionStatePresentation>
+          <JUDE:ActionStatePresentation xmi.id="da0fe95c-c392-4772-b81a-2a03640aa531jude" version="0" depth="2147483630" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" width="150.0" height="100.0" doAutoResize="false" label="[2] abhishekjamloki  GitHub (/abhishekjamloki)2" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:ActionState xmi.idref="da0fe95c-c392-4772-b81a-2a03640aa531" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="c7864cd1-6a29-4158-922a-06f2a975a655jude" />
+              <JUDE:TransitionPresentation xmi.idref="2a7ead2e-8866-4efa-868c-1249cad734c9jude" />
+            </JUDE:UPresentation.clients>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>50</XMI.field>
+              <XMI.field>1200</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ActionStatePresentation>
+          <JUDE:ActionStatePresentation xmi.id="9749982b-3ee0-4f55-baf6-4c83596727b1jude" version="0" depth="2147483629" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" width="150.0" height="100.0" doAutoResize="false" label="[3] The worlds leading software development platform  GitHub (/github.com/)1" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:ActionState xmi.idref="9749982b-3ee0-4f55-baf6-4c83596727b1" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="2a7ead2e-8866-4efa-868c-1249cad734c9jude" />
+              <JUDE:TransitionPresentation xmi.idref="d5b43030-dfe3-4a17-b926-69e257f09c35jude" />
+            </JUDE:UPresentation.clients>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>50</XMI.field>
+              <XMI.field>1350</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ActionStatePresentation>
+          <JUDE:ActionStatePresentation xmi.id="6cdb7249-d60a-4c82-bd1d-7f2eda6d8e0fjude" version="0" depth="2147483628" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" width="150.0" height="100.0" doAutoResize="false" label="[3] The worlds leading software development platform  GitHub (/github.com/)2" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:ActionState xmi.idref="6cdb7249-d60a-4c82-bd1d-7f2eda6d8e0f" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="d5b43030-dfe3-4a17-b926-69e257f09c35jude" />
+              <JUDE:TransitionPresentation xmi.idref="d412c308-6e43-405d-8dd2-8252990b8709jude" />
+            </JUDE:UPresentation.clients>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>50</XMI.field>
+              <XMI.field>1500</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ActionStatePresentation>
+          <JUDE:ActionStatePresentation xmi.id="93453c48-07b1-4330-8281-4a36d1aafe08jude" version="0" depth="2147483627" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" width="150.0" height="100.0" doAutoResize="false" label="[4] Sign in to GitHub  GitHub (/login)1" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:ActionState xmi.idref="93453c48-07b1-4330-8281-4a36d1aafe08" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="d412c308-6e43-405d-8dd2-8252990b8709jude" />
+              <JUDE:TransitionPresentation xmi.idref="87d2532c-10d2-4a59-8e74-5bcea3927b0bjude" />
+            </JUDE:UPresentation.clients>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>50</XMI.field>
+              <XMI.field>1650</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ActionStatePresentation>
+          <JUDE:FinalStatePresentation xmi.id="49c5117d-ff59-4cb0-bb58-9f687633ceccjude" version="0" depth="2147483626" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" width="20.0" height="20.0" doAutoResize="false" label="finalState" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:FinalState xmi.idref="49c5117d-ff59-4cb0-bb58-9f687633cecc" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="87d2532c-10d2-4a59-8e74-5bcea3927b0bjude" />
+            </JUDE:UPresentation.clients>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>115</XMI.field>
+              <XMI.field>1800</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:FinalStatePresentation>
+          <JUDE:TransitionPresentation xmi.id="b3bcbacf-c299-409c-84cc-de2adf0d65c7jude" version="0" depth="2147483625" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" rightAngle="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="b3bcbacf-c299-409c-84cc-de2adf0d65c7" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:InitialStatePresentation xmi.idref="85c3712e-5621-4643-94dd-66a53a506dd5jude" />
+              <JUDE:ActionStatePresentation xmi.idref="b6fd4c8c-e3b3-49eb-b426-deeae88427bajude" />
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line" />
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="8551f6c2-07a5-400e-bdeb-24ad534ac861" version="0" depth="0" constraintVisibility="true" stereotypeVisibility="true" notationType="0" width="11" height="16" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>128.0</XMI.field>
+                  <XMI.field>128.0</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="b3bcbacf-c299-409c-84cc-de2adf0d65c7jude" />
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:PathPresentation.points />
+          </JUDE:TransitionPresentation>
+          <JUDE:TransitionPresentation xmi.id="afe93f3e-665e-43a5-9b0b-a6c853560ac9jude" version="0" depth="2147483624" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" rightAngle="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="afe93f3e-665e-43a5-9b0b-a6c853560ac9" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ActionStatePresentation xmi.idref="b6fd4c8c-e3b3-49eb-b426-deeae88427bajude" />
+              <JUDE:ActionStatePresentation xmi.idref="52d93d74-8ec6-4ef9-a477-6ed0252c21d4jude" />
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line" />
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="7596a33e-29fa-44c5-9864-a16f2e2aa87c" version="0" depth="0" constraintVisibility="true" stereotypeVisibility="true" notationType="0" width="11" height="16" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>128.0</XMI.field>
+                  <XMI.field>128.0</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="afe93f3e-665e-43a5-9b0b-a6c853560ac9jude" />
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:PathPresentation.points />
+          </JUDE:TransitionPresentation>
+          <JUDE:TransitionPresentation xmi.id="75b0a101-5293-4ba1-9cd8-878bd8e021aajude" version="0" depth="2147483623" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" rightAngle="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="75b0a101-5293-4ba1-9cd8-878bd8e021aa" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ActionStatePresentation xmi.idref="52d93d74-8ec6-4ef9-a477-6ed0252c21d4jude" />
+              <JUDE:ActionStatePresentation xmi.idref="c7cab658-bb5d-49c3-9575-5ac4f786d489jude" />
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line" />
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="4f35cecd-c0a0-4fc2-a83e-e55e930a8b52" version="0" depth="0" constraintVisibility="true" stereotypeVisibility="true" notationType="0" width="11" height="16" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>128.0</XMI.field>
+                  <XMI.field>128.0</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="75b0a101-5293-4ba1-9cd8-878bd8e021aajude" />
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:PathPresentation.points />
+          </JUDE:TransitionPresentation>
+          <JUDE:TransitionPresentation xmi.id="0950e1e1-3ddb-4ada-9c65-4ee5e137edd2jude" version="0" depth="2147483622" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" rightAngle="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="0950e1e1-3ddb-4ada-9c65-4ee5e137edd2" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ActionStatePresentation xmi.idref="c7cab658-bb5d-49c3-9575-5ac4f786d489jude" />
+              <JUDE:ActionStatePresentation xmi.idref="08c8b1f9-1fb9-4653-abab-9399ebe43689jude" />
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line" />
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="4e4c4152-3f45-47dc-8d97-aaf326cc5b01" version="0" depth="0" constraintVisibility="true" stereotypeVisibility="true" notationType="0" width="11" height="16" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>128.0</XMI.field>
+                  <XMI.field>128.0</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="0950e1e1-3ddb-4ada-9c65-4ee5e137edd2jude" />
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:PathPresentation.points />
+          </JUDE:TransitionPresentation>
+          <JUDE:TransitionPresentation xmi.id="7660d80b-bf0a-436a-945f-0287f02e002bjude" version="0" depth="2147483621" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" rightAngle="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="7660d80b-bf0a-436a-945f-0287f02e002b" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ActionStatePresentation xmi.idref="08c8b1f9-1fb9-4653-abab-9399ebe43689jude" />
+              <JUDE:ActionStatePresentation xmi.idref="9901b0fe-0b47-4ac2-a5b7-d303e6787373jude" />
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line" />
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="2ea2d92b-8257-4f11-92de-29d5e47b8cd0" version="0" depth="0" constraintVisibility="true" stereotypeVisibility="true" notationType="0" width="11" height="16" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>128.0</XMI.field>
+                  <XMI.field>128.0</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="7660d80b-bf0a-436a-945f-0287f02e002bjude" />
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:PathPresentation.points />
+          </JUDE:TransitionPresentation>
+          <JUDE:TransitionPresentation xmi.id="c7864cd1-6a29-4158-922a-06f2a975a655jude" version="0" depth="2147483620" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" rightAngle="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="c7864cd1-6a29-4158-922a-06f2a975a655" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ActionStatePresentation xmi.idref="9901b0fe-0b47-4ac2-a5b7-d303e6787373jude" />
+              <JUDE:ActionStatePresentation xmi.idref="da0fe95c-c392-4772-b81a-2a03640aa531jude" />
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line" />
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="af821c94-7936-4a28-8c59-fbe1387a8b72" version="0" depth="0" constraintVisibility="true" stereotypeVisibility="true" notationType="0" width="11" height="16" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>128.0</XMI.field>
+                  <XMI.field>128.0</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="c7864cd1-6a29-4158-922a-06f2a975a655jude" />
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:PathPresentation.points />
+          </JUDE:TransitionPresentation>
+          <JUDE:TransitionPresentation xmi.id="2a7ead2e-8866-4efa-868c-1249cad734c9jude" version="0" depth="2147483619" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" rightAngle="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="2a7ead2e-8866-4efa-868c-1249cad734c9" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ActionStatePresentation xmi.idref="da0fe95c-c392-4772-b81a-2a03640aa531jude" />
+              <JUDE:ActionStatePresentation xmi.idref="9749982b-3ee0-4f55-baf6-4c83596727b1jude" />
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line" />
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="ee66997b-02b5-433c-8b65-acf5f104d14d" version="0" depth="0" constraintVisibility="true" stereotypeVisibility="true" notationType="0" width="11" height="16" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>128.0</XMI.field>
+                  <XMI.field>128.0</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="2a7ead2e-8866-4efa-868c-1249cad734c9jude" />
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:PathPresentation.points />
+          </JUDE:TransitionPresentation>
+          <JUDE:TransitionPresentation xmi.id="d5b43030-dfe3-4a17-b926-69e257f09c35jude" version="0" depth="2147483618" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" rightAngle="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="d5b43030-dfe3-4a17-b926-69e257f09c35" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ActionStatePresentation xmi.idref="9749982b-3ee0-4f55-baf6-4c83596727b1jude" />
+              <JUDE:ActionStatePresentation xmi.idref="6cdb7249-d60a-4c82-bd1d-7f2eda6d8e0fjude" />
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line" />
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="e6f0bf9f-bd3a-46df-a6c6-c8d011e4edcd" version="0" depth="0" constraintVisibility="true" stereotypeVisibility="true" notationType="0" width="11" height="16" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>128.0</XMI.field>
+                  <XMI.field>128.0</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="d5b43030-dfe3-4a17-b926-69e257f09c35jude" />
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:PathPresentation.points />
+          </JUDE:TransitionPresentation>
+          <JUDE:TransitionPresentation xmi.id="d412c308-6e43-405d-8dd2-8252990b8709jude" version="0" depth="2147483617" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" rightAngle="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="d412c308-6e43-405d-8dd2-8252990b8709" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ActionStatePresentation xmi.idref="6cdb7249-d60a-4c82-bd1d-7f2eda6d8e0fjude" />
+              <JUDE:ActionStatePresentation xmi.idref="93453c48-07b1-4330-8281-4a36d1aafe08jude" />
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line" />
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="0a7c0ea7-31ee-4f08-83df-8d84255d9d79" version="0" depth="0" constraintVisibility="true" stereotypeVisibility="true" notationType="0" width="11" height="16" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>128.0</XMI.field>
+                  <XMI.field>128.0</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="d412c308-6e43-405d-8dd2-8252990b8709jude" />
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:PathPresentation.points />
+          </JUDE:TransitionPresentation>
+          <JUDE:TransitionPresentation xmi.id="87d2532c-10d2-4a59-8e74-5bcea3927b0bjude" version="0" depth="2147483616" stereotypeVisibility="true" constraintVisibility="true" notationType="0" visibility="true" rightAngle="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="87d2532c-10d2-4a59-8e74-5bcea3927b0b" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="b584c4cd-0747-4b07-8082-44f98a3f21dcjude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ActionStatePresentation xmi.idref="93453c48-07b1-4330-8281-4a36d1aafe08jude" />
+              <JUDE:FinalStatePresentation xmi.idref="49c5117d-ff59-4cb0-bb58-9f687633ceccjude" />
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line" />
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="60e256e4-d0ca-4ab3-8818-f78904f8b34e" version="0" depth="0" constraintVisibility="true" stereotypeVisibility="true" notationType="0" width="11" height="16" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>128.0</XMI.field>
+                  <XMI.field>128.0</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="87d2532c-10d2-4a59-8e74-5bcea3927b0bjude" />
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:PathPresentation.points />
+          </JUDE:TransitionPresentation>
+        </JUDE:Diagram.presentations>
+      </JUDE:ActivityDiagram>
+      <JUDE:Diagram xmi.id="53fecf96-c368-4a1b-adfe-f332cc3e8863jude" name="UseCase Diagram0" typeInfo="UseCase Diagram" version="0" xmlns:JUDE="http://objectclub.esm.co.jp/Jude/namespace/">
+        <UML:ModelElement.namespace>
+          <UML:Namespace xmi.idref="null" />
+        </UML:ModelElement.namespace>
+        <JUDE:Diagram.presentations>
+          <JUDE:FramePresentation xmi.id="5ca843fb-a129-4baa-8061-945284005566" version="0" depth="2147483646" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="640.0" height="480.0" doAutoResize="true" visibility="true" label="+">
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="53fecf96-c368-4a1b-adfe-f332cc3e8863jude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>10.0</XMI.field>
+              <XMI.field>10.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:FramePresentation>
+          <JUDE:ClassifierPresentation xmi.id="a35d0a90-b2de-4abe-8a40-a7022adec3d7jude" version="0" depth="2147483636" stereotypeVisibility="true" constraintVisibility="true" notationType="1" width="40.0" height="71.0" doAutoResize="true" visibility="true" label="Actor0">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Actor xmi.idref="a35d0a90-b2de-4abe-8a40-a7022adec3d7" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="53fecf96-c368-4a1b-adfe-f332cc3e8863jude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:AssociationPresentation xmi.idref="a8a00397-ff4e-41dd-aed2-1e1f2df3caa0jude" />
+            </JUDE:UPresentation.clients>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>100.0</XMI.field>
+              <XMI.field>150.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ClassifierPresentation>
+          <JUDE:UseCasePresentation xmi.id="89bbebf5-6aab-41e0-9e4c-9a3c7ef1edddjude" version="0" depth="2147483635" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="120.0" height="40.0" doAutoResize="true" visibility="true" label="UseCase0">
+            <JUDE:UPresentation.semanticModel>
+              <UML:UseCase xmi.idref="89bbebf5-6aab-41e0-9e4c-9a3c7ef1eddd" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="53fecf96-c368-4a1b-adfe-f332cc3e8863jude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:AssociationPresentation xmi.idref="a8a00397-ff4e-41dd-aed2-1e1f2df3caa0jude" />
+            </JUDE:UPresentation.clients>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>380.0</XMI.field>
+              <XMI.field>190.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:UseCasePresentation>
+          <JUDE:AssociationPresentation xmi.id="a8a00397-ff4e-41dd-aed2-1e1f2df3caa0jude" version="0" depth="2147483634" stereotypeVisibility="true" constraintVisibility="true" notationType="0">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Association xmi.idref="a8a00397-ff4e-41dd-aed2-1e1f2df3caa0" />
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="53fecf96-c368-4a1b-adfe-f332cc3e8863jude" />
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ClassifierPresentation xmi.idref="a35d0a90-b2de-4abe-8a40-a7022adec3d7jude" />
+              <JUDE:UseCasePresentation xmi.idref="89bbebf5-6aab-41e0-9e4c-9a3c7ef1edddjude" />
+            </JUDE:UPresentation.servers>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0.0</XMI.field>
+              <XMI.field>0.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+            <JUDE:PathPresentation.points />
+          </JUDE:AssociationPresentation>
+        </JUDE:Diagram.presentations>
+      </JUDE:Diagram>
+    </XMI.extension>
+  </XMI.content>
+</XMI>

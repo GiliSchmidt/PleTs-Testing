@@ -1,0 +1,67 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Xml;
+
+namespace ShapeConnectors
+{
+    public class Loop : UcmlObject
+    {
+        public int IdObjectStart { get; set; }
+        public int IdObjectEnd { get; set; }
+        
+        public Loop()
+            : base(){}
+
+        public Loop(int idStart, int idEnd) 
+        {
+            IdObjectEnd = idEnd;
+            IdObjectStart = idStart;
+        }
+
+        public Loop Clone(UcmlObject obj)
+        {
+            var newObj = new Loop();
+            var aux = (Loop)obj;
+
+            newObj.Id = aux.Id;
+            newObj.UcmlName = aux.UcmlName;
+            newObj.Color = aux.Color;
+            newObj.PosTopX = aux.PosTopX;
+            newObj.PosTopY = aux.PosTopY;
+            newObj.Description = aux.Description;
+            newObj.TemplateName = aux.TemplateName;
+            newObj.listNewProp = aux.listNewProp;
+            newObj.UcmlWidth = aux.UcmlWidth;
+            newObj.UcmlHeight = aux.UcmlHeight;
+            newObj.myPathOrigem = aux.myPathOrigem;
+            newObj.myPathDestino = aux.myPathDestino;
+            newObj.myColor = aux.myColor;
+            newObj.Percentage = aux.Percentage;
+            newObj.IdObjectStart = aux.IdObjectStart;
+            newObj.IdObjectEnd = aux.IdObjectEnd;
+
+            return newObj;
+        }
+
+        public void ExportToXml(ref XmlTextWriter writer)
+        {
+            writer.WriteStartElement("loop");
+            writer.WriteAttributeString("idObjectStart", this.IdObjectStart.ToString());
+            writer.WriteAttributeString("idObjectEnd", this.IdObjectEnd.ToString());
+            writer.WriteElementString("percentage", this.Percentage.ToString());
+            writer.WriteEndElement();
+        }
+
+        public Loop ImportToXml(XmlNode xn)
+        {
+            var attributes = xn.Attributes;
+            this.Percentage = Convert.ToDouble(attributes["percentage"].Value);
+            this.IdObjectStart = Convert.ToInt32(xn.SelectSingleNode("idObjectStart").InnerText);
+            this.IdObjectEnd = Convert.ToInt32(xn.SelectSingleNode("idObjectEnd").InnerText);
+
+            return this;
+        }
+    }
+}

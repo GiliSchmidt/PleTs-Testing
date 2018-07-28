@@ -1,0 +1,2210 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "yes"?>
+<XMI xmi.version="1.1" xmlns:JUDE="http://objectclub.esm.co.jp/Jude/namespace/" xmlns:UML="org.omg.xmi.namespace.UML">
+  <XMI.header>
+    <XMI.documentation>
+      <XMI.exporter>Jomt XMI writer</XMI.exporter>
+      <XMI.exporterVersion>1.2.0.36</XMI.exporterVersion>
+      <XMI.currentModelVersion>36</XMI.currentModelVersion>
+      <XMI.maxModelVersion>36</XMI.maxModelVersion>
+      <XMI.currentModelProducer>A.P</XMI.currentModelProducer>
+      <XMI.sortedVersionHistories>
+        <XMI.versionEntry productVersion="Professional 6.7.0" modelVersion="36"/>
+      </XMI.sortedVersionHistories>
+    </XMI.documentation>
+    <XMI.metamodel xmi.name="UML" xmi.version="1.4"/>
+  </XMI.header>
+  <XMI.content>
+    <UML:Model xmi.id="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Coc-Doms" version="0" unSolvedFlag="false" isRoot="true" isLeaf="false" isAbstract="false" xmlns:UML="org.omg.xmi.namespace.UML">
+      <XMI.extension>
+        <UML:Model.customStyleMap>
+          <UML:Model.styleProperty key="shadow.on.elements" value="true"/>
+          <UML:Model.styleProperty key="uml.color.component_instance" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="view.gradation_background.selected" value="0"/>
+          <UML:Model.styleProperty key="diagram.editor.text.anti-aliasing" value="true"/>
+          <UML:Model.styleProperty key="uml.color.com_lifeline" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="view.gradation.null" value="0"/>
+          <UML:Model.styleProperty key="uml.color.seq_lifeline" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.color.model" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.color.node_instance" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.color.subsystem" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.stereotype.name.0" value="actor"/>
+          <UML:Model.styleProperty key="uml.color.part" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.color.flow_final_node" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.color.artifact" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="view.gradation_element.selected" value="1"/>
+          <UML:Model.styleProperty key="view.gradation.horizontal" value="2"/>
+          <UML:Model.styleProperty key="dfd.color.datastore" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.color.role" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.stereotype.color.7" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.stereotype.color.8" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.color.deep_history" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.stereotype.color.5" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.color.action_state" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.stereotype.color.6" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.stereotype.color.3" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.stereotype.name.3" value="control"/>
+          <UML:Model.styleProperty key="uml.stereotype.color.4" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.stereotype.name.4" value="entity"/>
+          <UML:Model.styleProperty key="uml.stereotype.color.1" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.stereotype.name.1" value="interface"/>
+          <UML:Model.styleProperty key="uml.stereotype.color.2" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.stereotype.name.2" value="boundary"/>
+          <UML:Model.styleProperty key="uml.color.submachine_state" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.stereotype.name.7" value=""/>
+          <UML:Model.styleProperty key="uml.color.lane" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.stereotype.name.8" value=""/>
+          <UML:Model.styleProperty key="uml.stereotype.color.0" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.stereotype.name.5" value=""/>
+          <UML:Model.styleProperty key="uml.stereotype.name.6" value=""/>
+          <UML:Model.styleProperty key="uml.color.shallow_history" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="er.entity.type.name.8" value=""/>
+          <UML:Model.styleProperty key="er.entity.type.name.7" value=""/>
+          <UML:Model.styleProperty key="uml.color.interaction_use" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="er.entity.type.name.6" value=""/>
+          <UML:Model.styleProperty key="er.entity.type.name.5" value=""/>
+          <UML:Model.styleProperty key="uml.color.object_flow_state" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="er.entity.type.color.7" value="#FFFFFF"/>
+          <UML:Model.styleProperty key="er.entity.type.name.4" value=""/>
+          <UML:Model.styleProperty key="er.entity.type.color.8" value="#FFFFFF"/>
+          <UML:Model.styleProperty key="er.entity.type.name.3" value=""/>
+          <UML:Model.styleProperty key="er.entity.type.color.5" value="#FFFFFF"/>
+          <UML:Model.styleProperty key="er.entity.type.name.2" value="Summary"/>
+          <UML:Model.styleProperty key="er.entity.type.color.6" value="#FFFFFF"/>
+          <UML:Model.styleProperty key="er.entity.type.name.1" value="Event"/>
+          <UML:Model.styleProperty key="uml.color.sub_activity" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="er.entity.type.name.0" value="Resource"/>
+          <UML:Model.styleProperty key="uml.color.connector" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.color.state_invariant" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="view.gradation.diagonal" value="1"/>
+          <UML:Model.styleProperty key="diagram.editor.other.anti-aliasing" value="true"/>
+          <UML:Model.styleProperty key="uml.color.condition_judgement" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.color.class" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="sysml.color.requirement" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="view.gradation.vertical" value="3"/>
+          <UML:Model.styleProperty key="uml.color.composite_state" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="sysml.color.testcase" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.color.choice" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.color.package" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.color.merge" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.color.usecase" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.color.partition" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.color.port" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.color.node" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.color.note" value="#FFCCCC"/>
+          <UML:Model.styleProperty key="uml.color.flow_element" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="dfd.color.external_entity" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="other.color.common" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="uml.color.component" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="er.entity.type.color.2" value="#66CCFF"/>
+          <UML:Model.styleProperty key="er.entity.type.color.1" value="#FFFF99"/>
+          <UML:Model.styleProperty key="dfd.color.processbox" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="er.entity.type.color.4" value="#FFFFFF"/>
+          <UML:Model.styleProperty key="er.entity.type.color.3" value="#FFFFFF"/>
+          <UML:Model.styleProperty key="er.entity.type.color.0" value="#FF9999"/>
+          <UML:Model.styleProperty key="er.color.entity" value="#FFFFCC"/>
+          <UML:Model.styleProperty key="diagram.editor.rect.anti-aliasing" value="false"/>
+        </UML:Model.customStyleMap>
+      </XMI.extension>
+      <UML:ModelElement.taggedValue>
+        <UML:TaggedValue xmi.id="2-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="jude.profiles" value="%3C%3Fxml+version+%3D+%221.0%22+encoding+%3D+%22UTF-8%22+standalone+%3D+%22yes%22%3F%3E%0D%0A%3CumlProfiles%3E%0D%0A+%3CumlProfile%3E%0D%0A++%3Cname%3Ejude.profiles%3C%2Fname%3E%0D%0A+%3C%2FumlProfile%3E%0D%0A%3C%2FumlProfiles%3E%0D%0A%0D%0A">
+          <UML:TaggedValue.modelElement>
+            <UML:ModelElement xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:TaggedValue.modelElement>
+        </UML:TaggedValue>
+        <UML:TaggedValue xmi.id="3y-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="jude.usericons" value="%3C%3Fxml+version+%3D+%221.0%22+encoding+%3D+%22UTF-8%22+standalone+%3D+%22yes%22%3F%3E%0D%0A%3CmmUserIcon%3E%0D%0A+%3CmmUserIconInfo%3E%0D%0A++%3Cname%3Ejude.usericons%3C%2Fname%3E%0D%0A+%3C%2FmmUserIconInfo%3E%0D%0A%3C%2FmmUserIcon%3E%0D%0A%0D%0A">
+          <UML:TaggedValue.modelElement>
+            <UML:ModelElement xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:TaggedValue.modelElement>
+        </UML:TaggedValue>
+        <UML:TaggedValue xmi.id="7x-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="jude.profile.java" value="true">
+          <UML:TaggedValue.modelElement>
+            <UML:ModelElement xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:TaggedValue.modelElement>
+        </UML:TaggedValue>
+        <UML:TaggedValue xmi.id="7m-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="jude.profile.java.stereotypes" value="class%2Cattribute%2Coperation%2Cenum%2Cenum_constant">
+          <UML:TaggedValue.modelElement>
+            <UML:ModelElement xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:TaggedValue.modelElement>
+        </UML:TaggedValue>
+        <UML:TaggedValue xmi.id="99-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="jude.profile.java.stereotype.class" value="name%3DJava+Class%0D%0Atarget%3DClass%2CAssociationClass%2CInterface%2CEntity%2CBoundary%2CControl%2CActor%0D%0Avisibility%3Dfalse%0D%0Arequired%3Dtrue%0D%0Atags%3Dannotations%2Catmark_interface%2Cstrictfp%0D%0Alabel%3D">
+          <UML:TaggedValue.modelElement>
+            <UML:ModelElement xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:TaggedValue.modelElement>
+        </UML:TaggedValue>
+        <UML:TaggedValue xmi.id="9c-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="jude.profile.java.stereotype.attribute" value="name%3DJava+Attribute%0D%0Atarget%3DAttribute%0D%0Avisibility%3Dfalse%0D%0Arequired%3Dtrue%0D%0Atags%3Dannotations%2Ctransient%2Cvolatile%0D%0Alabel%3D">
+          <UML:TaggedValue.modelElement>
+            <UML:ModelElement xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:TaggedValue.modelElement>
+        </UML:TaggedValue>
+        <UML:TaggedValue xmi.id="6x-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="jude.profile.java.stereotype.operation" value="name%3DJava+Method%0D%0Atarget%3DMethod%0D%0Avisibility%3Dfalse%0D%0Arequired%3Dtrue%0D%0Atags%3Dannotations%2Csynchronized%2Cnative%2Cstrictfp%0D%0Alabel%3D">
+          <UML:TaggedValue.modelElement>
+            <UML:ModelElement xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:TaggedValue.modelElement>
+        </UML:TaggedValue>
+        <UML:TaggedValue xmi.id="4n-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="jude.profile.java.stereotype.enum" value="name%3Denum%0D%0Atarget%3DClass%2CAssociationClass%2CInterface%2CEntity%2CBoundary%2CControl%2CActor%0D%0Avisibility%3Dtrue%0D%0Arequired%3Dfalse%0D%0Atags%3D%0D%0Alabel%3D%3C%3Cenum%3E%3E">
+          <UML:TaggedValue.modelElement>
+            <UML:ModelElement xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:TaggedValue.modelElement>
+        </UML:TaggedValue>
+        <UML:TaggedValue xmi.id="83-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="jude.profile.java.stereotype.enum_constant" value="name%3Denum+constant%0D%0Atarget%3DAttribute%0D%0Avisibility%3Dtrue%0D%0Arequired%3Dfalse%0D%0Atags%3D%0D%0Alabel%3D%3C%3Cenum+constant%3E%3E">
+          <UML:TaggedValue.modelElement>
+            <UML:ModelElement xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:TaggedValue.modelElement>
+        </UML:TaggedValue>
+        <UML:TaggedValue xmi.id="85-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="jude.profile.java.tags" value="annotations%2Catmark_interface%2Csynchronized%2Cnative%2Ctransient%2Cvolatile%2Cstrictfp">
+          <UML:TaggedValue.modelElement>
+            <UML:ModelElement xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:TaggedValue.modelElement>
+        </UML:TaggedValue>
+        <UML:TaggedValue xmi.id="c-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="jude.profile.java.tag.annotations" value="name%3Djude.java.annotations%0D%0Atarget%3DClass%2CAssociationClass%2CInterface%2CEntity%2CBoundary%2CControl%2CActor%2CAttribute%2CMethod%0D%0Astereotype%3DJava+Class%2CJava+Attribute%2CJava+Method%0D%0Adefaultvalue%3D%0D%0Adefinition%3D%0D%0Atype%3Dtext%0D%0Alabel%3Dannotations%0D%0Aomit%3Dtrue">
+          <UML:TaggedValue.modelElement>
+            <UML:ModelElement xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:TaggedValue.modelElement>
+        </UML:TaggedValue>
+        <UML:TaggedValue xmi.id="5s-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="jude.profile.java.tag.atmark_interface" value="name%3Djude.java.atmark_interface%0D%0Atarget%3DClass%2CAssociationClass%2CInterface%2CEntity%2CBoundary%2CControl%2CActor%0D%0Astereotype%3DJava+Class%0D%0Adefaultvalue%3Dfalse%0D%0Adefinition%3D%0D%0Atype%3Dboolean%0D%0Alabel%3D%40interface%0D%0Aomit%3Dtrue">
+          <UML:TaggedValue.modelElement>
+            <UML:ModelElement xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:TaggedValue.modelElement>
+        </UML:TaggedValue>
+        <UML:TaggedValue xmi.id="6w-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="jude.profile.java.tag.synchronized" value="name%3Djude.java.synchronized%0D%0Atarget%3DMethod%0D%0Astereotype%3DJava+Method%0D%0Adefaultvalue%3Dfalse%0D%0Adefinition%3D%0D%0Atype%3Dboolean%0D%0Alabel%3Dsynchronized%0D%0Aomit%3Dtrue">
+          <UML:TaggedValue.modelElement>
+            <UML:ModelElement xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:TaggedValue.modelElement>
+        </UML:TaggedValue>
+        <UML:TaggedValue xmi.id="7g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="jude.profile.java.tag.native" value="name%3Djude.java.native%0D%0Atarget%3DMethod%0D%0Astereotype%3DJava+Method%0D%0Adefaultvalue%3Dfalse%0D%0Adefinition%3D%0D%0Atype%3Dboolean%0D%0Alabel%3Dnative%0D%0Aomit%3Dtrue">
+          <UML:TaggedValue.modelElement>
+            <UML:ModelElement xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:TaggedValue.modelElement>
+        </UML:TaggedValue>
+        <UML:TaggedValue xmi.id="d-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="jude.profile.java.tag.transient" value="name%3Djude.java.transient%0D%0Atarget%3DAttribute%0D%0Astereotype%3DJava+Attribute%0D%0Adefaultvalue%3Dfalse%0D%0Adefinition%3D%0D%0Atype%3Dboolean%0D%0Alabel%3Dtransient%0D%0Aomit%3Dtrue">
+          <UML:TaggedValue.modelElement>
+            <UML:ModelElement xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:TaggedValue.modelElement>
+        </UML:TaggedValue>
+        <UML:TaggedValue xmi.id="49-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="jude.profile.java.tag.volatile" value="name%3Djude.java.volatile%0D%0Atarget%3DAttribute%0D%0Astereotype%3DJava+Attribute%0D%0Adefaultvalue%3Dfalse%0D%0Adefinition%3D%0D%0Atype%3Dboolean%0D%0Alabel%3Dvolatile%0D%0Aomit%3Dtrue">
+          <UML:TaggedValue.modelElement>
+            <UML:ModelElement xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:TaggedValue.modelElement>
+        </UML:TaggedValue>
+        <UML:TaggedValue xmi.id="7a-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="jude.profile.java.tag.strictfp" value="name%3Djude.java.strictfp%0D%0Atarget%3DClass%2CAssociationClass%2CInterface%2CEntity%2CBoundary%2CControl%2CActor%2CMethod%0D%0Astereotype%3DJava+Class%2CJava+Method%0D%0Adefaultvalue%3Dfalse%0D%0Adefinition%3D%0D%0Atype%3Dboolean%0D%0Alabel%3Dstrictfp%0D%0Aomit%3Dtrue">
+          <UML:TaggedValue.modelElement>
+            <UML:ModelElement xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:TaggedValue.modelElement>
+        </UML:TaggedValue>
+      </UML:ModelElement.taggedValue>
+      <UML:ModelElement.behavior>
+        <UML:ActivityGraph xmi.idref="a9h-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+        <UML:ActivityGraph xmi.idref="ovi-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+        <UML:ActivityGraph xmi.idref="sj9-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+      </UML:ModelElement.behavior>
+      <UML:Namespace.ownedElement>
+        <UML:Actor xmi.id="dz-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="DOMS+User" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="8v6-hvnxq3am-j52619-ok7ia0-5cc4e6c5b52eb84b625a4293fa8317af" version="0" tag="TDhost" value="TDhost-DOMS_User">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="dz-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+          <UML:ModelElement.stereotype>
+            <UML:Stereotype xmi.idref="e1-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:ModelElement.stereotype>
+        </UML:Actor>
+        <UML:UseCase xmi.id="yd-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Create+APOS+quote+in+DOMS+with+no+discounts" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="o1n-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="jude.hyperlink" value="type%3Dmodel%2Cname%3Da9g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428%2Cpath%3D%2Ccomment%3D">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="yd-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+            <UML:TaggedValue xmi.id="12cx-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDprecondition" value="-+Quote+with+APOS+sku+and+service+tag%2C+with+no+discounts+applied%7C-+Note+the+price+of+APOS+sku">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="yd-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+        </UML:UseCase>
+        <UML:UseCase xmi.id="1il-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Create+APOS+quote+in+DOMS+with+a+contract+discount" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+        </UML:UseCase>
+        <UML:UseCase xmi.id="1ys-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Create+APOS+quote+in+Symphony+%28DOMS1296+OSB+call+with+source+type+code+%3D+P+with+a+customer+discount" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="11o2-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="jude.hyperlink" value="type%3Dmodel%2Cname%3Dovh-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428%2Cpath%3D%2Ccomment%3D">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="1ys-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+            <UML:TaggedValue xmi.id="1423-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDprecondition" value="-+Service+APOS+sku%7C-+Service+Tag%7C-+Customer+number+with+discounts+applied+for+the+APOS+sku">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="1ys-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+        </UML:UseCase>
+        <UML:UseCase xmi.id="2l8-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Run+job+KEYCHG1" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+        </UML:UseCase>
+        <UML:Association xmi.id="40l-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="40n-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable" aggregation="none" ordering="unordered" navigableType="unspecified navigable" isNavigable="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="yd-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id="40q-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="40r-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" lowerValue="" upperValue=""/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:AssociationEnd.participant>
+                <UML:Classifier xmi.idref="dz-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:AssociationEnd.participant>
+              <UML:AssociationEnd.association>
+                <UML:Association xmi.idref="40l-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:AssociationEnd.association>
+              <UML:AssociationEnd.visibility xmi.value="private"/>
+            </UML:AssociationEnd>
+            <UML:AssociationEnd xmi.id="40t-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable" aggregation="none" ordering="unordered" navigableType="unspecified navigable" isNavigable="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="dz-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id="40w-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="40x-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" lowerValue="" upperValue=""/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:AssociationEnd.participant>
+                <UML:Classifier xmi.idref="yd-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:AssociationEnd.participant>
+              <UML:AssociationEnd.association>
+                <UML:Association xmi.idref="40l-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:AssociationEnd.association>
+              <UML:AssociationEnd.visibility xmi.value="private"/>
+            </UML:AssociationEnd>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:AssociationEnd xmi.idref="40n-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+        <UML:AssociationEnd xmi.idref="40t-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+        <UML:Association xmi.id="59j-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="59l-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable" aggregation="none" ordering="unordered" navigableType="unspecified navigable" isNavigable="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="1il-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id="59o-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="59p-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" lowerValue="" upperValue=""/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:AssociationEnd.participant>
+                <UML:Classifier xmi.idref="dz-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:AssociationEnd.participant>
+              <UML:AssociationEnd.association>
+                <UML:Association xmi.idref="59j-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:AssociationEnd.association>
+              <UML:AssociationEnd.visibility xmi.value="private"/>
+            </UML:AssociationEnd>
+            <UML:AssociationEnd xmi.id="59r-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable" aggregation="none" ordering="unordered" navigableType="unspecified navigable" isNavigable="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="dz-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id="59u-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="59v-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" lowerValue="" upperValue=""/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:AssociationEnd.participant>
+                <UML:Classifier xmi.idref="1il-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:AssociationEnd.participant>
+              <UML:AssociationEnd.association>
+                <UML:Association xmi.idref="59j-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:AssociationEnd.association>
+              <UML:AssociationEnd.visibility xmi.value="private"/>
+            </UML:AssociationEnd>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:AssociationEnd xmi.idref="59l-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+        <UML:AssociationEnd xmi.idref="59r-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+        <UML:Association xmi.id="6mm-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="6mo-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable" aggregation="none" ordering="unordered" navigableType="unspecified navigable" isNavigable="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="1ys-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id="6mr-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="6ms-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" lowerValue="" upperValue=""/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:AssociationEnd.participant>
+                <UML:Classifier xmi.idref="dz-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:AssociationEnd.participant>
+              <UML:AssociationEnd.association>
+                <UML:Association xmi.idref="6mm-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:AssociationEnd.association>
+              <UML:AssociationEnd.visibility xmi.value="private"/>
+            </UML:AssociationEnd>
+            <UML:AssociationEnd xmi.id="6mu-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable" aggregation="none" ordering="unordered" navigableType="unspecified navigable" isNavigable="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="dz-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id="6mx-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="6my-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" lowerValue="" upperValue=""/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:AssociationEnd.participant>
+                <UML:Classifier xmi.idref="1ys-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:AssociationEnd.participant>
+              <UML:AssociationEnd.association>
+                <UML:Association xmi.idref="6mm-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:AssociationEnd.association>
+              <UML:AssociationEnd.visibility xmi.value="private"/>
+            </UML:AssociationEnd>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:AssociationEnd xmi.idref="6mo-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+        <UML:AssociationEnd xmi.idref="6mu-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+        <UML:Association xmi.id="86r-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="86t-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable" aggregation="none" ordering="unordered" navigableType="unspecified navigable" isNavigable="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="2l8-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id="86w-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="86x-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" lowerValue="" upperValue=""/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:AssociationEnd.participant>
+                <UML:Classifier xmi.idref="dz-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:AssociationEnd.participant>
+              <UML:AssociationEnd.association>
+                <UML:Association xmi.idref="86r-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:AssociationEnd.association>
+              <UML:AssociationEnd.visibility xmi.value="private"/>
+            </UML:AssociationEnd>
+            <UML:AssociationEnd xmi.id="86z-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable" aggregation="none" ordering="unordered" navigableType="unspecified navigable" isNavigable="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="dz-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id="872-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="873-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" lowerValue="" upperValue=""/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:AssociationEnd.participant>
+                <UML:Classifier xmi.idref="2l8-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:AssociationEnd.participant>
+              <UML:AssociationEnd.association>
+                <UML:Association xmi.idref="86r-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:AssociationEnd.association>
+              <UML:AssociationEnd.visibility xmi.value="private"/>
+            </UML:AssociationEnd>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:AssociationEnd xmi.idref="86t-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+        <UML:AssociationEnd xmi.idref="86z-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+        <UML:ActivityGraph xmi.id="a9h-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Create+APOS+quote+in+DOMS+with+no+discounts" version="0" unSolvedFlag="false">
+          <UML:StateMachine.top>
+            <UML:CompositeState xmi.id="a9i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false" isConcurrent="true" isOrthogonal="false" isRegion="true">
+              <UML:CompositeState.subvertex>
+                <UML:Pseudostate xmi.id="aem-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="InitialNode0" version="0" unSolvedFlag="false" kind="initial">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="a9i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="f7r-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.outgoing>
+                </UML:Pseudostate>
+                <UML:FinalState xmi.id="aje-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="ActivityFinal0" version="0" unSolvedFlag="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="a9i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="j1j-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.incoming>
+                </UML:FinalState>
+                <UML:ActionState xmi.id="ao6-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Log+in+DOMS" version="0" unSolvedFlag="false" isDynamic="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="a9i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="fqx-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="f7r-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:Action xmi.id="ao7-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Log+in+DOMS" version="0" unSolvedFlag="false" isAsynchronous="false" actionType="5"></UML:Action>
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:ActionState xmi.id="b1g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Enter+in+DOMS+Router" version="0" unSolvedFlag="false" isDynamic="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="a9i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="gen-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="fqx-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:Action xmi.id="b1h-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Enter+in+DOMS+Router" version="0" unSolvedFlag="false" isAsynchronous="false" actionType="5"></UML:Action>
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:ActionState xmi.id="bbo-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Enter+in+Quote+screen" version="0" unSolvedFlag="false" isDynamic="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="a9i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="h2d-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="gen-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:Action xmi.id="bbp-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Enter+in+Quote+screen" version="0" unSolvedFlag="false" isAsynchronous="false" actionType="5"></UML:Action>
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:ActionState xmi.id="blw-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Load+existing+quote" version="0" unSolvedFlag="false" isDynamic="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="a9i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="hq3-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="h2d-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:Action xmi.id="blx-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Load+existing+quote" version="0" unSolvedFlag="false" isAsynchronous="false" actionType="5"></UML:Action>
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:ActionState xmi.id="d3y-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Clear+quote+number+and+process+new+quote" version="0" unSolvedFlag="false" isDynamic="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="a9i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="idt-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="hq3-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:Action xmi.id="d3z-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Clear+quote+number+and+process+new+quote" version="0" unSolvedFlag="false" isAsynchronous="false" actionType="5"></UML:Action>
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:ActionState xmi.id="dnc-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Check+price" version="0" unSolvedFlag="false" isDynamic="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="a9i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="j1j-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="idt-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:Action xmi.id="dnd-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Check+price" version="0" unSolvedFlag="false" isAsynchronous="false" actionType="5"></UML:Action>
+                  </UML:State.entry>
+                </UML:ActionState>
+              </UML:CompositeState.subvertex>
+            </UML:CompositeState>
+          </UML:StateMachine.top>
+          <UML:StateMachine.context>
+            <UML:ModelElement xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:StateMachine.context>
+          <UML:StateMachine.transitions>
+            <UML:Transition xmi.id="f7r-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false">
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="jnz-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDaction" value="Enter+Username+and+Password.+Press+F1">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="f7r-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="k14-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDexpectedResult" value="User+logged+and+DOMS+Main+Menu+is+displayed.">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="f7r-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="aem-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="ao6-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="a9h-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+            <UML:Transition xmi.id="fqx-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false">
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="ke9-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDaction" value="Press+F1+on+DOMS+ROUTER+line+on+Main+Menu">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="fqx-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="kre-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDexpectedResult" value="DOMS+Router+screen+is+displayed+%28DOMSHOTW%29">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="fqx-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="ao6-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="b1g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="a9h-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+            <UML:Transition xmi.id="gen-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false">
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="l4j-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDaction" value="Press+F6+on+DOMS+Router+screen">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="gen-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="lho-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDexpectedResult" value="DOMS1100+-+Quote+Processing+screen+is+displayed.">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="gen-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="b1g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="bbo-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="a9h-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+            <UML:Transition xmi.id="h2d-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false">
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="lut-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDaction" value="Enter+the+quote+number+on+Quote+%23+field+and+press+F1">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="h2d-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="m4n-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDexpectedResult" value="Quote+information+is+loaded.+Message+%22Data+retrieved+successfully%22+is+displayed.">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="h2d-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="bbo-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="blw-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="a9h-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+            <UML:Transition xmi.id="hq3-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false">
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="ml3-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDaction" value="Add+spaces+on+Quote+%23+field+and+press+F1">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="hq3-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="my8-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDexpectedResult" value="Quote+is+processed.+Message+%22Processing+completed+normally+-+F6+for+totals%22+is+displayed.">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="hq3-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="blw-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="d3y-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="a9h-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+            <UML:Transition xmi.id="idt-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false">
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="nbd-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDaction" value="Compare+the+price+of+APOS+sku+after+processing+the+quote+with+the+price+from+the+quote+previously+loaded">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="idt-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="noi-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDexpectedResult" value="Prices+should+match.+No+changes+made.">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="idt-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="d3y-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="dnc-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="a9h-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+            <UML:Transition xmi.id="j1j-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false">
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="dnc-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="aje-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="a9h-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+          </UML:StateMachine.transitions>
+        </UML:ActivityGraph>
+        <UML:ActivityGraph xmi.id="ovi-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Create+APOS+quote+in+Symphony+%28DOMS1296+OSB+call+with+source+type+code+%3D+P+with+a+customer+discount" version="0" unSolvedFlag="false">
+          <UML:StateMachine.top>
+            <UML:CompositeState xmi.id="ovj-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false" isConcurrent="true" isOrthogonal="false" isRegion="true">
+              <UML:CompositeState.subvertex>
+                <UML:Pseudostate xmi.id="p0h-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="InitialNode1" version="0" unSolvedFlag="false" kind="initial">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="ovj-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="qjd-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.outgoing>
+                </UML:Pseudostate>
+                <UML:FinalState xmi.id="p59-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="ActivityFinal1" version="0" unSolvedFlag="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="ovj-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="rq9-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.incoming>
+                </UML:FinalState>
+                <UML:ActionState xmi.id="pce-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Create+quote+DOMS1296+in+SOAP+UI+with+STC+%3D+P+and+customer+discount" version="0" unSolvedFlag="false" isDynamic="false">
+                  <UML:ModelElement.taggedValue>
+                    <UML:TaggedValue xmi.id="10dj-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="jude.hyperlink" value="type%3Dmodel%2Cname%3Dsj8-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428%2Cpath%3D%2Ccomment%3D">
+                      <UML:TaggedValue.modelElement>
+                        <UML:ModelElement xmi.idref="pce-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                      </UML:TaggedValue.modelElement>
+                    </UML:TaggedValue>
+                  </UML:ModelElement.taggedValue>
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="ovj-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="r2j-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="qjd-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:Action xmi.id="q2x-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Create+quote+DOMS1296+in+SOAP+UI+with+STC+%3D+P+and+customer+discount" version="0" unSolvedFlag="false" isAsynchronous="false" actionType="5"></UML:Action>
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:ActionState xmi.id="ppo-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Check+the+sku+price" version="0" unSolvedFlag="false" isDynamic="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="ovj-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="rq9-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="r2j-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:Action xmi.id="ppp-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Check+the+sku+price" version="0" unSolvedFlag="false" isAsynchronous="false" actionType="5"></UML:Action>
+                  </UML:State.entry>
+                </UML:ActionState>
+              </UML:CompositeState.subvertex>
+            </UML:CompositeState>
+          </UML:StateMachine.top>
+          <UML:StateMachine.context>
+            <UML:ModelElement xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:StateMachine.context>
+          <UML:StateMachine.transitions>
+            <UML:Transition xmi.id="qjd-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false">
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="p0h-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="pce-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="ovi-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+            <UML:Transition xmi.id="r2j-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false">
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="10xs-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDaction" value="Calculate+the+price+of+sku+according+to+the+Customer+Discount">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="r2j-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="11ax-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDexpectedResult" value="Price+must+be+calculated+considering+the+formula%3A+SKU+PRICE+-+Customer+Discount+%25">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="r2j-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="pce-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="ppo-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="ovi-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+            <UML:Transition xmi.id="rq9-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false">
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="ppo-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="p59-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="ovi-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+          </UML:StateMachine.transitions>
+        </UML:ActivityGraph>
+        <UML:ActivityGraph xmi.id="sj9-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Create+quote+DOMS1296+in+SOAP+UI+with+STC+%3D+P+and+customer+discount" version="0" unSolvedFlag="false">
+          <UML:StateMachine.top>
+            <UML:CompositeState xmi.id="sja-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false" isConcurrent="true" isOrthogonal="false" isRegion="true">
+              <UML:CompositeState.subvertex>
+                <UML:Pseudostate xmi.id="sll-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="InitialNode2" version="0" unSolvedFlag="false" kind="initial">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="sja-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="tlk-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.outgoing>
+                </UML:Pseudostate>
+                <UML:ActionState xmi.id="sta-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Enter+the+values+in+XML" version="0" unSolvedFlag="false" isDynamic="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="sja-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="u4q-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="tlk-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:Action xmi.id="stb-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Enter+the+values+in+XML" version="0" unSolvedFlag="false" isAsynchronous="false" actionType="5"></UML:Action>
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:ActionState xmi.id="szw-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Press+Play+on+SOAP+UI" version="0" unSolvedFlag="false" isDynamic="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="sja-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="15xm-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="u4q-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:Action xmi.id="szx-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Press+Play+on+SOAP+UI" version="0" unSolvedFlag="false" isAsynchronous="false" actionType="5"></UML:Action>
+                  </UML:State.entry>
+                </UML:ActionState>
+                <UML:FinalState xmi.id="t6i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="ActivityFinal2" version="0" unSolvedFlag="false">
+                  <UML:StateVertex.container>
+                    <UML:CompositeState xmi.idref="sja-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.container>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="15xm-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:StateVertex.incoming>
+                </UML:FinalState>
+              </UML:CompositeState.subvertex>
+            </UML:CompositeState>
+          </UML:StateMachine.top>
+          <UML:StateMachine.context>
+            <UML:ModelElement xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+          </UML:StateMachine.context>
+          <UML:StateMachine.transitions>
+            <UML:Transition xmi.id="tlk-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false">
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="z6t-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDaction" value="On+SOAP+UI%2C+type+the+following+values%3A%7C%3CSOURCE_TYPE_CODE%3EP%3C%2FSOURCE_TYPE_CODE%3E%7C%3CCUSTOMER_NUM%3ECustomer+from+pre-conditions%3C%2FCUSTOMER_NUM%3E">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="tlk-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="zjy-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDexpectedResult">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="tlk-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="sll-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="sta-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="sj9-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+            <UML:Transition xmi.id="u4q-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false">
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="xyi-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDaction" value="Press+Play+on+SOAP+UI">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="u4q-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="100e-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDexpectedResult" value="Response+must+be%3A%7C%3CREPLY_CODE%3E00%3C%2FREPLY_CODE%3E%7C%3CQUOTE_NUMBER%3EAny+number+different+than+000000000%3C%2FQUOTE_NUMBER%3E">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="u4q-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="sta-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="szw-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="sj9-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+            <UML:Transition xmi.id="15xm-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="" version="0" unSolvedFlag="false">
+              <UML:Transition.source>
+                <UML:StateVertex xmi.idref="szw-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:StateVertex xmi.idref="t6i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.target>
+              <UML:Transition.stateMachine>
+                <UML:StateMachine xmi.idref="sj9-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              </UML:Transition.stateMachine>
+            </UML:Transition>
+          </UML:StateMachine.transitions>
+        </UML:ActivityGraph>
+        <UML:Stereotype xmi.id="e1-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="actor" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Actor</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <JUDE:ModelElement xmi.idref="dz-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" xmlns:JUDE="http://objectclub.esm.co.jp/Jude/namespace/"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <XMI.extension></XMI.extension>
+    <XMI.extension>
+      <JUDE:Diagram xmi.id="bm-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="UseCase Diagram0" typeInfo="UseCase Diagram" version="0" xmlns:JUDE="http://objectclub.esm.co.jp/Jude/namespace/">
+        <UML:ModelElement.namespace>
+          <UML:Namespace xmi.idref="az-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+        </UML:ModelElement.namespace>
+        <UML:ModelElement.taggedValue>
+          <UML:TaggedValue xmi.id="9tl-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" tag="TDhost" value="http%3A%2F%2Ftandem6530dev.us.dell.com%2Fuser_custom%2Fweb6530%2FTaclWeb6530.html">
+            <UML:TaggedValue.modelElement>
+              <UML:ModelElement xmi.idref="bm-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </UML:TaggedValue.modelElement>
+          </UML:TaggedValue>
+        </UML:ModelElement.taggedValue>
+        <JUDE:Diagram.presentations>
+          <JUDE:FramePresentation xmi.id="bo-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483646" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="760.0" height="603.7853219141379" doAutoResize="true" visibility="true" label="+">
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="bm-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>10.0</XMI.field>
+              <XMI.field>8.40625</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:FramePresentation>
+          <JUDE:ClassifierPresentation xmi.id="dy-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483636" stereotypeVisibility="true" constraintVisibility="true" notationType="1" width="40.0" height="70.09375" doAutoResize="true" visibility="true" label="DOMS+User" isActive="false" allAttributeVisibility="true" allOperationVisibility="true" visibilityKindVisibility="true" attributeTypeVisibility="true" parameterVisibility="true" parameterTypeVisibility="true" returnTypeVisibility="true" isClassNameItalic="false" attributeInitValueVisibility="true" pathVisibility="0" attributeStereotypeVisibility="true" operationStereotypeVisibility="true" attributeConstraintVisibility="true" operationConstraintVisibility="true" publicAttributeVisibility="true" protectedAttributeVisibility="true" packageAttributeVisibility="true" privateAttributeVisibility="true" publicOperationVisibility="true" protectedOperationVisibility="true" packageOperationVisibility="true" privateOperationVisibility="true" classType="0" interfaceType="0" nameVisibility="true" templateParameterVisibility="true" templateParameterMultiline="false" boundClassTemplateParameterNameVisibility="true" boundClassTemplateParameterVisibility="true">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Actor xmi.idref="dz-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="bm-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:AssociationPresentation xmi.idref="409-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:AssociationPresentation xmi.idref="597-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:AssociationPresentation xmi.idref="6ma-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:AssociationPresentation xmi.idref="86f-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="attribute.filter_by_visibility" value=""/>
+              <JUDE:UPresentation.styleProperty key="fill.color" value="#FFFFCC"/>
+              <JUDE:UPresentation.styleProperty key="operation.filter_by_visibility" value=""/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>132.0</XMI.field>
+              <XMI.field>281.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ClassifierPresentation>
+          <JUDE:UseCasePresentation xmi.id="yc-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483635" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="406.0" height="52.5" doAutoResize="false" visibility="true" label="Create+APOS+quote+in+DOMS+with+no+discounts" isActive="false" allAttributeVisibility="true" allOperationVisibility="true" visibilityKindVisibility="true" attributeTypeVisibility="true" parameterVisibility="true" parameterTypeVisibility="true" returnTypeVisibility="true" isClassNameItalic="false" attributeInitValueVisibility="true" pathVisibility="0" attributeStereotypeVisibility="true" operationStereotypeVisibility="true" attributeConstraintVisibility="true" operationConstraintVisibility="true" publicAttributeVisibility="true" protectedAttributeVisibility="true" packageAttributeVisibility="true" privateAttributeVisibility="true" publicOperationVisibility="true" protectedOperationVisibility="true" packageOperationVisibility="true" privateOperationVisibility="true" classType="0" interfaceType="0" nameVisibility="true" templateParameterVisibility="true" templateParameterMultiline="false" boundClassTemplateParameterNameVisibility="false" boundClassTemplateParameterVisibility="true" withinOvalName="true" stereotypeAboveOval="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:UseCase xmi.idref="yd-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="bm-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:AssociationPresentation xmi.idref="409-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="attribute.filter_by_visibility" value=""/>
+              <JUDE:UPresentation.styleProperty key="fill.color" value="#FFFFCC"/>
+              <JUDE:UPresentation.styleProperty key="operation.filter_by_visibility" value=""/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>132.0</XMI.field>
+              <XMI.field>43.5</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:UseCasePresentation>
+          <JUDE:UseCasePresentation xmi.id="1ik-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483634" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="431.0" height="57.5" doAutoResize="false" visibility="true" label="Create+APOS+quote+in+DOMS+with+a+contract+discount" isActive="false" allAttributeVisibility="true" allOperationVisibility="true" visibilityKindVisibility="true" attributeTypeVisibility="true" parameterVisibility="true" parameterTypeVisibility="true" returnTypeVisibility="true" isClassNameItalic="false" attributeInitValueVisibility="true" pathVisibility="0" attributeStereotypeVisibility="true" operationStereotypeVisibility="true" attributeConstraintVisibility="true" operationConstraintVisibility="true" publicAttributeVisibility="true" protectedAttributeVisibility="true" packageAttributeVisibility="true" privateAttributeVisibility="true" publicOperationVisibility="true" protectedOperationVisibility="true" packageOperationVisibility="true" privateOperationVisibility="true" classType="0" interfaceType="0" nameVisibility="true" templateParameterVisibility="true" templateParameterMultiline="false" boundClassTemplateParameterNameVisibility="false" boundClassTemplateParameterVisibility="true" withinOvalName="true" stereotypeAboveOval="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:UseCase xmi.idref="1il-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="bm-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:AssociationPresentation xmi.idref="597-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="attribute.filter_by_visibility" value=""/>
+              <JUDE:UPresentation.styleProperty key="fill.color" value="#FFFFCC"/>
+              <JUDE:UPresentation.styleProperty key="operation.filter_by_visibility" value=""/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>284.0</XMI.field>
+              <XMI.field>148.5</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:UseCasePresentation>
+          <JUDE:UseCasePresentation xmi.id="1yr-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483633" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="433.0" height="69.5" doAutoResize="false" visibility="true" label="Create+APOS+quote+in+Symphony+%28DOMS1296+OSB+call+with+source+type+code+%3D+P+with+a+customer+discount" isActive="false" allAttributeVisibility="true" allOperationVisibility="true" visibilityKindVisibility="true" attributeTypeVisibility="true" parameterVisibility="true" parameterTypeVisibility="true" returnTypeVisibility="true" isClassNameItalic="false" attributeInitValueVisibility="true" pathVisibility="0" attributeStereotypeVisibility="true" operationStereotypeVisibility="true" attributeConstraintVisibility="true" operationConstraintVisibility="true" publicAttributeVisibility="true" protectedAttributeVisibility="true" packageAttributeVisibility="true" privateAttributeVisibility="true" publicOperationVisibility="true" protectedOperationVisibility="true" packageOperationVisibility="true" privateOperationVisibility="true" classType="0" interfaceType="0" nameVisibility="true" templateParameterVisibility="true" templateParameterMultiline="false" boundClassTemplateParameterNameVisibility="false" boundClassTemplateParameterVisibility="true" withinOvalName="true" stereotypeAboveOval="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:UseCase xmi.idref="1ys-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="bm-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:AssociationPresentation xmi.idref="6ma-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="attribute.filter_by_visibility" value=""/>
+              <JUDE:UPresentation.styleProperty key="fill.color" value="#FFFFCC"/>
+              <JUDE:UPresentation.styleProperty key="operation.filter_by_visibility" value=""/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>284.0</XMI.field>
+              <XMI.field>292.5</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:UseCasePresentation>
+          <JUDE:UseCasePresentation xmi.id="2l7-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483632" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="171.0" height="42.5" doAutoResize="false" visibility="true" label="Run+job+KEYCHG1" isActive="false" allAttributeVisibility="true" allOperationVisibility="true" visibilityKindVisibility="true" attributeTypeVisibility="true" parameterVisibility="true" parameterTypeVisibility="true" returnTypeVisibility="true" isClassNameItalic="false" attributeInitValueVisibility="true" pathVisibility="0" attributeStereotypeVisibility="true" operationStereotypeVisibility="true" attributeConstraintVisibility="true" operationConstraintVisibility="true" publicAttributeVisibility="true" protectedAttributeVisibility="true" packageAttributeVisibility="true" privateAttributeVisibility="true" publicOperationVisibility="true" protectedOperationVisibility="true" packageOperationVisibility="true" privateOperationVisibility="true" classType="0" interfaceType="0" nameVisibility="true" templateParameterVisibility="true" templateParameterMultiline="false" boundClassTemplateParameterNameVisibility="false" boundClassTemplateParameterVisibility="true" withinOvalName="true" stereotypeAboveOval="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:UseCase xmi.idref="2l8-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="bm-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:AssociationPresentation xmi.idref="86f-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="attribute.filter_by_visibility" value=""/>
+              <JUDE:UPresentation.styleProperty key="fill.color" value="#FFFFCC"/>
+              <JUDE:UPresentation.styleProperty key="operation.filter_by_visibility" value=""/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>284.0</XMI.field>
+              <XMI.field>437.5</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:UseCasePresentation>
+          <JUDE:AssociationPresentation xmi.id="409-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483631" stereotypeVisibility="true" constraintVisibility="true" notationType="0" rightAngle="false" visibility="true" qualifierBoxATypeVisibility="true" qualifierBoxBTypeVisibility="true" nameDirectionVisible="true" nameDirectionReverse="0">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Association xmi.idref="40l-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="bm-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ClassifierPresentation xmi.idref="dy-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:UseCasePresentation xmi.idref="yc-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0.0</XMI.field>
+              <XMI.field>0.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="40a-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="11.0" height="15.09375" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>238.24804922920765</XMI.field>
+                  <XMI.field>194.0177168715847</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="409-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:BinaryRelationPresentation.sourceEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.sourceEnd>
+            <JUDE:BinaryRelationPresentation.targetEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.targetEnd>
+            <JUDE:PathPresentation.points></JUDE:PathPresentation.points>
+            <JUDE:AssociationPresentation.qualifierBoxAPresentation>
+              <JUDE:QualifierBoxPresentation xmi.id="54k-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="0.0" height="0.0" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>172.0</XMI.field>
+                  <XMI.field>274.1291837431694</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="409-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:QualifierBoxPresentation>
+            </JUDE:AssociationPresentation.qualifierBoxAPresentation>
+            <JUDE:AssociationPresentation.qualifierBoxBPresentation>
+              <JUDE:QualifierBoxPresentation xmi.id="54l-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="0.0" height="0.0" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>295.4960984584153</XMI.field>
+                  <XMI.field>96.0</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="409-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:QualifierBoxPresentation>
+            </JUDE:AssociationPresentation.qualifierBoxBPresentation>
+          </JUDE:AssociationPresentation>
+          <JUDE:AssociationPresentation xmi.id="597-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483630" stereotypeVisibility="true" constraintVisibility="true" notationType="0" rightAngle="false" visibility="true" qualifierBoxATypeVisibility="true" qualifierBoxBTypeVisibility="true" nameDirectionVisible="true" nameDirectionReverse="0">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Association xmi.idref="59j-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="bm-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ClassifierPresentation xmi.idref="dy-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:UseCasePresentation xmi.idref="1ik-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0.0</XMI.field>
+              <XMI.field>0.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="598-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="11.0" height="15.09375" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>294.25990656309807</XMI.field>
+                  <XMI.field>258.482407823741</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="597-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:BinaryRelationPresentation.sourceEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.sourceEnd>
+            <JUDE:BinaryRelationPresentation.targetEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.targetEnd>
+            <JUDE:PathPresentation.points></JUDE:PathPresentation.points>
+            <JUDE:AssociationPresentation.qualifierBoxAPresentation>
+              <JUDE:QualifierBoxPresentation xmi.id="6jg-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="0.0" height="0.0" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>172.0</XMI.field>
+                  <XMI.field>293.058565647482</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="597-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:QualifierBoxPresentation>
+            </JUDE:AssociationPresentation.qualifierBoxAPresentation>
+            <JUDE:AssociationPresentation.qualifierBoxBPresentation>
+              <JUDE:QualifierBoxPresentation xmi.id="6jh-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="0.0" height="0.0" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>407.5198131261961</XMI.field>
+                  <XMI.field>206.0</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="597-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:QualifierBoxPresentation>
+            </JUDE:AssociationPresentation.qualifierBoxBPresentation>
+          </JUDE:AssociationPresentation>
+          <JUDE:AssociationPresentation xmi.id="6ma-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483629" stereotypeVisibility="true" constraintVisibility="true" notationType="0" rightAngle="false" visibility="true" qualifierBoxATypeVisibility="true" qualifierBoxBTypeVisibility="true" nameDirectionVisible="true" nameDirectionReverse="0">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Association xmi.idref="6mm-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="bm-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ClassifierPresentation xmi.idref="dy-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:UseCasePresentation xmi.idref="1yr-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0.0</XMI.field>
+              <XMI.field>0.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="6mb-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="11.0" height="15.09375" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>222.5</XMI.field>
+                  <XMI.field>319.94314921090387</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="6ma-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:BinaryRelationPresentation.sourceEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.sourceEnd>
+            <JUDE:BinaryRelationPresentation.targetEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.targetEnd>
+            <JUDE:PathPresentation.points></JUDE:PathPresentation.points>
+            <JUDE:AssociationPresentation.qualifierBoxAPresentation>
+              <JUDE:QualifierBoxPresentation xmi.id="82h-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="0.0" height="0.0" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>172.0</XMI.field>
+                  <XMI.field>301.6898090028694</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="6ma-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:QualifierBoxPresentation>
+            </JUDE:AssociationPresentation.qualifierBoxAPresentation>
+            <JUDE:AssociationPresentation.qualifierBoxBPresentation>
+              <JUDE:QualifierBoxPresentation xmi.id="82i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="0.0" height="0.0" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>244.0</XMI.field>
+                  <XMI.field>305.2902394189383</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="6ma-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:QualifierBoxPresentation>
+            </JUDE:AssociationPresentation.qualifierBoxBPresentation>
+          </JUDE:AssociationPresentation>
+          <JUDE:AssociationPresentation xmi.id="86f-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483628" stereotypeVisibility="true" constraintVisibility="true" notationType="0" rightAngle="false" visibility="true" qualifierBoxATypeVisibility="true" qualifierBoxBTypeVisibility="true" nameDirectionVisible="true" nameDirectionReverse="0">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Association xmi.idref="86r-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="bm-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ClassifierPresentation xmi.idref="dy-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:UseCasePresentation xmi.idref="2l7-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0.0</XMI.field>
+              <XMI.field>0.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="86g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="11.0" height="15.09375" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>249.05597832037665</XMI.field>
+                  <XMI.field>384.7876257183908</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="86f-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:BinaryRelationPresentation.sourceEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.sourceEnd>
+            <JUDE:BinaryRelationPresentation.targetEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.targetEnd>
+            <JUDE:PathPresentation.points></JUDE:PathPresentation.points>
+            <JUDE:AssociationPresentation.qualifierBoxAPresentation>
+              <JUDE:QualifierBoxPresentation xmi.id="9sk-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="0.0" height="0.0" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>172.0</XMI.field>
+                  <XMI.field>314.1690014367816</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="86f-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:QualifierBoxPresentation>
+            </JUDE:AssociationPresentation.qualifierBoxAPresentation>
+            <JUDE:AssociationPresentation.qualifierBoxBPresentation>
+              <JUDE:QualifierBoxPresentation xmi.id="9sl-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="0.0" height="0.0" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>317.1119566407533</XMI.field>
+                  <XMI.field>407.5</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="86f-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:QualifierBoxPresentation>
+            </JUDE:AssociationPresentation.qualifierBoxBPresentation>
+          </JUDE:AssociationPresentation>
+        </JUDE:Diagram.presentations>
+      </JUDE:Diagram>
+      <JUDE:ActivityDiagram xmi.id="a9g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Create APOS quote in DOMS with no discounts" typeInfo="Activity Diagram" version="0" verticalMaxLevel="-1" horizontalMaxLevel="-1">
+        <JUDE:StateChartDiagram.semanticModel>
+          <UML:ActivityGraph xmi.idref="a9h-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+        </JUDE:StateChartDiagram.semanticModel>
+        <JUDE:Diagram.presentations>
+          <JUDE:FramePresentation xmi.id="a9j-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483646" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="919.655" height="480.0" doAutoResize="true" visibility="true" label="Create+APOS+quote+in+DOMS+with+no+discounts">
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="a9g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>10.0</XMI.field>
+              <XMI.field>10.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:FramePresentation>
+          <JUDE:InitialStatePresentation xmi.id="ael-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483636" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="20.0" height="20.0" doAutoResize="false" visibility="true" label="InitialNode0">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Pseudostate xmi.idref="aem-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="a9g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="f7q-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>42.0</XMI.field>
+              <XMI.field>206.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:InitialStatePresentation>
+          <JUDE:FinalStatePresentation xmi.id="ajd-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483635" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="20.0" height="20.0" doAutoResize="true" visibility="true" label="ActivityFinal0" allActionVisibility="true">
+            <JUDE:UPresentation.semanticModel>
+              <UML:FinalState xmi.idref="aje-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="a9g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="j1i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>894.655</XMI.field>
+              <XMI.field>206.05599999999998</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:FinalStatePresentation>
+          <JUDE:ActionStatePresentation xmi.id="ao5-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483634" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="80.0" height="38.1875" doAutoResize="false" visibility="true" label="Log+in+DOMS" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:ActionState xmi.idref="ao6-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="a9g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="f7q-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:TransitionPresentation xmi.idref="fqw-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="jude.hidetaggedvalue" value="false"/>
+              <JUDE:UPresentation.styleProperty key="fill.color" value="#FFFFCC"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>108.31700000000001</XMI.field>
+              <XMI.field>196.683</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ActionStatePresentation>
+          <JUDE:ActionStatePresentation xmi.id="b1f-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483633" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="80.0" height="53.28125" doAutoResize="false" visibility="true" label="Enter+in+DOMS+Router" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:ActionState xmi.idref="b1g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="a9g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="fqw-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:TransitionPresentation xmi.idref="gem-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="jude.hidetaggedvalue" value="false"/>
+              <JUDE:UPresentation.styleProperty key="fill.color" value="#FFFFCC"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>240.007</XMI.field>
+              <XMI.field>189.683</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ActionStatePresentation>
+          <JUDE:ActionStatePresentation xmi.id="bbn-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483632" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="80.0" height="53.28125" doAutoResize="false" visibility="true" label="Enter+in+Quote+screen" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:ActionState xmi.idref="bbo-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="a9g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="gem-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:TransitionPresentation xmi.idref="h2c-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="jude.hidetaggedvalue" value="false"/>
+              <JUDE:UPresentation.styleProperty key="fill.color" value="#FFFFCC"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>370.014</XMI.field>
+              <XMI.field>189.683</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ActionStatePresentation>
+          <JUDE:ActionStatePresentation xmi.id="blv-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483631" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="80.0" height="53.28125" doAutoResize="false" visibility="true" label="Load+existing+quote" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:ActionState xmi.idref="blw-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="a9g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="h2c-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:TransitionPresentation xmi.idref="hq2-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="jude.hidetaggedvalue" value="false"/>
+              <JUDE:UPresentation.styleProperty key="fill.color" value="#FFFFCC"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>500.345</XMI.field>
+              <XMI.field>189.02800000000002</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ActionStatePresentation>
+          <JUDE:ActionStatePresentation xmi.id="d3x-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483630" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="80.0" height="98.5625" doAutoResize="false" visibility="true" label="Clear+quote+number+and+process+new+quote" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:ActionState xmi.idref="d3y-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="a9g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="hq2-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:TransitionPresentation xmi.idref="ids-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="jude.hidetaggedvalue" value="false"/>
+              <JUDE:UPresentation.styleProperty key="fill.color" value="#FFFFCC"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>635.0140000000001</XMI.field>
+              <XMI.field>166.683</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ActionStatePresentation>
+          <JUDE:ActionStatePresentation xmi.id="dnb-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483629" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="80.0" height="38.1875" doAutoResize="false" visibility="true" label="Check+price" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:ActionState xmi.idref="dnc-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="a9g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="ids-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:TransitionPresentation xmi.idref="j1i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="jude.hidetaggedvalue" value="false"/>
+              <JUDE:UPresentation.styleProperty key="fill.color" value="#FFFFCC"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>761.0139999999999</XMI.field>
+              <XMI.field>197.373</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ActionStatePresentation>
+          <JUDE:TransitionPresentation xmi.id="f7q-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483628" stereotypeVisibility="true" constraintVisibility="true" notationType="0" rightAngle="false" visibility="true">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="f7r-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="a9g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:InitialStatePresentation xmi.idref="ael-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:ActionStatePresentation xmi.idref="ao5-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0.0</XMI.field>
+              <XMI.field>0.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="f7s-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="11.0" height="15.09375" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>79.6585</XMI.field>
+                  <XMI.field>217.376268005648</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="f7q-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:BinaryRelationPresentation.sourceEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.sourceEnd>
+            <JUDE:BinaryRelationPresentation.targetEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.targetEnd>
+            <JUDE:PathPresentation.points></JUDE:PathPresentation.points>
+          </JUDE:TransitionPresentation>
+          <JUDE:TransitionPresentation xmi.id="fqw-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483627" stereotypeVisibility="true" constraintVisibility="true" notationType="0" rightAngle="false" visibility="true">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="fqx-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="a9g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ActionStatePresentation xmi.idref="ao5-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:ActionStatePresentation xmi.idref="b1f-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0.0</XMI.field>
+              <XMI.field>0.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="fr8-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="11.0" height="15.09375" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>208.662</XMI.field>
+                  <XMI.field>217.5033125</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="fqw-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:BinaryRelationPresentation.sourceEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.sourceEnd>
+            <JUDE:BinaryRelationPresentation.targetEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.targetEnd>
+            <JUDE:PathPresentation.points></JUDE:PathPresentation.points>
+          </JUDE:TransitionPresentation>
+          <JUDE:TransitionPresentation xmi.id="gem-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483626" stereotypeVisibility="true" constraintVisibility="true" notationType="0" rightAngle="false" visibility="true">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="gen-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="a9g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ActionStatePresentation xmi.idref="b1f-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:ActionStatePresentation xmi.idref="bbn-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0.0</XMI.field>
+              <XMI.field>0.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="gey-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="11.0" height="15.09375" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>339.5105</XMI.field>
+                  <XMI.field>217.77675</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="gem-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:BinaryRelationPresentation.sourceEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.sourceEnd>
+            <JUDE:BinaryRelationPresentation.targetEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.targetEnd>
+            <JUDE:PathPresentation.points></JUDE:PathPresentation.points>
+          </JUDE:TransitionPresentation>
+          <JUDE:TransitionPresentation xmi.id="h2c-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483625" stereotypeVisibility="true" constraintVisibility="true" notationType="0" rightAngle="false" visibility="true">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="h2d-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="a9g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ActionStatePresentation xmi.idref="bbn-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:ActionStatePresentation xmi.idref="blv-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0.0</XMI.field>
+              <XMI.field>0.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="h2o-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="11.0" height="15.09375" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>469.6795</XMI.field>
+                  <XMI.field>217.44925</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="h2c-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:BinaryRelationPresentation.sourceEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.sourceEnd>
+            <JUDE:BinaryRelationPresentation.targetEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.targetEnd>
+            <JUDE:PathPresentation.points></JUDE:PathPresentation.points>
+          </JUDE:TransitionPresentation>
+          <JUDE:TransitionPresentation xmi.id="hq2-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483624" stereotypeVisibility="true" constraintVisibility="true" notationType="0" rightAngle="false" visibility="true">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="hq3-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="a9g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ActionStatePresentation xmi.idref="blv-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:ActionStatePresentation xmi.idref="d3x-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0.0</XMI.field>
+              <XMI.field>0.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="hqe-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="11.0" height="15.09375" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>602.1795000000001</XMI.field>
+                  <XMI.field>217.2695625</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="hq2-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:BinaryRelationPresentation.sourceEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.sourceEnd>
+            <JUDE:BinaryRelationPresentation.targetEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.targetEnd>
+            <JUDE:PathPresentation.points></JUDE:PathPresentation.points>
+          </JUDE:TransitionPresentation>
+          <JUDE:TransitionPresentation xmi.id="ids-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483623" stereotypeVisibility="true" constraintVisibility="true" notationType="0" rightAngle="false" visibility="true">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="idt-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="a9g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ActionStatePresentation xmi.idref="d3x-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:ActionStatePresentation xmi.idref="dnb-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0.0</XMI.field>
+              <XMI.field>0.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="ie4-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="11.0" height="15.09375" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>732.514</XMI.field>
+                  <XMI.field>217.668625</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="ids-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:BinaryRelationPresentation.sourceEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.sourceEnd>
+            <JUDE:BinaryRelationPresentation.targetEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.targetEnd>
+            <JUDE:PathPresentation.points></JUDE:PathPresentation.points>
+          </JUDE:TransitionPresentation>
+          <JUDE:TransitionPresentation xmi.id="j1i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483622" stereotypeVisibility="true" constraintVisibility="true" notationType="0" rightAngle="false" visibility="true">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="j1j-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="a9g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ActionStatePresentation xmi.idref="dnb-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:FinalStatePresentation xmi.idref="ajd-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0.0</XMI.field>
+              <XMI.field>0.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="j1u-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="11.0" height="15.09375" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>862.3344999999999</XMI.field>
+                  <XMI.field>217.65505200162096</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="j1i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:BinaryRelationPresentation.sourceEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.sourceEnd>
+            <JUDE:BinaryRelationPresentation.targetEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.targetEnd>
+            <JUDE:PathPresentation.points></JUDE:PathPresentation.points>
+          </JUDE:TransitionPresentation>
+        </JUDE:Diagram.presentations>
+      </JUDE:ActivityDiagram>
+      <JUDE:ActivityDiagram xmi.id="sj8-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Create quote DOMS1296 in SOAP UI with STC = P and customer discount" typeInfo="Activity Diagram" version="0" verticalMaxLevel="-1" horizontalMaxLevel="-1">
+        <JUDE:StateChartDiagram.semanticModel>
+          <UML:ActivityGraph xmi.idref="sj9-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+        </JUDE:StateChartDiagram.semanticModel>
+        <JUDE:Diagram.presentations>
+          <JUDE:FramePresentation xmi.id="sjb-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483646" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="643.0" height="480.0" doAutoResize="true" visibility="true" label="Create+quote+DOMS1296+in+SOAP+UI+with+STC+%3D+P+and+customer+discount">
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="sj8-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>7.0</XMI.field>
+              <XMI.field>10.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:FramePresentation>
+          <JUDE:InitialStatePresentation xmi.id="slk-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483636" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="20.0" height="20.0" doAutoResize="false" visibility="true" label="InitialNode2">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Pseudostate xmi.idref="sll-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="sj8-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="tlj-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>55.0</XMI.field>
+              <XMI.field>149.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:InitialStatePresentation>
+          <JUDE:ActionStatePresentation xmi.id="st9-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483635" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="80.0" height="53.28125" doAutoResize="false" visibility="true" label="Enter+the+values+in+XML" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:ActionState xmi.idref="sta-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="sj8-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="tlj-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:TransitionPresentation xmi.idref="u4p-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="jude.hidetaggedvalue" value="false"/>
+              <JUDE:UPresentation.styleProperty key="fill.color" value="#FFFFCC"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>184.0</XMI.field>
+              <XMI.field>132.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ActionStatePresentation>
+          <JUDE:ActionStatePresentation xmi.id="szv-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483634" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="80.0" height="53.28125" doAutoResize="false" visibility="true" label="Press+Play+on+SOAP+UI" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:ActionState xmi.idref="szw-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="sj8-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="u4p-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:TransitionPresentation xmi.idref="15xl-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="jude.hidetaggedvalue" value="false"/>
+              <JUDE:UPresentation.styleProperty key="fill.color" value="#FFFFCC"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>359.0</XMI.field>
+              <XMI.field>132.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ActionStatePresentation>
+          <JUDE:FinalStatePresentation xmi.id="t6h-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483633" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="20.0" height="20.0" doAutoResize="true" visibility="true" label="ActivityFinal2" allActionVisibility="true">
+            <JUDE:UPresentation.semanticModel>
+              <UML:FinalState xmi.idref="t6i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="sj8-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="15xl-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>568.0</XMI.field>
+              <XMI.field>149.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:FinalStatePresentation>
+          <JUDE:TransitionPresentation xmi.id="tlj-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483632" stereotypeVisibility="true" constraintVisibility="true" notationType="0" rightAngle="false" visibility="true">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="tlk-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="sj8-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:InitialStatePresentation xmi.idref="slk-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:ActionStatePresentation xmi.idref="st9-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0.0</XMI.field>
+              <XMI.field>0.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="tll-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="11.0" height="15.09375" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>124.0</XMI.field>
+                  <XMI.field>160.3073408018868</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="tlj-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:BinaryRelationPresentation.sourceEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.sourceEnd>
+            <JUDE:BinaryRelationPresentation.targetEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.targetEnd>
+            <JUDE:PathPresentation.points></JUDE:PathPresentation.points>
+          </JUDE:TransitionPresentation>
+          <JUDE:TransitionPresentation xmi.id="u4p-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483631" stereotypeVisibility="true" constraintVisibility="true" notationType="0" rightAngle="false" visibility="true">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="u4q-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="sj8-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ActionStatePresentation xmi.idref="st9-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:ActionStatePresentation xmi.idref="szv-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0.0</XMI.field>
+              <XMI.field>0.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="u51-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="11.0" height="15.09375" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>306.0</XMI.field>
+                  <XMI.field>160.09375</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="u4p-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:BinaryRelationPresentation.sourceEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.sourceEnd>
+            <JUDE:BinaryRelationPresentation.targetEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.targetEnd>
+            <JUDE:PathPresentation.points></JUDE:PathPresentation.points>
+          </JUDE:TransitionPresentation>
+          <JUDE:TransitionPresentation xmi.id="15xl-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483630" stereotypeVisibility="true" constraintVisibility="true" notationType="0" rightAngle="false" visibility="true">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="15xm-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="sj8-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ActionStatePresentation xmi.idref="szv-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:FinalStatePresentation xmi.idref="t6h-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0.0</XMI.field>
+              <XMI.field>0.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="15xx-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="11.0" height="15.09375" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>498.0</XMI.field>
+                  <XMI.field>160.3035527234637</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="15xl-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:BinaryRelationPresentation.sourceEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.sourceEnd>
+            <JUDE:BinaryRelationPresentation.targetEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.targetEnd>
+            <JUDE:PathPresentation.points></JUDE:PathPresentation.points>
+          </JUDE:TransitionPresentation>
+        </JUDE:Diagram.presentations>
+      </JUDE:ActivityDiagram>
+      <JUDE:ActivityDiagram xmi.id="ovh-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" name="Create APOS quote in Symphony (DOMS1296 OSB call with source type code = P with a customer discount" typeInfo="Activity Diagram" version="0" verticalMaxLevel="-1" horizontalMaxLevel="-1">
+        <JUDE:StateChartDiagram.semanticModel>
+          <UML:ActivityGraph xmi.idref="ovi-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+        </JUDE:StateChartDiagram.semanticModel>
+        <JUDE:Diagram.presentations>
+          <JUDE:FramePresentation xmi.id="ovk-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483646" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="882.0" height="480.0" doAutoResize="true" visibility="true" label="Create+APOS+quote+in+Symphony+%28DOMS1296+OSB+call+with+source+type+code+%3D+P+with+a+customer+discount">
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="ovh-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>10.0</XMI.field>
+              <XMI.field>10.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:FramePresentation>
+          <JUDE:InitialStatePresentation xmi.id="p0g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483636" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="20.0" height="20.0" doAutoResize="false" visibility="true" label="InitialNode1">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Pseudostate xmi.idref="p0h-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="ovh-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="qjc-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>56.0</XMI.field>
+              <XMI.field>221.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:InitialStatePresentation>
+          <JUDE:FinalStatePresentation xmi.id="p58-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483635" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="20.0" height="20.0" doAutoResize="true" visibility="true" label="ActivityFinal1" allActionVisibility="true">
+            <JUDE:UPresentation.semanticModel>
+              <UML:FinalState xmi.idref="p59-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="ovh-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="rq8-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>660.012</XMI.field>
+              <XMI.field>221.35199999999998</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:FinalStatePresentation>
+          <JUDE:ActionStatePresentation xmi.id="pcd-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483634" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="208.0" height="69.0" doAutoResize="false" visibility="true" label="Create+quote+DOMS1296+in+SOAP+UI+with+STC+%3D+P+and+customer+discount" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:ActionState xmi.idref="pce-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="ovh-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="qjc-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:TransitionPresentation xmi.idref="r2i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="jude.hidetaggedvalue" value="false"/>
+              <JUDE:UPresentation.styleProperty key="fill.color" value="#FFFFCC"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>157.02100000000002</XMI.field>
+              <XMI.field>197.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ActionStatePresentation>
+          <JUDE:ActionStatePresentation xmi.id="ppn-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483633" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="80.0" height="38.1875" doAutoResize="false" visibility="true" label="Check+the+sku+price" allActionVisibility="true" signalReverse="false">
+            <JUDE:UPresentation.semanticModel>
+              <UML:ActionState xmi.idref="ppo-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="ovh-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.clients>
+              <JUDE:TransitionPresentation xmi.idref="r2i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:TransitionPresentation xmi.idref="rq8-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.clients>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="jude.hidetaggedvalue" value="false"/>
+              <JUDE:UPresentation.styleProperty key="fill.color" value="#FFFFCC"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>452.1610000000001</XMI.field>
+              <XMI.field>212.317</XMI.field>
+            </JUDE:JomtPresentation.location>
+          </JUDE:ActionStatePresentation>
+          <JUDE:TransitionPresentation xmi.id="qjc-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483632" stereotypeVisibility="true" constraintVisibility="true" notationType="0" rightAngle="false" visibility="true">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="qjd-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="ovh-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:InitialStatePresentation xmi.idref="p0g-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:ActionStatePresentation xmi.idref="pcd-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0.0</XMI.field>
+              <XMI.field>0.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="qje-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="11.0" height="15.09375" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>111.01050000000001</XMI.field>
+                  <XMI.field>232.58262515639342</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="qjc-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:BinaryRelationPresentation.sourceEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.sourceEnd>
+            <JUDE:BinaryRelationPresentation.targetEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.targetEnd>
+            <JUDE:PathPresentation.points></JUDE:PathPresentation.points>
+          </JUDE:TransitionPresentation>
+          <JUDE:TransitionPresentation xmi.id="r2i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483631" stereotypeVisibility="true" constraintVisibility="true" notationType="0" rightAngle="false" visibility="true">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="r2j-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="ovh-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ActionStatePresentation xmi.idref="pcd-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:ActionStatePresentation xmi.idref="ppn-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0.0</XMI.field>
+              <XMI.field>0.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="r2u-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="11.0" height="15.09375" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>403.09100000000007</XMI.field>
+                  <XMI.field>232.8961438522108</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="r2i-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:BinaryRelationPresentation.sourceEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.sourceEnd>
+            <JUDE:BinaryRelationPresentation.targetEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.targetEnd>
+            <JUDE:PathPresentation.points></JUDE:PathPresentation.points>
+          </JUDE:TransitionPresentation>
+          <JUDE:TransitionPresentation xmi.id="rq8-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="2147483630" stereotypeVisibility="true" constraintVisibility="true" notationType="0" rightAngle="false" visibility="true">
+            <JUDE:UPresentation.semanticModel>
+              <UML:Transition xmi.idref="rq9-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.semanticModel>
+            <JUDE:UPresentation.diagram>
+              <JUDE:Diagram xmi.idref="ovh-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.diagram>
+            <JUDE:UPresentation.servers>
+              <JUDE:ActionStatePresentation xmi.idref="ppn-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+              <JUDE:FinalStatePresentation xmi.idref="p58-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+            </JUDE:UPresentation.servers>
+            <JUDE:UPresentation.customStyleMap>
+              <JUDE:UPresentation.styleProperty key="line.shape" value="line"/>
+            </JUDE:UPresentation.customStyleMap>
+            <JUDE:JomtPresentation.location>
+              <XMI.field>0.0</XMI.field>
+              <XMI.field>0.0</XMI.field>
+            </JUDE:JomtPresentation.location>
+            <JUDE:PathPresentation.namePresentation>
+              <JUDE:LabelPresentation xmi.id="rqk-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428" version="0" depth="0" stereotypeVisibility="true" constraintVisibility="true" notationType="0" width="11.0" height="15.09375" doAutoResize="true" visibility="true">
+                <JUDE:JomtPresentation.location>
+                  <XMI.field>590.5865</XMI.field>
+                  <XMI.field>232.82954500958667</XMI.field>
+                </JUDE:JomtPresentation.location>
+                <JUDE:JomtPresentation.compositeParent>
+                  <JUDE:UPresentation xmi.idref="rq8-huyehco3-vyxi4--28rwy1-4b4bf4c48f273fffe339b1947a06b428"/>
+                </JUDE:JomtPresentation.compositeParent>
+              </JUDE:LabelPresentation>
+            </JUDE:PathPresentation.namePresentation>
+            <JUDE:BinaryRelationPresentation.sourceEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.sourceEnd>
+            <JUDE:BinaryRelationPresentation.targetEnd>
+              <XMI.field>0.5</XMI.field>
+              <XMI.field>0.5</XMI.field>
+            </JUDE:BinaryRelationPresentation.targetEnd>
+            <JUDE:PathPresentation.points></JUDE:PathPresentation.points>
+          </JUDE:TransitionPresentation>
+        </JUDE:Diagram.presentations>
+      </JUDE:ActivityDiagram>
+    </XMI.extension>
+  </XMI.content>
+</XMI>
+
