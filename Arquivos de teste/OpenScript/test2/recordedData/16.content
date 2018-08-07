@@ -1,0 +1,681 @@
+<html class="yui3-js-enabled" lang="pt-br" lang="pt-br" dir="ltr" xml:lang="pt-br"><head><META content="IE=11.0000" http-equiv="X-UA-Compatible">
+    <title>UNIPAMPA</title>
+    <link href="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/theme/1486561592/favicon" rel="shortcut icon">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="moodle, UNIPAMPA">
+<link href="https://moodle.unipampa.edu.br/moodle/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" rel="stylesheet" type="text/css"><script id="yui_3_17_2_1_1494815165336_9" src="https://moodle.unipampa.edu.br/moodle/theme/yui_combo.php?m/1486561592/core/event/event-min.js&amp;m/1486561592/filter_mathjaxloader/loader/loader-min.js" charset="utf-8" async=""></script><script id="yui_3_17_2_1_1494815165336_18" src="https://moodle.unipampa.edu.br/moodle/lib/javascript.php/1486561592/blocks/accessibility/module.js" charset="utf-8" async=""></script><script id="yui_3_17_2_1_1494815165336_19" src="https://moodle.unipampa.edu.br/moodle/theme/yui_combo.php?3.17.2/stylesheet/stylesheet-min.js" charset="utf-8" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link href="https://moodle.unipampa.edu.br/moodle/theme/styles.php/boost/1486561592/all" rel="stylesheet" type="text/css">
+<link href="https://moodle.unipampa.edu.br/moodle/blocks/accessibility/userstyles.php?instance_id=47031" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\\/\\/moodle.unipampa.edu.br\\/moodle","sesskey":"8romo6CVTh","loadingicon":"https:\\/\\/moodle.unipampa.edu.br\\/moodle\\/theme\\/image.php\\/boost\\/core\\/1486561592\\/i\\/loading_small","themerev":"1486561592","slasharguments":1,"theme":"boost","jsrev":"1486561592","admin":"admin","svgicons":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\\.js/,'.css');me.path=me.path.replace(/\\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\\/\\/moodle.unipampa.edu.br\\/moodle\\/lib\\/yuilib\\/3.17.2\\/","comboBase":"https:\\/\\/moodle.unipampa.edu.br\\/moodle\\/theme\\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\\/\\/moodle.unipampa.edu.br\\/moodle\\/lib\\/yuilib\\/2in3\\/2.9.0\\/build\\/","comboBase":"https:\\/\\/moodle.unipampa.edu.br\\/moodle\\/theme\\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\\/2.9.0\\/build\\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\\/\\/moodle.unipampa.edu.br\\/moodle\\/theme\\/yui_combo.php?m\\/1486561592\\/","combine":true,"comboBase":"https:\\/\\/moodle.unipampa.edu.br\\/moodle\\/theme\\/yui_combo.php?","ext":false,"root":"m\\/1486561592\\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-event":{"requires":["event-custom"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-formautosubmit":{"requires":["base","event-key"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-calendar-info":{"requires":["base","node","event-mouseenter","event-key","overlay","moodle-calendar-info-skin"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-toolboxes":{"requires":["node","base","event-key","node","io","moodle-course-coursebase","moodle-course-util"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\\/\\/moodle.unipampa.edu.br\\/moodle\\/lib\\/yuilib\\/gallery\\/","combine":true,"comboBase":"https:\\/\\/moodle.unipampa.edu.br\\/moodle\\/theme\\/yui_combo.php?","ext":false,"root":"gallery\\/1486561592\\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\\/\\/moodle.unipampa.edu.br\\/moodle\\/lib\\/javascript.php\\/1486561592\\/repository\\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker"]},"core_comment":{"name":"core_comment","fullpath":"https:\\/\\/moodle.unipampa.edu.br\\/moodle\\/lib\\/javascript.php\\/1486561592\\/comment\\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay"]},"mathjax":{"name":"mathjax","fullpath":"https:\\/\\/cdn.mathjax.org\\/mathjax\\/2.7-latest\\/MathJax.js?delayStartupUntil=configured"},"block_accessibility":{"name":"block_accessibility","fullpath":"https:\\/\\/moodle.unipampa.edu.br\\/moodle\\/lib\\/javascript.php\\/1486561592\\/blocks\\/accessibility\\/module.js","requires":["base","node","stylesheet"]}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://moodle.unipampa.edu.br/moodle/lib/requirejs.php/1486561592/core/first.js" type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><script src="https://moodle.unipampa.edu.br/moodle/lib/javascript.php/1486561592/lib/requirejs/jquery-private.js" type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jqueryprivate"></script><script src="https://moodle.unipampa.edu.br/moodle/lib/javascript.php/1486561592/lib/jquery/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery"></script></head>
+
+<body class="format-site course path-site ie ie11 dir-ltr lang-pt_br yui-skin-sam yui3-skin-sam moodle-unipampa-edu-br--moodle pagelayout-frontpage course-1 context-2 drawer-open-left jsenabled" id="page-site-index">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Ir para o conte\C3\BAdo principal</a>
+</div><script src="https://moodle.unipampa.edu.br/moodle/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js&amp;rollup/1486561592/mcore-min.js" type="text/javascript"></script><script src="https://moodle.unipampa.edu.br/moodle/lib/javascript.php/1486561592/lib/javascript-static.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+<div class="cabecalho-logo">
+<img alt="Moodle - UAB - UNIPAMPA" src="https://moodle-ead.unipampa.edu.br/logos/logo_unipampa.png">
+</div>
+
+    <header class="pos-f-t navbar navbar-full navbar-light bg-faded navbar-static-top moodle-has-zindex" role="banner">
+    
+        <div class="container-fluid navbar-nav">
+    
+            <div data-region="drawer-toggle">
+                <button class="btn pull-xs-left m-r-1 btn-secondary" aria-expanded="true" aria-controls="nav-drawer" type="button" data-action="toggle-drawer" data-preference="drawer-open-nav" data-side="left"><span aria-hidden="true">\E2\98\B0</span><span class="sr-only">Expandir</span></button>
+            </div>
+    
+            <a class="navbar-brand &#10;                    hidden-sm-down&#10;                    " href="https://moodle.unipampa.edu.br/moodle">
+                <span class="site-name hidden-sm-down">MOODLE</span>
+            </a>
+    
+            <!-- user_menu -->
+            <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items" id="action-menu-1" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar" id="action-menu-1-menubar" role="menubar">
+
+            <span class="dropdown">
+    <a title="" class="dropdown-toggle" id="dropdown-1" role="button" aria-expanded="false" aria-haspopup="true" href="#" data-toggle="dropdown"><span class="userbutton"><span class="usertext">GILIARDI SCHMIDT</span><span class="avatars"><span class="avatar current"><img width="35" height="35" title="Imagem de GILIARDI SCHMIDT" class="userpicture defaultuserpic" role="presentation" alt="Imagem de GILIARDI SCHMIDT" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/u/f2"></span></span></span><b class="caret"></b></a>
+        <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" role="menu" aria-labelledby="action-menu-toggle-1" data-align="tr-br" data-rel="menu-content">
+            <a class="dropdown-item menu-action" role="menuitem" aria-labelledby="actionmenuaction-1" href="https://moodle.unipampa.edu.br/moodle/my/" data-title="mymoodle,admin"><img class="icon " alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/i/course">
+<span class="menu-action-text" id="actionmenuaction-1">Painel</span></a><div class="dropdown-divider"></div><a class="dropdown-item menu-action" role="menuitem" aria-labelledby="actionmenuaction-2" href="https://moodle.unipampa.edu.br/moodle/user/profile.php?id=20960" data-title="profile,moodle"><img class="icon " alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/i/user">
+<span class="menu-action-text" id="actionmenuaction-2">Perfil</span></a><a class="dropdown-item menu-action" role="menuitem" aria-labelledby="actionmenuaction-3" href="https://moodle.unipampa.edu.br/moodle/grade/report/overview/index.php" data-title="grades,grades"><img class="icon " alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/grades">
+<span class="menu-action-text" id="actionmenuaction-3">Notas</span></a><a class="dropdown-item menu-action" role="menuitem" aria-labelledby="actionmenuaction-4" href="https://moodle.unipampa.edu.br/moodle/message/index.php" data-title="messages,message"><img class="icon " alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message">
+<span class="menu-action-text" id="actionmenuaction-4">Mensagens</span></a><a class="dropdown-item menu-action" role="menuitem" aria-labelledby="actionmenuaction-5" href="https://moodle.unipampa.edu.br/moodle/user/preferences.php" data-title="preferences,moodle"><img class="icon " alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/preferences">
+<span class="menu-action-text" id="actionmenuaction-5">Prefer\C3\AAncias</span></a><div class="dropdown-divider"></div><a class="dropdown-item menu-action" role="menuitem" aria-labelledby="actionmenuaction-6" href="https://moodle.unipampa.edu.br/moodle/login/logout.php?sesskey=8romo6CVTh" data-title="logout,moodle"><img class="icon " alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/a/logout">
+<span class="menu-action-text" id="actionmenuaction-6">Sair</span></a>
+        </div>
+</span>
+
+
+        </div>
+
+</div></div>
+    
+            <!-- navbar_plugin_output -->
+            <div class="popover-region collapsed popover-region-messages" id="nav-message-popover-container" data-region="popover-region" data-userid="20960">
+    <div tabindex="0" class="popover-region-toggle nav-link" aria-haspopup="true" aria-controls="popover-region-container-591911ba621f9591911b73096012" aria-label="Show message window with no new messages" data-region="popover-region-toggle" aria-role="button">
+                <img title=" Toggle messages menu " class="icon smallicon" alt=" Toggle messages menu " src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message">
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div class="popover-region-container" id="popover-region-container-591911ba621f9591911b73096012" role="region" aria-expanded="false" aria-hidden="true" aria-label="Notification window" data-region="popover-region-container">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Mensagens</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="newmessage-link">
+                <a href="https://moodle.unipampa.edu.br/moodle/message/index.php?contactsfirst=1">Nova Mensagem
+                </a>
+        </div>
+        <div class="hover-tooltip-container">
+                    <a title="Marcar tudo como lido" class="mark-all-read-button" role="button" href="#" data-action="mark-all-read">
+                    <span class="normal-icon"><img title=" Marcar tudo como lido " class="icon smallicon" alt=" Marcar tudo como lido " src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/markasread"></span>
+                    <span class="loading-icon"><img title=" Carregando " class="icon smallicon" alt=" Carregando " src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/y/loading"></span>
+                </a>
+
+    <div class="hover-tooltip">
+        Marcar tudo como lido
+    </div>
+</div>
+        <div class="hover-tooltip-container">
+                    <a title="Message preferences" href="https://moodle.unipampa.edu.br/moodle/message/edit.php?id=20960">
+                    <img title=" Message preferences " class="icon smallicon" alt=" Message preferences " src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/i/settings">
+                </a>
+
+    <div class="hover-tooltip">
+        Message preferences
+    </div>
+</div>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="messages" role="log" aria-busy="false" aria-relevant="additions" aria-atomic="false" data-region="messages"></div>
+        <div tabindex="0" class="empty-message" data-region="empty-message">Sem novas mensagens</div>
+
+            </div>
+            <span class="loading-icon"><img title=" Carregando " class="icon smallicon" alt=" Carregando " src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/y/loading"></span>
+        </div>
+                <a class="see-all-link" href="https://moodle.unipampa.edu.br/moodle/message/index.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Mostrar todos</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed popover-region-notifications" id="nav-notification-popover-container" data-region="popover-region" data-userid="20960">
+    <div tabindex="0" class="popover-region-toggle nav-link" aria-haspopup="true" aria-controls="popover-region-container-591911ba63e91591911b73096013" aria-label="Show notification window with no new notifications" data-region="popover-region-toggle" aria-role="button">
+                <img title=" Toggle notifications menu " class="icon smallicon" alt=" Toggle notifications menu " src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/i/notifications">
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div class="popover-region-container" id="popover-region-container-591911ba63e91591911b73096013" role="region" aria-expanded="false" aria-hidden="true" aria-label="Notification window" data-region="popover-region-container">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifica\C3\A7\C3\B5es</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="hover-tooltip-container">
+                    <a title="Marcar tudo como lido" class="mark-all-read-button" role="button" href="#" data-action="mark-all-read">
+                    <span class="normal-icon"><img title=" Marcar tudo como lido " class="icon smallicon" alt=" Marcar tudo como lido " src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/markasread"></span>
+                    <span class="loading-icon"><img title=" Carregando " class="icon smallicon" alt=" Carregando " src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/y/loading"></span>
+                </a>
+
+    <div class="hover-tooltip">
+        Marcar tudo como lido
+    </div>
+</div>
+        <div class="hover-tooltip-container">
+                    <a title="Prefer\C3\AAncias de notifica\C3\A7\C3\A3o" href="https://moodle.unipampa.edu.br/moodle/message/notificationpreferences.php?userid=20960">
+                    <img title=" Prefer\C3\AAncias de notifica\C3\A7\C3\A3o " class="icon smallicon" alt=" Prefer\C3\AAncias de notifica\C3\A7\C3\A3o " src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/i/settings">
+                </a>
+
+    <div class="hover-tooltip">
+        Prefer\C3\AAncias de notifica\C3\A7\C3\A3o
+    </div>
+</div>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications" role="log" aria-busy="false" aria-relevant="additions" aria-atomic="false" data-region="all-notifications"></div>
+        <div tabindex="0" class="empty-message" data-region="empty-message">Voc\C3\AA n\C3\A3o tem nenhuma notifica\C3\A7\C3\A3o</div>
+
+            </div>
+            <span class="loading-icon"><img title=" Carregando " class="icon smallicon" alt=" Carregando " src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/y/loading"></span>
+        </div>
+                <a class="see-all-link" href="https://moodle.unipampa.edu.br/moodle/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Mostrar todos</div>
+                    </div>
+                </a>
+    </div>
+</div>
+    
+            <!-- search_box -->
+            <span class="hidden-md-down">
+            
+            </span>
+    
+            <nav class="nav navbar-nav hidden-md-down">
+                <!-- custom_menu -->
+                <span class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-591911ba67405591911b73096015" aria-expanded="false" aria-haspopup="true" href="#" data-toggle="dropdown">
+        Portugu\C3\AAs - Brasil \E2\80\8E(pt_br)\E2\80\8E
+    </a>
+    <div class="dropdown-menu" aria-labelledby="drop-down-591911ba67405591911b73096015">
+                <a title="English \E2\80\8E(en)\E2\80\8E" class="dropdown-item" href="https://moodle.unipampa.edu.br/moodle/?lang=en">English \E2\80\8E(en)\E2\80\8E</a>
+                <a title="Portugu\C3\AAs - Brasil \E2\80\8E(pt_br)\E2\80\8E" class="dropdown-item" href="https://moodle.unipampa.edu.br/moodle/?lang=pt_br">Portugu\C3\AAs - Brasil \E2\80\8E(pt_br)\E2\80\8E</a>
+    </div>
+</span>
+                <!-- page_heading_menu -->
+                
+            </nav>
+        </div>
+    </header>
+    
+
+    <div class="container-fluid" id="page">
+        <header class="row" id="page-header"><div class="col-xs-12 p-a-1"><div class="card"><div class="card-block"><div class="pull-xs-right context-header-settings-menu"></div><div class="pull-xs-left"><div class="page-context-header"><div class="page-header-headings"><h1>UNIPAMPA</h1></div></div></div><div id="course-header"></div></div></div></div></header>
+
+        <div class="row" id="page-content">
+            <div class="col-xs-12" id="region-main-box">
+                <section class="has-blocks" id="region-main">
+                    <div class="card card-block">
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><a class="skip skip-block" href="#skipcategories">Pular categorias de cursos</a><div id="frontpage-category-names"><h2>Categorias de Cursos</h2><div class="course_category_tree clearfix frontpage-category-names"><div class="collapsible-actions"><a class="collapseexpand" href="#">Expandir tudo</a></div><div class="content"><div class="subcategories"><div class="category notloaded with_children collapsed" data-type="0" data-showcourses="5" data-depth="1" data-categoryid="3"><div class="info"><h3 class="categoryname"><a href="https://moodle.unipampa.edu.br/moodle/course/index.php?categoryid=3">Campus Alegrete</a><span title="N\C3\BAmero de cursos" class="numberofcourse"> (69)</span></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-type="0" data-showcourses="5" data-depth="1" data-categoryid="5"><div class="info"><h3 class="categoryname"><a href="https://moodle.unipampa.edu.br/moodle/course/index.php?categoryid=5">Campus Bag\C3\A9</a><span title="N\C3\BAmero de cursos" class="numberofcourse"> (90)</span></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-type="0" data-showcourses="5" data-depth="1" data-categoryid="14"><div class="info"><h3 class="categoryname"><a href="https://moodle.unipampa.edu.br/moodle/course/index.php?categoryid=14">Campus Ca\C3\A7apava do Sul</a><span title="N\C3\BAmero de cursos" class="numberofcourse"> (20)</span></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-type="0" data-showcourses="5" data-depth="1" data-categoryid="9"><div class="info"><h3 class="categoryname"><a href="https://moodle.unipampa.edu.br/moodle/course/index.php?categoryid=9">Campus Dom Pedrito</a><span title="N\C3\BAmero de cursos" class="numberofcourse"> (11)</span></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-type="0" data-showcourses="5" data-depth="1" data-categoryid="6"><div class="info"><h3 class="categoryname"><a href="https://moodle.unipampa.edu.br/moodle/course/index.php?categoryid=6">Campus Itaqui</a><span title="N\C3\BAmero de cursos" class="numberofcourse"> (66)</span></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-type="0" data-showcourses="5" data-depth="1" data-categoryid="13"><div class="info"><h3 class="categoryname"><a href="https://moodle.unipampa.edu.br/moodle/course/index.php?categoryid=13">Campus Jaguar\C3\A3o</a><span title="N\C3\BAmero de cursos" class="numberofcourse"> (21)</span></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-type="0" data-showcourses="5" data-depth="1" data-categoryid="12"><div class="info"><h3 class="categoryname"><a href="https://moodle.unipampa.edu.br/moodle/course/index.php?categoryid=12">Campus Santana do Livramento</a><span title="N\C3\BAmero de cursos" class="numberofcourse"> (35)</span></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-type="0" data-showcourses="5" data-depth="1" data-categoryid="15"><div class="info"><h3 class="categoryname"><a href="https://moodle.unipampa.edu.br/moodle/course/index.php?categoryid=15">Campus S\C3\A3o Borja</a><span title="N\C3\BAmero de cursos" class="numberofcourse"> (21)</span></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-type="0" data-showcourses="5" data-depth="1" data-categoryid="4"><div class="info"><h3 class="categoryname"><a href="https://moodle.unipampa.edu.br/moodle/course/index.php?categoryid=4">Campus S\C3\A3o Gabriel</a><span title="N\C3\BAmero de cursos" class="numberofcourse"> (5)</span></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-type="0" data-showcourses="5" data-depth="1" data-categoryid="8"><div class="info"><h3 class="categoryname"><a href="https://moodle.unipampa.edu.br/moodle/course/index.php?categoryid=8">Campus Uruguaiana</a><span title="N\C3\BAmero de cursos" class="numberofcourse"> (48)</span></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-type="0" data-showcourses="5" data-depth="1" data-categoryid="100"><div class="info"><h3 class="categoryname"><a href="https://moodle.unipampa.edu.br/moodle/course/index.php?categoryid=100">Cursos de P\C3\B3s-Gradua\C3\A7\C3\A3o Multicampi</a></h3></div><div class="content"></div></div><div class="category notloaded" data-type="0" data-showcourses="5" data-depth="1" data-categoryid="2"><div class="info"><h3 class="categoryname"><a href="https://moodle.unipampa.edu.br/moodle/course/index.php?categoryid=2">Grupos de Trabalho (GTs) - UNIPAMPA</a><span title="N\C3\BAmero de cursos" class="numberofcourse"> (6)</span></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-type="0" data-showcourses="5" data-depth="1" data-categoryid="16"><div class="info"><h3 class="categoryname"><a href="https://moodle.unipampa.edu.br/moodle/course/index.php?categoryid=16">Universidade Federal do Pampa</a><span title="N\C3\BAmero de cursos" class="numberofcourse"> (20)</span></h3></div><div class="content"></div></div><div class="category notloaded" data-type="0" data-showcourses="5" data-depth="1" data-categoryid="18"><div class="info"><h3 class="categoryname"><a href="https://moodle.unipampa.edu.br/moodle/course/index.php?categoryid=18">Diretoria de Tecnologia da Informa\C3\A7\C3\A3o e Comunica\C3\A7\C3\A3o (DTIC)</a><span title="N\C3\BAmero de cursos" class="numberofcourse"> (7)</span></h3></div><div class="content"></div></div><div class="category notloaded" data-type="0" data-showcourses="5" data-depth="1" data-categoryid="26"><div class="info"><h3 class="categoryname"><a href="https://moodle.unipampa.edu.br/moodle/course/index.php?categoryid=26">Plano Desenvolvimento Institucional </a><span title="N\C3\BAmero de cursos" class="numberofcourse"> (2)</span></h3></div><div class="content"></div></div><div class="category notloaded" data-type="0" data-showcourses="5" data-depth="1" data-categoryid="61"><div class="info"><h3 class="categoryname"><a href="https://moodle.unipampa.edu.br/moodle/course/index.php?categoryid=61">F\C3\B3runs UNIPAMPA</a><span title="N\C3\BAmero de cursos" class="numberofcourse"> (6)</span></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-type="0" data-showcourses="5" data-depth="1" data-categoryid="79"><div class="info"><h3 class="categoryname"><a href="https://moodle.unipampa.edu.br/moodle/course/index.php?categoryid=79">Projetos de Pesquisa, Ensino e Extens\C3\A3o</a><span title="N\C3\BAmero de cursos" class="numberofcourse"> (31)</span></h3></div><div class="content"></div></div><div class="category notloaded" data-type="0" data-showcourses="5" data-depth="1" data-categoryid="122"><div class="info"><h3 class="categoryname"><a href="https://moodle.unipampa.edu.br/moodle/course/index.php?categoryid=122">N\C3\BAcleo de Inclus\C3\A3o e Acessibilidade</a><span title="N\C3\BAmero de cursos" class="numberofcourse"> (1)</span></h3></div><div class="content"></div></div><div class="category notloaded" data-type="0" data-showcourses="5" data-depth="1" data-categoryid="153"><div class="info"><h3 class="categoryname"><a href="https://moodle.unipampa.edu.br/moodle/course/index.php?categoryid=153">N\C3\BAcleo de Desenvolvimento de Pessoal - NUDEPE</a><span title="N\C3\BAmero de cursos" class="numberofcourse"> (24)</span></h3></div><div class="content"></div></div></div></div></div></div><span class="skip-block-to" id="skipcategories"></span><br><div class="box mdl-align p-y-1"><form class="form-inline" id="coursesearch" action="https://moodle.unipampa.edu.br/moodle/course/search.php" method="get">
+    <fieldset class="coursesearchbox invisiblefieldset">
+        <label for="shortsearchbox">Buscar cursos</label>
+        <input name="search" class="form-control" id="shortsearchbox" type="text" size="12" value="">
+        <button class="btn btn-secondary" type="submit">Vai</button>
+    </fieldset>
+</form></div><br></div>
+                    
+                    </div>
+                </section>
+                <section class="hidden-print" data-region="blocks-column">
+                    <aside class="block-region" id="block-region-side-pre" data-droptarget="1" data-blockregion="side-pre"><a class="sr-only sr-only-focusable" href="#sb-1">Pular Acessibilidade</a>
+
+<aside class=" block block_accessibility  card m-b-1" id="inst47031" role="complementary" aria-labelledby="instance-47031-header" data-block="accessibility">
+
+    <div class="card-block">
+
+
+            <h3 class="card-title" id="instance-47031-header">Acessibilidade</h3>
+
+        <div class="card-text content">
+            <div class="content" id="accessibility_controls"><ul class="button_row" id="block_accessibility_textresize"><li class="access-button"><a title="Diminuir o tamanho do texto" id="block_accessibility_dec" href="https://moodle.unipampa.edu.br/moodle/blocks/accessibility/changesize.php?redirect=https%3A%2F%2Fmoodle.unipampa.edu.br%2Fmoodle%2F&amp;op=dec">A-</a></li><li class="access-button"><a title="Redefinir tamanho do texto (limpa defini\C3\A7\C3\A3o salva)" class="disabled" id="block_accessibility_reset" href="https://moodle.unipampa.edu.br/moodle/blocks/accessibility/changesize.php?redirect=https%3A%2F%2Fmoodle.unipampa.edu.br%2Fmoodle%2F&amp;op=reset">A</a></li><li class="access-button"><a title="Aumentar o tamanho do texto" id="block_accessibility_inc" href="https://moodle.unipampa.edu.br/moodle/blocks/accessibility/changesize.php?redirect=https%3A%2F%2Fmoodle.unipampa.edu.br%2Fmoodle%2F&amp;op=inc">A+</a></li><li class="access-button"><a title="Salvar defini\C3\A7\C3\A3o" id="block_accessibility_save" href="https://moodle.unipampa.edu.br/moodle/blocks/accessibility/database.php?redirect=https%3A%2F%2Fmoodle.unipampa.edu.br%2Fmoodle%2F&amp;op=save&amp;size=1&amp;scheme=1">&nbsp;</a></li></ul><ul id="block_accessibility_changecolour"><li class="access-button"><a class="disabled" id="block_accessibility_colour1" href="https://moodle.unipampa.edu.br/moodle/blocks/accessibility/changecolour.php?redirect=https%3A%2F%2Fmoodle.unipampa.edu.br%2Fmoodle%2F&amp;scheme=1">R</a></li><li class="access-button"><a id="block_accessibility_colour2" href="https://moodle.unipampa.edu.br/moodle/blocks/accessibility/changecolour.php?redirect=https%3A%2F%2Fmoodle.unipampa.edu.br%2Fmoodle%2F&amp;scheme=2">A</a></li><li class="access-button"><a id="block_accessibility_colour3" href="https://moodle.unipampa.edu.br/moodle/blocks/accessibility/changecolour.php?redirect=https%3A%2F%2Fmoodle.unipampa.edu.br%2Fmoodle%2F&amp;scheme=3">A</a></li><li class="access-button"><a id="block_accessibility_colour4" href="https://moodle.unipampa.edu.br/moodle/blocks/accessibility/changecolour.php?redirect=https%3A%2F%2Fmoodle.unipampa.edu.br%2Fmoodle%2F&amp;scheme=4">A</a></li></ul><div class="clearfix" id="block_accessibility_message"></div><input class="atbar_control access-button" id="block_accessibility_launchtoolbar" type="button" value="Launch ATbar"><span class="atbar-always"><input name="atbar_auto" class="atbar_control" id="atbar_auto" type="checkbox" value="1"><label class="atbar_control" for="atbar_auto">(sempre?)</label></span></div><span id="loader-icon"></span>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</aside>
+
+  <span id="sb-1"></span><a class="sr-only sr-only-focusable" href="#sb-2">Pular Menu Principal</a>
+
+<aside class=" block block_site_main_menu  card m-b-1" id="inst1" role="complementary" aria-labelledby="instance-1-header" data-block="site_main_menu">
+
+    <div class="card-block">
+
+
+            <h3 class="card-title" id="instance-1-header">Menu Principal</h3>
+
+        <div class="card-text content">
+            <ul class="unlist"><li class="r0"><div class="column c1"><div class="main-menu-content"><div class="no-overflow"><div class="no-overflow">
+<div style="text-align: center;"><span style="font-weight: bold;"><br>Ambiente Virtual de Ensino-Aprendizagem - Moodle/UNIPAMPA. </span><br style="font-weight: bold;"></div><span style="font-weight: bold;"></span> </div></div></div></div></li>
+<li class="r1"><div class="column c1"><div class="main-menu-content"><div class="activity"><a onclick="" href="https://moodle.unipampa.edu.br/moodle/mod/page/view.php?id=13763"><img class="iconlarge activityicon" role="presentation" alt=" " src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/page/1486561592/icon"><span class="instancename">Instru\C3\A7\C3\B5es de Acesso<span class="accesshide "> P\C3\A1gina</span></span></a></div></div></div></li>
+<li class="r0"><div class="column c1"><div class="main-menu-content"><div class="activity"><a onclick="window.open('https://moodle.unipampa.edu.br/mod/url/view.php?id=29342&amp;redirect=1', '', 'width=620,height=450,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes'); return false;" href="https://moodle.unipampa.edu.br/moodle/mod/url/view.php?id=29342"><img class="iconlarge activityicon" role="presentation" alt=" " src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/url/1486561592/icon"><span class="instancename">Painel de Servi\C3\A7os<span class="accesshide "> URL</span></span></a></div></div></div></li>
+<li class="r1"><div class="column c1"><div class="main-menu-content"><div class="activity"><a onclick="" href="https://moodle.unipampa.edu.br/moodle/mod/resource/view.php?id=69776"><img class="iconlarge activityicon" role="presentation" alt=" " src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/f/pdf-24"><span class="instancename">Manual do Professor<span class="accesshide "> Arquivo</span></span></a></div></div></div></li>
+<li class="r0"><div class="column c1"><div class="main-menu-content"><div class="activity"><a onclick="" href="https://moodle.unipampa.edu.br/moodle/mod/resource/view.php?id=68163"><img class="iconlarge activityicon" role="presentation" alt=" " src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/f/pdf-24"><span class="instancename">Manual do Aluno<span class="accesshide "> Arquivo</span></span></a></div></div></div></li>
+<li class="r1"><div class="column c1"><div class="main-menu-content"><div class="activity"><a onclick="window.open('https://moodle.unipampa.edu.br/mod/url/view.php?id=13765&amp;redirect=1', '', 'width=620,height=450,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes'); return false;" href="https://moodle.unipampa.edu.br/moodle/mod/url/view.php?id=13765"><img class="iconlarge activityicon" role="presentation" alt=" " src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/url/1486561592/icon"><span class="instancename">Confer\C3\AAncias On-line<span class="accesshide "> URL</span></span></a></div></div></div></li>
+<li class="r0"><div class="column c1"><div class="main-menu-content"><div class="no-overflow"><div class="no-overflow">
+<div style="text-align: center;"><span style="font-style: italic; font-weight: bold;"><br>Institucional<br></span></div> </div></div></div></div></li>
+<li class="r1"><div class="column c1"><div class="main-menu-content"><div class="activity"><a onclick="" href="https://moodle.unipampa.edu.br/moodle/mod/url/view.php?id=13760"><img class="iconlarge activityicon" role="presentation" alt=" " src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/url/1486561592/icon"><span class="instancename">UNIPAMPA<span class="accesshide "> URL</span></span></a></div></div></div></li>
+<li class="r0"><div class="column c1"><div class="main-menu-content"><div class="activity"><a onclick="" href="https://moodle.unipampa.edu.br/moodle/mod/url/view.php?id=13761"><img class="iconlarge activityicon" role="presentation" alt=" " src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/url/1486561592/icon"><span class="instancename">Coordenadoria de EAD<span class="accesshide "> URL</span></span></a></div></div></div></li>
+<li class="r1"><div class="column c1"><div class="main-menu-content"><div class="activity"><a onclick="" href="https://moodle.unipampa.edu.br/moodle/mod/url/view.php?id=13762"><img class="iconlarge activityicon" role="presentation" alt=" " src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/url/1486561592/icon"><span class="instancename">DTIC - Diretoria de Tecnologia da Informa\C3\A7\C3\A3o e Comunica\C3\A7\C3\A3o<span class="accesshide "> URL</span></span></a></div></div></div></li>
+<li class="r0"><div class="column c1"><div class="main-menu-content"><div class="no-overflow"><div class="no-overflow"><p><span style='font: italic bold 14px/20px "Source Sans Pro"; text-align: center; color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; float: none; display: inline !important; white-space: normal; widows: 1; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;'><br></span></p><p><span style='font: italic bold 14px/20px "Source Sans Pro"; text-align: center; color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; float: none; display: inline !important; white-space: normal; widows: 1; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;'>Acessibilidade</span></p></div></div></div></div></li>
+<li class="r1"><div class="column c1"><div class="main-menu-content"><div class="activity"><a onclick="" href="https://moodle.unipampa.edu.br/moodle/mod/url/view.php?id=114082"><img class="iconlarge activityicon" role="presentation" alt=" " src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/url/1486561592/icon"><span class="instancename">Leitor de Tela NVDA<span class="accesshide "> URL</span></span></a></div></div></div></li>
+<li class="r0"><div class="column c1"><div class="main-menu-content"><div class="activity"><a onclick="" href="https://moodle.unipampa.edu.br/moodle/mod/url/view.php?id=114083"><img class="iconlarge activityicon" role="presentation" alt=" " src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/f/sourcecode-24"><span class="instancename">Manual do NVDA<span class="accesshide "> URL</span></span></a></div></div></div></li></ul>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</aside>
+
+  <span id="sb-2"></span><a class="sr-only sr-only-focusable" href="#sb-3">Pular Mensagens</a>
+
+<aside class=" block block_messages  card m-b-1" id="inst20116" role="complementary" aria-labelledby="instance-20116-header" data-block="messages">
+
+    <div class="card-block">
+
+
+            <h3 class="card-title" id="instance-20116-header">Mensagens</h3>
+
+        <div class="card-text content">
+            <div class="info">Sem novas mensagens</div>
+            <div class="footer"><a id="action_link591911b7309602" href="https://moodle.unipampa.edu.br/moodle/message/index.php">Mensagens</a></div>
+            
+        </div>
+
+    </div>
+
+</aside>
+
+  <span id="sb-3"></span><a class="sr-only sr-only-focusable" href="#sb-4">Pular Calend\C3\A1rio</a>
+
+<aside class=" block block_calendar_month  card m-b-1" id="inst4" role="complementary" aria-labelledby="instance-4-header" data-block="calendar_month">
+
+    <div class="card-block">
+
+
+            <h3 class="card-title" id="instance-4-header">Calend\C3\A1rio</h3>
+
+        <div class="card-text content">
+            <table class="minicalendar calendartable" summary="May 2017 Calend\C3\A1rio"><caption><div class="calendar-controls"><a title="M\C3\AAs anterior" class="arrow_link previous" href="https://moodle.unipampa.edu.br/moodle/?time=1491015600"><span class="arrow ">\E2\97\84</span><span class="accesshide ">&nbsp;<span class="arrow_text">M\C3\AAs anterior</span></span></a><span class="hide"> | </span><span class="current"><a title="Este m\C3\AAs" href="https://moodle.unipampa.edu.br/moodle/calendar/view.php?view=month&amp;time=1494815159&amp;course=1">May 2017</a></span><span class="hide"> | </span><a title="Pr\C3\B3ximo m\C3\AAs" class="arrow_link next" href="https://moodle.unipampa.edu.br/moodle/?time=1496286000"><span class="accesshide "><span class="arrow_text">Pr\C3\B3ximo m\C3\AAs</span>&nbsp;</span><span class="arrow ">\E2\96\BA</span></a><span class="clearer"><!-- --></span>
+</div></caption><tbody><tr class="weekdays"><th scope="col"><abbr title="Domingo">Dom</abbr></th>
+<th scope="col"><abbr title="Segunda-feira">Seg</abbr></th>
+<th scope="col"><abbr title="Ter\C3\A7a-feira">Ter</abbr></th>
+<th scope="col"><abbr title="Quarta-feira">Qua</abbr></th>
+<th scope="col"><abbr title="Quinta-feira">Qui</abbr></th>
+<th scope="col"><abbr title="Sexta-feira">Sex</abbr></th>
+<th scope="col"><abbr title="S\C3\A1bado">S\C3\A1b</abbr></th>
+</tr><tr><td class="dayblank">&nbsp;</td>
+<td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td><td class="day hasevent calendar_event_course calendar_event_course" data-core_calendar-popupcontent='<div><img class="icon smallicon" alt="assign" title="assign" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/assign/1486561592/icon" /><a href="https://moodle.unipampa.edu.br/moodle/calendar/view.php?view=day&amp;amp;time=1493953200#event_25755">Exerc\C3\ADcio: Avalia\C3\A7\C3\A3o Heur\C3\ADstica de Usabilidade</a></div>' data-core_calendar-title="Friday, 5 May eventos"><a href="https://moodle.unipampa.edu.br/moodle/calendar/view.php?view=day&amp;time=1493953200#event_25755">5</a></td><td class="weekend day">6</td></tr><tr><td class="weekend day">7</td><td class="day">8</td><td class="day hasevent calendar_event_course calendar_event_course" data-core_calendar-popupcontent='<div><img class="icon smallicon" alt="assign" title="assign" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/assign/1486561592/icon" /><a href="https://moodle.unipampa.edu.br/moodle/calendar/view.php?view=day&amp;amp;time=1494298800#event_25738">Pr\C3\A1tica com Modelagem de Caso de Uso Concreto 1</a></div>' data-core_calendar-title="Tuesday, 9 May eventos"><a href="https://moodle.unipampa.edu.br/moodle/calendar/view.php?view=day&amp;time=1494298800#event_25738">9</a></td><td class="day">10</td><td class="day hasevent calendar_event_course calendar_event_course" data-core_calendar-popupcontent='<div><img class="icon smallicon" alt="assign" title="assign" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/assign/1486561592/icon" /><a href="https://moodle.unipampa.edu.br/moodle/calendar/view.php?view=day&amp;amp;time=1494471600#event_25855">Pr\C3\A1tica com Modelagem de Caso de Uso Concreto 2</a></div>' data-core_calendar-title="Thursday, 11 May eventos"><a href="https://moodle.unipampa.edu.br/moodle/calendar/view.php?view=day&amp;time=1494471600#event_25855">11</a></td><td class="day hasevent calendar_event_course duration_finish calendar_event_course" data-core_calendar-popupcontent='<div><img class="icon smallicon" alt="quiz" title="quiz" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/quiz/1486561592/icon" /><a href="https://moodle.unipampa.edu.br/moodle/calendar/view.php?view=day&amp;amp;time=1494558000#event_25883">UNIDADE 2 - Avalia\C3\A7\C3\A3o Diagn\C3\B3stica</a></div>' data-core_calendar-title="Friday, 12 May eventos"><a href="https://moodle.unipampa.edu.br/moodle/calendar/view.php?view=day&amp;time=1494558000#event_25883">12</a></td><td class="weekend day">13</td></tr><tr><td class="weekend day today eventnone" data-core_calendar-popupcontent="Nenhum evento" data-core_calendar-title="Hoje Sunday, 14 May"><span class="accesshide ">Hoje Sunday, 14 May </span><a href="#">14</a></td><td class="day">15</td><td class="day">16</td><td class="day">17</td><td class="day">18</td><td class="day">19</td><td class="weekend day">20</td></tr><tr><td class="weekend day">21</td><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day">25</td><td class="day">26</td><td class="weekend day">27</td></tr><tr><td class="weekend day">28</td><td class="day">29</td><td class="day">30</td><td class="day">31</td><td class="dayblank">&nbsp;</td><td class="dayblank">&nbsp;</td><td class="dayblank">&nbsp;</td></tr></tbody></table>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</aside>
+
+  <span id="sb-4"></span><a class="sr-only sr-only-focusable" href="#sb-5">Pular Usu\C3\A1rios Online</a>
+
+<aside class=" block block_online_users  card m-b-1" id="inst308" role="complementary" aria-labelledby="instance-308-header" data-block="online_users">
+
+    <div class="card-block">
+
+
+            <h3 class="card-title" id="instance-308-header">Usu\C3\A1rios Online</h3>
+
+        <div class="card-text content">
+            <div class="info">(\C3\BAltimos 5 minutos: 20)</div><ul class="list">
+<li class="listentry"><div class="user"><a title="4 segundos" href="https://moodle.unipampa.edu.br/moodle/user/view.php?id=20960&amp;course=1"><img width="16" height="16" title="" class="userpicture defaultuserpic" alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/u/f2">GILIARDI SCHMIDT</a></div></li>
+<li class="listentry"><div class="user"><a title="4 segundos" href="https://moodle.unipampa.edu.br/moodle/user/view.php?id=18198&amp;course=1"><img width="16" height="16" title="" class="userpicture defaultuserpic" alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/u/f2">ALEX GEOVANE DA SILVEIRA PEREIRA</a></div><div class="message"><a title="Enviar uma mensagem" href="https://moodle.unipampa.edu.br/moodle/message/index.php?id=18198"><img class="iconsmall" alt="Enviar uma mensagem" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message"></a></div></li>
+<li class="listentry"><div class="user"><a title="25 segundos" href="https://moodle.unipampa.edu.br/moodle/user/view.php?id=14554&amp;course=1"><img width="16" height="16" title="" class="userpicture defaultuserpic" alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/u/f2">ALISON BRUNO RIBEIRO DE SOUZA</a></div><div class="message"><a title="Enviar uma mensagem" href="https://moodle.unipampa.edu.br/moodle/message/index.php?id=14554"><img class="iconsmall" alt="Enviar uma mensagem" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message"></a></div></li>
+<li class="listentry"><div class="user"><a title="37 segundos" href="https://moodle.unipampa.edu.br/moodle/user/view.php?id=17937&amp;course=1"><img width="16" height="16" title="" class="userpicture defaultuserpic" alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/u/f2">JONNATHAN RIQUELMO LOPES FRESCURA</a></div><div class="message"><a title="Enviar uma mensagem" href="https://moodle.unipampa.edu.br/moodle/message/index.php?id=17937"><img class="iconsmall" alt="Enviar uma mensagem" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message"></a></div></li>
+<li class="listentry"><div class="user"><a title="1 minuto 22 segundos" href="https://moodle.unipampa.edu.br/moodle/user/view.php?id=27192&amp;course=1"><img width="16" height="16" title="" class="userpicture defaultuserpic" alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/u/f2">AMANDA BUSCH DA SILVA</a></div><div class="message"><a title="Enviar uma mensagem" href="https://moodle.unipampa.edu.br/moodle/message/index.php?id=27192"><img class="iconsmall" alt="Enviar uma mensagem" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message"></a></div></li>
+<li class="listentry"><div class="user"><a title="1 minuto 24 segundos" href="https://moodle.unipampa.edu.br/moodle/user/view.php?id=26110&amp;course=1"><img width="16" height="16" title="" class="userpicture" alt="" src="https://moodle.unipampa.edu.br/moodle/pluginfile.php/266063/user/icon/boost/f2?rev=1038496">DANIEL CLEU ALVES MARQUES</a></div><div class="message"><a title="Enviar uma mensagem" href="https://moodle.unipampa.edu.br/moodle/message/index.php?id=26110"><img class="iconsmall" alt="Enviar uma mensagem" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message"></a></div></li>
+<li class="listentry"><div class="user"><a title="1 minuto 24 segundos" href="https://moodle.unipampa.edu.br/moodle/user/view.php?id=25401&amp;course=1"><img width="16" height="16" title="" class="userpicture defaultuserpic" alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/u/f2">ENZO VASQUES PAZ</a></div><div class="message"><a title="Enviar uma mensagem" href="https://moodle.unipampa.edu.br/moodle/message/index.php?id=25401"><img class="iconsmall" alt="Enviar uma mensagem" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message"></a></div></li>
+<li class="listentry"><div class="user"><a title="1 minuto 28 segundos" href="https://moodle.unipampa.edu.br/moodle/user/view.php?id=20499&amp;course=1"><img width="16" height="16" title="" class="userpicture defaultuserpic" alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/u/f2">HENRIQUE TRAJANO DA SILVA</a></div><div class="message"><a title="Enviar uma mensagem" href="https://moodle.unipampa.edu.br/moodle/message/index.php?id=20499"><img class="iconsmall" alt="Enviar uma mensagem" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message"></a></div></li>
+<li class="listentry"><div class="user"><a title="1 minuto 29 segundos" href="https://moodle.unipampa.edu.br/moodle/user/view.php?id=21192&amp;course=1"><img width="16" height="16" title="" class="userpicture defaultuserpic" alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/u/f2">HERBERT CAETANO DA SILVA</a></div><div class="message"><a title="Enviar uma mensagem" href="https://moodle.unipampa.edu.br/moodle/message/index.php?id=21192"><img class="iconsmall" alt="Enviar uma mensagem" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message"></a></div></li>
+<li class="listentry"><div class="user"><a title="1 minuto 59 segundos" href="https://moodle.unipampa.edu.br/moodle/user/view.php?id=20146&amp;course=1"><img width="16" height="16" title="" class="userpicture defaultuserpic" alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/u/f2">FLAVIA LUIZA LAVACH</a></div><div class="message"><a title="Enviar uma mensagem" href="https://moodle.unipampa.edu.br/moodle/message/index.php?id=20146"><img class="iconsmall" alt="Enviar uma mensagem" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message"></a></div></li>
+<li class="listentry"><div class="user"><a title="2 minutos 4 segundos" href="https://moodle.unipampa.edu.br/moodle/user/view.php?id=25481&amp;course=1"><img width="16" height="16" title="" class="userpicture defaultuserpic" alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/u/f2">GUILHERME PETRIN</a></div><div class="message"><a title="Enviar uma mensagem" href="https://moodle.unipampa.edu.br/moodle/message/index.php?id=25481"><img class="iconsmall" alt="Enviar uma mensagem" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message"></a></div></li>
+<li class="listentry"><div class="user"><a title="2 minutos 10 segundos" href="https://moodle.unipampa.edu.br/moodle/user/view.php?id=24722&amp;course=1"><img width="16" height="16" title="" class="userpicture defaultuserpic" alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/u/f2">ANDRESSA RUBIM LOPES</a></div><div class="message"><a title="Enviar uma mensagem" href="https://moodle.unipampa.edu.br/moodle/message/index.php?id=24722"><img class="iconsmall" alt="Enviar uma mensagem" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message"></a></div></li>
+<li class="listentry"><div class="user"><a title="2 minutos 11 segundos" href="https://moodle.unipampa.edu.br/moodle/user/view.php?id=24855&amp;course=1"><img width="16" height="16" title="" class="userpicture defaultuserpic" alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/u/f2">LEANDRO DA SILVA CAMARGO</a></div><div class="message"><a title="Enviar uma mensagem" href="https://moodle.unipampa.edu.br/moodle/message/index.php?id=24855"><img class="iconsmall" alt="Enviar uma mensagem" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message"></a></div></li>
+<li class="listentry"><div class="user"><a title="2 minutos 16 segundos" href="https://moodle.unipampa.edu.br/moodle/user/view.php?id=25149&amp;course=1"><img width="16" height="16" title="" class="userpicture defaultuserpic" alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/u/f2">CRISTHOFER CUNHA MARQUES</a></div><div class="message"><a title="Enviar uma mensagem" href="https://moodle.unipampa.edu.br/moodle/message/index.php?id=25149"><img class="iconsmall" alt="Enviar uma mensagem" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message"></a></div></li>
+<li class="listentry"><div class="user"><a title="2 minutos 52 segundos" href="https://moodle.unipampa.edu.br/moodle/user/view.php?id=17921&amp;course=1"><img width="16" height="16" title="" class="userpicture defaultuserpic" alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/u/f2">ISADORA MOREIRA MINICH</a></div><div class="message"><a title="Enviar uma mensagem" href="https://moodle.unipampa.edu.br/moodle/message/index.php?id=17921"><img class="iconsmall" alt="Enviar uma mensagem" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message"></a></div></li>
+<li class="listentry"><div class="user"><a title="3 minutos 15 segundos" href="https://moodle.unipampa.edu.br/moodle/user/view.php?id=22924&amp;course=1"><img width="16" height="16" title="" class="userpicture defaultuserpic" alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/u/f2">BEATRIZ SILVEIRA FREITAS</a></div><div class="message"><a title="Enviar uma mensagem" href="https://moodle.unipampa.edu.br/moodle/message/index.php?id=22924"><img class="iconsmall" alt="Enviar uma mensagem" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message"></a></div></li>
+<li class="listentry"><div class="user"><a title="3 minutos 22 segundos" href="https://moodle.unipampa.edu.br/moodle/user/view.php?id=12607&amp;course=1"><img width="16" height="16" title="" class="userpicture defaultuserpic" alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/u/f2">JOAO VICTOR ROCHA SEVERO</a></div><div class="message"><a title="Enviar uma mensagem" href="https://moodle.unipampa.edu.br/moodle/message/index.php?id=12607"><img class="iconsmall" alt="Enviar uma mensagem" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message"></a></div></li>
+<li class="listentry"><div class="user"><a title="3 minutos 58 segundos" href="https://moodle.unipampa.edu.br/moodle/user/view.php?id=24503&amp;course=1"><img width="16" height="16" title="" class="userpicture defaultuserpic" alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/u/f2">LAURA GOMES RODRIGUES DOS SANTOS</a></div><div class="message"><a title="Enviar uma mensagem" href="https://moodle.unipampa.edu.br/moodle/message/index.php?id=24503"><img class="iconsmall" alt="Enviar uma mensagem" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message"></a></div></li>
+<li class="listentry"><div class="user"><a title="4 minutos 22 segundos" href="https://moodle.unipampa.edu.br/moodle/user/view.php?id=17705&amp;course=1"><img width="16" height="16" title="" class="userpicture defaultuserpic" alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/u/f2">TIAGO MACHADO JARDIM</a></div><div class="message"><a title="Enviar uma mensagem" href="https://moodle.unipampa.edu.br/moodle/message/index.php?id=17705"><img class="iconsmall" alt="Enviar uma mensagem" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message"></a></div></li>
+<li class="listentry"><div class="user"><a title="4 minutos 35 segundos" href="https://moodle.unipampa.edu.br/moodle/user/view.php?id=11922&amp;course=1"><img width="16" height="16" title="" class="userpicture defaultuserpic" alt="" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/u/f2">JORGE PERES DA CUNHA</a></div><div class="message"><a title="Enviar uma mensagem" href="https://moodle.unipampa.edu.br/moodle/message/index.php?id=11922"><img class="iconsmall" alt="Enviar uma mensagem" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/t/message"></a></div></li>
+</ul><div class="clearer"><!-- --></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</aside>
+
+  <span id="sb-5"></span><a class="sr-only sr-only-focusable" href="#sb-6">Pular Recupera\C3\A7\C3\A3o de login e senha</a>
+
+<aside class=" block block_html  card m-b-1" id="inst21959" role="complementary" aria-labelledby="instance-21959-header" data-block="html">
+
+    <div class="card-block">
+
+
+            <h3 class="card-title" id="instance-21959-header">Recupera\C3\A7\C3\A3o de login e senha</h3>
+
+        <div class="card-text content">
+            <div class="no-overflow"><div style="text-align: justify;">Para recuperar login e senha institucionais alunos, docentes e t\C3\A9cnicos administrativos devem acessar o Painel de Servi\C3\A7os UNIPAMPA - <b><a href="http://www.unipampa.edu.br/servicos" target="_blank">http://www.unipampa.edu.br/servicos</a>.</b></div></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</aside>
+
+  <span id="sb-6"></span><a class="sr-only sr-only-focusable" href="#sb-7">Pular Professores</a>
+
+<aside class=" block block_html  card m-b-1" id="inst2419" role="complementary" aria-labelledby="instance-2419-header" data-block="html">
+
+    <div class="card-block">
+
+
+            <h3 class="card-title" id="instance-2419-header">Professores</h3>
+
+        <div class="card-text content">
+            <div class="no-overflow"><span style="font-weight: bold;">Como criar sua disciplina no Moodle? </span><br>1 - Acesse o <a style="font-weight: bold;" href="https://gaucha.unipampa.edu.br/" target="_blank">GAUCHA</a><br><span style='text-align: left; color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: "Source Sans Pro"; font-size: 14px; font-style: normal; font-weight: normal; word-spacing: 0px; float: none; display: inline !important; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px; font-variant-ligatures: normal; font-variant-caps: normal;'>2 - Clicar em "Criar um chamado"</span><br style='text-align: left; color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: "Source Sans Pro"; font-size: 14px; font-style: normal; font-weight: normal; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px; font-variant-ligatures: normal; font-variant-caps: normal;'><span style='text-align: left; color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: "Source Sans Pro"; font-size: 14px; font-style: normal; font-weight: normal; word-spacing: 0px; float: none; display: inline !important; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px; font-variant-ligatures: normal; font-variant-caps: normal;'>3 - Escolher categoria "Suporte de TI"</span><br style='text-align: left; color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: "Source Sans Pro"; font-size: 14px; font-style: normal; font-weight: normal; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px; font-variant-ligatures: normal; font-variant-caps: normal;'><span style='text-align: left; color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: "Source Sans Pro"; font-size: 14px; font-style: normal; font-weight: normal; word-spacing: 0px; float: none; display: inline !important; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px; font-variant-ligatures: normal; font-variant-caps: normal;'>4 - Definir urg\C3\AAncia conforme demanda</span><br style='text-align: left; color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: "Source Sans Pro"; font-size: 14px; font-style: normal; font-weight: normal; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px; font-variant-ligatures: normal; font-variant-caps: normal;'><span style='text-align: left; color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: "Source Sans Pro"; font-size: 14px; font-style: normal; font-weight: normal; word-spacing: 0px; float: none; display: inline !important; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px; font-variant-ligatures: normal; font-variant-caps: normal;'>5 - Escolher a sua unidade e localiza\C3\A7\C3\A3o</span><span style='text-align: left; color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: "Source Sans Pro"; font-size: 14px; font-style: normal; font-weight: normal; text-decoration: underline; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px; font-variant-ligatures: normal; font-variant-caps: normal;'><span style='font-family: "Source Sans Pro"; font-weight: bold;'><br style='font-family: "Source Sans Pro";'></span></span><a style='text-align: left; color: rgb(0, 165, 97); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: "Source Sans Pro"; font-size: 14px; font-style: normal; font-weight: bold; text-decoration: none; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px; font-variant-ligatures: normal; font-variant-caps: normal;' href="http://moodle.unipampa.edu.br/course/request.php" target="_top"></a><p style='margin: 0px 0px 10px; text-align: left; color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: "Source Sans Pro"; font-size: 14px; font-style: normal; font-weight: normal; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px; font-variant-ligatures: normal; font-variant-caps: normal;'>6 - No t\C3\ADtulo informar "Cria\C3\A7\C3\A3o de disciplina no Moodle"<br style='font-family: "Source Sans Pro";'>7 - Na descri\C3\A7\C3\A3o indicar os dados da disciplina (nome, curso e docentes)</p><a style="font-weight: bold;" href="http://moodle.unipampa.edu.br/course/request.php" target="_top"></a></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</aside>
+
+  <span id="sb-7"></span><a class="sr-only sr-only-focusable" href="#sb-8">Pular Alunos</a>
+
+<aside class=" block block_html  card m-b-1" id="inst2420" role="complementary" aria-labelledby="instance-2420-header" data-block="html">
+
+    <div class="card-block">
+
+
+            <h3 class="card-title" id="instance-2420-header">Alunos</h3>
+
+        <div class="card-text content">
+            <div class="no-overflow">
+<div style="text-align: justify;"><span style="font-weight: bold;">Como se matricular em uma disciplina?</span><br></div>1 - Acesse o ambiente Moodle. <br>2 - Localize a disciplina. <br>
+<div style="text-align: justify;">3 - Matricule-se na disciplina utilizando o c\C3\B3digo de inscri\C3\A7\C3\A3o fornecido pelo professor.</div></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</aside>
+
+  <span id="sb-8"></span></aside>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div tabindex="-1" class="hidden-print moodle-has-zindex " id="nav-drawer" aria-hidden="false" data-region="drawer">
+        <nav class="list-group">
+            <a class="list-group-item list-group-item-action font-weight-bold" href="https://moodle.unipampa.edu.br/moodle/" data-key="home">
+                <div class="m-l-0">
+                        P\C3\A1gina inicial
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.unipampa.edu.br/moodle/my/" data-key="home">
+                <div class="m-l-0">
+                        Painel
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.unipampa.edu.br/moodle/calendar/view.php?view=month" data-key="calendar">
+                <div class="m-l-0">
+                        Calend\C3\A1rio
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.unipampa.edu.br/moodle/user/files.php" data-key="4">
+                <div class="m-l-0">
+                        Arquivos privados
+                </div>
+            </a>
+            <div class="list-group-item" data-key="mycourses">
+                <div class="m-l-0">
+                    Meus cursos
+                </div>
+            </div>
+            <a class="list-group-item list-group-item-action " href="https://moodle.unipampa.edu.br/moodle/course/view.php?id=5893" data-key="5893">
+                <div class="m-l-1">
+                        PSD_CC3_2017_01
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.unipampa.edu.br/moodle/course/view.php?id=3995" data-key="3995">
+                <div class="m-l-1">
+                        Teoria dos Grafos 02/2016
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.unipampa.edu.br/moodle/course/view.php?id=6371" data-key="6371">
+                <div class="m-l-1">
+                        ADes-ES 2017
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.unipampa.edu.br/moodle/course/view.php?id=6029" data-key="6029">
+                <div class="m-l-1">
+                        IHC - Intera\C3\A7\C3\A3o Humano-Computador 2017/1
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.unipampa.edu.br/moodle/course/view.php?id=5953" data-key="5953">
+                <div class="m-l-1">
+                        RP III 2017/1
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.unipampa.edu.br/moodle/course/view.php?id=5205" data-key="5205">
+                <div class="m-l-1">
+                        Teste e Depura\C3\A7\C3\A3o - 2016/2
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.unipampa.edu.br/moodle/course/view.php?id=5178" data-key="5178">
+                <div class="m-l-1">
+                        ES - Programa\C3\A7\C3\A3o Orientada a Objetos - 2016/2
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.unipampa.edu.br/moodle/course/view.php?id=4884" data-key="4884">
+                <div class="m-l-1">
+                        AP2016/1
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.unipampa.edu.br/moodle/course/view.php?id=4825" data-key="4825">
+                <div class="m-l-1">
+                        ICT_ES1_2016_01
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.unipampa.edu.br/moodle/course/view.php?id=4824" data-key="4824">
+                <div class="m-l-1">
+                        RP1_ES1_2016_01
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.unipampa.edu.br/moodle/course/view.php?id=4233" data-key="4233">
+                <div class="m-l-1">
+                        ADes-ES 2016
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.unipampa.edu.br/moodle/course/view.php?id=2994" data-key="2994">
+                <div class="m-l-1">
+                        Modelagem e Projeto de Banco de Dados -  2017/01
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://moodle.unipampa.edu.br/moodle/course/view.php?id=1154" data-key="1154">
+                <div class="m-l-1">
+                        MPS - 2017/01
+                </div>
+            </a>
+        </nav>
+    </div>
+</div><div id="yui3-css-stamp" style="visibility: hidden !important; position: absolute !important;"></div>
+<footer class="p-y-1 bg-inverse" id="page-footer">
+    <div class="container">
+        <div id="course-footer"></div>
+
+
+        <div class="logininfo">Voc\C3\AA acessou como <a title="Ver perfil" href="https://moodle.unipampa.edu.br/moodle/user/profile.php?id=20960">GILIARDI SCHMIDT</a> (<a href="https://moodle.unipampa.edu.br/moodle/login/logout.php?sesskey=8romo6CVTh">Sair</a>)</div>
+        <div class="sitelink"><a title="Moodle" href="http://moodle.org/"><img alt="Logotipo Moodle" src="https://moodle.unipampa.edu.br/moodle/theme/image.php/boost/core/1486561592/moodlelogo"></a></div>
+        <nav class="nav navbar-nav hidden-lg-up">
+                <ul class="list-unstyled p-t-1">
+                                    <li><a title="Idioma" href="#">Portugu\C3\AAs - Brasil \E2\80\8E(pt_br)\E2\80\8E</a></li>
+                                <ul class="list-unstyled m-l-1">
+                                                    <li><a title="English \E2\80\8E(en)\E2\80\8E" href="https://moodle.unipampa.edu.br/moodle/?lang=en">English \E2\80\8E(en)\E2\80\8E</a></li>
+                                                    <li><a title="Portugu\C3\AAs - Brasil \E2\80\8E(pt_br)\E2\80\8E" href="https://moodle.unipampa.edu.br/moodle/?lang=pt_br">Portugu\C3\AAs - Brasil \E2\80\8E(pt_br)\E2\80\8E</a></li>
+                                </ul>
+                </ul>
+        </nav>
+        
+        <script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://moodle.unipampa.edu.br/moodle/lib/requirejs.php/1486561592/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://moodle.unipampa.edu.br/moodle/lib/javascript.php/1486561592/lib/jquery/jquery-3.1.0.min',
+        jqueryui: 'https://moodle.unipampa.edu.br/moodle/lib/javascript.php/1486561592/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://moodle.unipampa.edu.br/moodle/lib/javascript.php/1486561592/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://moodle.unipampa.edu.br/moodle/lib/javascript.php/1486561592/lib/requirejs/require.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://moodle.unipampa.edu.br/moodle/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("pt-BR",{
+ "Play": "Tocar",
+ "Pause": "Pausar",
+ "Current Time": "Tempo",
+ "Duration Time": "Dura\C3\A7\C3\A3o",
+ "Remaining Time": "Tempo Restante",
+ "Stream Type": "Tipo de Stream",
+ "LIVE": "AO VIVO",
+ "Loaded": "Carregado",
+ "Progress": "Progresso",
+ "Fullscreen": "Tela Cheia",
+ "Non-Fullscreen": "Tela Normal",
+ "Mute": "Mudo",
+ "Unmute": "Habilitar Som",
+ "Playback Rate": "Velocidade",
+ "Subtitles": "Legendas",
+ "subtitles off": "Sem Legendas",
+ "Captions": "Anota\C3\A7\C3\B5es",
+ "captions off": "Sem Anota\C3\A7\C3\B5es",
+ "Chapters": "Cap\C3\ADtulos",
+ "You aborted the media playback": "Voc\C3\AA parou a execu\C3\A7\C3\A3o do v\C3\ADdeo.",
+ "A network error caused the media download to fail part-way.": "Um erro na rede fez o v\C3\ADdeo parar parcialmente.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "O v\C3\ADdeo n\C3\A3o pode ser carregado, ou porque houve um problema com sua rede ou pelo formato do v\C3\ADdeo n\C3\A3o ser suportado.",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "A execu\C3\A7\C3\A3o foi interrompida por um problema com o v\C3\ADdeo ou por seu navegador n\C3\A3o dar suporte ao seu formato.",
+ "No compatible source was found for this media.": "N\C3\A3o foi encontrada fonte de v\C3\ADdeo compat\C3\ADvel."
+});
+
+    });
+});;
+function legacy_activity_onclick_handler_1(e) { e.halt(); window.open('https://moodle.unipampa.edu.br/mod/url/view.php?id=29342&redirect=1', '', 'width=620,height=450,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes'); return false; };
+function legacy_activity_onclick_handler_2(e) { e.halt(); window.open('https://moodle.unipampa.edu.br/mod/resource/view.php?id=13758&redirect=1', '', 'width=620,height=450,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes'); return false; };
+function legacy_activity_onclick_handler_3(e) { e.halt(); window.open('https://moodle.unipampa.edu.br/mod/resource/view.php?id=39433&redirect=1', '', 'width=620,height=450,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes'); return false; };
+function legacy_activity_onclick_handler_4(e) { e.halt(); window.open('https://moodle.unipampa.edu.br/mod/url/view.php?id=13765&redirect=1', '', 'width=620,height=450,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes'); return false; };
+
+require(['jquery', 'message_popup/message_popover_controller'], function($, controller) {
+    var container = $('#nav-message-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['core/yui'], function(Y) {
+    Y.use('moodle-core-formautosubmit', function() {
+        M.core.init_formautosubmit({
+            selectid: 'single_select591911b73096014',
+            nothing: false
+        });
+    });
+});
+;
+
+require(['core/yui'], function(Y) {
+    Y.use('moodle-core-formautosubmit', function() {
+        M.core.init_formautosubmit({
+            selectid: 'single_select591911b73096016',
+            nothing: false
+        });
+    });
+});
+;
+
+require(['theme_boost/loader']);
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+;
+require(["core/notification"], function(amd) { amd.init(2, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"\\u00daltima atualiza\\u00e7\\u00e3o","name":"Nome","error":"Erro","info":"Informa\\u00e7\\u00e3o","yes":"Sim","no":"N\\u00e3o","morehelp":"Mais ajuda","loadinghelp":"Carregando...","cancel":"Cancelar","collapseall":"Contrair tudo","expandall":"Expandir tudo","confirm":"Confirmar","areyousure":"Voc\\u00ea tem certeza?","closebuttontitle":"Fechar","unknownerror":"Erro desconhecido"},"repository":{"type":"Tipo","size":"Tamanho","invalidjson":"palavra JSON inv\\u00e1lida","nofilesattached":"Nenhum arquivo anexado","filepicker":"File picker","logout":"Sair","nofilesavailable":"Nenhum arquivo dispon\\u00edvel","norepositoriesavailable":"Desculpe, nenhum dos seus reposit\\u00f3rios atuais pode retornar arquivos no formato solicitado.","fileexistsdialogheader":"Arquivo existe","fileexistsdialog_editor":"Um arquivo com este nome j\\u00e1 foi anexado ao texto que voc\\u00ea est\\u00e1 editando.","fileexistsdialog_filemanager":"Um arquivo com este nome j\\u00e1 foi anexado","renameto":"Renomear para \\"{$a}\\"","referencesexist":"H\\u00e1 {$a} arquivos pseud\\u00f4nimos\\/atalhos que usam este arquivo como fonte","select":"Selecione"},"admin":{"confirmdeletecomments":"Voc\\u00ea est\\u00e1 prestes a excluir coment\\u00e1rios, tem certeza?","confirmation":"Confirma\\u00e7\\u00e3o"},"block_accessibility":{"saved":"Defini\\u00e7\\u00e3o salva","jsnosave":"Error saving settings","reset":"Setting Cleared","jsnosizereset":"Error resetting text size","jsnocolourreset":"Erro ao redefinir o esquema de cores","jsnosize":"Error changing size","jsnocolour":"Erro ao alterar o esquema de cores","jsnotloggedin":"Error! Please check if you are logged-in to the system or contact your administrator","launchtoolbar":"Launch ATbar"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {setTimeout("fix_column_widths()", 20);
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\\nMathJax.Hub.Config({\\n    config: [\\"Accessible.js\\", \\"Safe.js\\"],\\n    errorSettings: { message: [\\"!\\"] },\\n    skipStartupTypeset: true,\\n    messageStyle: \\"none\\"\\n});\\n","lang":"en"});
+});
+ M.util.js_pending('random591911b7309601'); Y.use('block_accessibility', function(Y) { M.block_accessibility.init(Y, false, "47031");  M.util.js_complete('random591911b7309601'); });
+Y.use("moodle-calendar-info",function() {Y.M.core_calendar.info.init();
+});
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+Y.use("moodle-course-categoryexpander",function() {Y.Moodle.course.categoryexpander.init();
+});
+ M.util.js_pending('random591911b73096017'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random591911b73096017'); });
+})();
+//]]>
+</script>
+
+    </div>
+</footer>
+
+
+</body></html>

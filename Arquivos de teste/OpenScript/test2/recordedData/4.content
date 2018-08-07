@@ -1,0 +1,80 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+<title>Moodle</title>
+<style>
+	body {
+		background: #f4f4f4;
+		font-family: 'Open Sans', sans-serif;
+	}
+	.marca {
+		display: block;
+		width: 428px;
+		margin: 20px auto;
+	}
+	.texto-escolha {
+		font-size: 35px;
+		color: #444;
+		text-align: center;
+	}
+	#corpo {
+		margin: 0 auto;
+		display: table;
+	}
+	.bloco {
+		float: left;
+		width: 435px;
+		height: 400px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		background: #fff;
+		border: 1px solid #eaeaea;
+		box-sizing: border-box;
+		padding: 10px 35px;
+		text-align: center;
+	}
+	.titulo-entrada {
+		font-size: 36px;
+		font-weight: 800;
+		color: #009045;
+		margin-bottom: 22px;
+	}
+	.texto-entrada {
+		font-size: 14px;
+		line-height: 28px;
+		color: #444;
+		margin-bottom: 22px;
+	}
+	.botao-entrar {
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		background: #009045;
+		border-radius: 3px;
+		color: #fff;
+		font-size: 18px;
+		font-weight: 800;
+		padding: 12px 20px 14px;
+		margin-top: 10px;
+	}
+</style>
+</head>
+<body>
+	<h1><img class="marca" alt="Unipampa" src="marca.png"></h1>
+    <p class="texto-escolha">Escolha uma das op\C3\A7\C3\B5es:</p>
+    <div id="corpo">
+        <div class="bloco">
+            <h2 class="titulo-entrada">Moodle<br>Cursos Presenciais</h2>
+            <p class="texto-entrada">Acesso \C3\A0s atividades de apoio dos cursos presenciais da UNIPAMPA e capacita\C3\A7\C3\B5es ofertadas pelo N\C3\BAcleo de Desenvolvimento de Pessoal (NUDEPE).</p>
+            <a class="botao-entrar" href="https://moodle.unipampa.edu.br/moodle">ACESSAR</a>
+        </div>
+        <div class="bloco">
+            <h2 class="titulo-entrada">Moodle<br>EAD e UAB</h2>
+            <p class="texto-entrada">Acesso a cursos na modalidade a dist\C3\A2ncia ofertados pela UNIPAMPA, bem como aqueles no \C3\A2mbito do Sistema Universidade Aberta do Brasil (UAB).</p>
+            <a class="botao-entrar" href="https://moodle-ead.unipampa.edu.br">ACESSAR</a>
+        </div>
+    </div>
+
+
+
+</body></html>
