@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using ControlAndConversionStructures;
+using Lesse.Core.ControlAndConversionStructures;
 using UTestUtil;
 
 namespace Coc.Data.Xmi.UTest

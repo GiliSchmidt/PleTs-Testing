@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Coc.Modeling.Graph;
-using Coc.Data.Interfaces;
-using Coc.Data.ControlStructure;
-using Coc.Modeling.TestPlanStructure;
-using Coc.Data.CSV;
-using Coc.Data.ControlAndConversionStructures;
+using Lesse.Core.ControlAndConversionStructures;
+using Lesse.Core.ControlStructure;
+using Lesse.Core.Interfaces;
+using Lesse.Modeling.Graph;
+using Lesse.Modeling.TestPlanStructure;
+using Lesse.Util.CSV;
 
-namespace Coc.Data.DFS
+namespace Lesse.MTM.DFS
 {
     public class DepthFirstSearch : SequenceGenerator
     {

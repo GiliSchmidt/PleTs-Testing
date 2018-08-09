@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Text.RegularExpressions;
-using Coc.Data.CSV;
-using Coc.Modeling.TestPlanStructure;
-using Coc.Modeling.Graph;
+using System.Web;
+using Lesse.Modeling.Graph;
+using Lesse.Modeling.TestPlanStructure;
+using Lesse.Util.CSV;
 
-namespace Coc.Data.DFS
+namespace Lesse.MTM.DFS
 {
     public class GenerateTestPlan
     {

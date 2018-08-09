@@ -1,11 +1,10 @@
-﻿
-using Coc.Data.ControlAndConversionStructures;
-using Coc.Data.ControlStructure;
-using Coc.Data.ConversionUnit;
-using Coc.Data.Xmi;
-using OgmaJOATSParser;
+﻿using Coc.Data.Xmi;
 using System;
 using System.Collections.Generic;
+using Lesse.Core.ControlAndConversionStructures;
+using Lesse.Core.ControlStructure;
+using Lesse.Core.ConversionUnit;
+using Lesse.OATS.OgmaJParser;
 
 namespace UTestUtil
 {

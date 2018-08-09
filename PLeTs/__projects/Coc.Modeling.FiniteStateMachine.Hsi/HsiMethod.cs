@@ -2,20 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Coc.Data.ControlStructure;
-using Coc.Data.Interfaces;
-using Coc.Modeling.TestPlanStructure;
-using Coc.Data.CSV;
-using Coc.Modeling.FiniteStateMachine;
-using Coc.Data.ControlAndConversionStructures;
-using Coc.Modeling.TestSuitStructure;
+using Lesse.Core.ControlAndConversionStructures;
+using Lesse.Core.ControlStructure;
+using Lesse.Core.Interfaces;
+using Lesse.Modeling.FiniteStateMachine;
+using Lesse.Modeling.TestPlanStructure;
+using Lesse.Modeling.TestSuitStructure;
+using Lesse.Util.CSV;
+using TestCase = Lesse.Modeling.TestPlanStructure.TestCase;
 
-namespace Coc.Data.HSI
+namespace Coc.Modeling.FiniteStateMachine.Hsi
 {
     public class HsiMethod : SequenceGenerator
     {
         #region Attributes
-        private FiniteStateMachine fsm;
+        private Lesse.Modeling.FiniteStateMachine.FiniteStateMachine fsm;
         private StatePair[] statePairGroup;
         private List<FailnessRecord> failnessTable;
         private String[][] hiSet;
@@ -57,7 +58,7 @@ namespace Coc.Data.HSI
 
             foreach (GeneralUseStructure sgs in listSequenceGenerationStructure)
             {
-                this.fsm = (FiniteStateMachine)sgs;
+                this.fsm = (Lesse.Modeling.FiniteStateMachine.FiniteStateMachine)sgs;
                 String[][] sequence = this.GenerateTestCases();
                 //Verify what to do in this step when using PerformanceTool
                 List<CsvParamFile> listCSV = listGeneralStructure.OfType<CsvParamFile>().ToList();
@@ -698,9 +699,9 @@ namespace Coc.Data.HSI
         private void GeneralTPGenerator(List<TestPlan> listPlan, List<TestStep> listTestStep)
         {
             TestPlan testPlanGeral = new TestPlan();
-            Coc.Modeling.TestPlanStructure.TestCase testCaseGeral = new Coc.Modeling.TestPlanStructure.TestCase("GeneralTestCase1");
+            TestCase testCaseGeral = new TestCase("GeneralTestCase1");
             TestPlan testPlanAux = listPlan[listPlan.Count - 1];
-            Coc.Modeling.TestPlanStructure.TestCase testAux = testPlanAux.TestCases[testPlanAux.TestCases.Count - 1];
+            TestCase testAux = testPlanAux.TestCases[testPlanAux.TestCases.Count - 1];
             int valor = testAux.WorkItemId;
             
             valor = valor + 1;
@@ -709,7 +710,7 @@ namespace Coc.Data.HSI
             
             foreach (TestPlan testPlan in listPlan)
             {
-                foreach (Coc.Modeling.TestPlanStructure.TestCase testCase in testPlan.TestCases)
+                foreach (TestCase testCase in testPlan.TestCases)
                 {
                     bool initial = true;
                     foreach (TestStep testStep in testCase.TestSteps)
@@ -773,7 +774,7 @@ namespace Coc.Data.HSI
         {
             public StatePair SourcePair = null;
             public StatePair TargetPair = null;
-            public String Input = FiniteStateMachine.EPSILON;
+            public String Input = Lesse.Modeling.FiniteStateMachine.FiniteStateMachine.EPSILON;
             public Failness Status = Failness.Invalid;
             
             public override String ToString()

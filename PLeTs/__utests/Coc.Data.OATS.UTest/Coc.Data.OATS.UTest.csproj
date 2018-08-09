@@ -52,13 +52,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\__projects\Coc.Data.ControlAndConversionStructures\Coc.Data.ControlAndConversionStructures.csproj">
+    <ProjectReference Include="..\..\__projects\Lesse.Core.ControlAndConversionStructures\Lesse.Core.ControlAndConversionStructures.csproj">
       <Project>{AC4DEDF3-8BC9-4B66-92C5-858A1AB00A27}</Project>
-      <Name>Coc.Data.ControlAndConversionStructures</Name>
+      <Name>Lesse.Core.ControlAndConversionStructures</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\__projects\Coc.Data.OATS\Coc.Data.OATS.csproj">
-      <Project>{a0eaa259-abcc-4e3b-b283-b8f8d4b6876b}</Project>
-      <Name>Coc.Data.OATS</Name>
+    <ProjectReference Include="..\..\__projects\Lesse.OATS\Lesse.OATS.csproj">
+      <Project>{A0EAA259-ABCC-4E3B-B283-B8F8D4B6876B}</Project>
+      <Name>Lesse.OATS</Name>
     </ProjectReference>
     <ProjectReference Include="..\UTestUtil\UTestUtil.csproj">
       <Project>{4068AE81-6344-43AF-8253-C4FC48215DB9}</Project>

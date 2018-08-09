@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Coc.Data.Interfaces;
 using System.Xml;
-using Coc.Modeling.Uml;
-using Coc.Data.ControlAndConversionStructures;
 using System.Diagnostics;
 using System.IO;
-using ControlAndConversionStructures;
+using Lesse.Core.ControlAndConversionStructures;
+using Lesse.Core.Interfaces;
+using Lesse.Modeling.Uml;
 
 namespace Coc.Data.Xmi
 {

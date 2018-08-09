@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Xml;
-using Coc.Modeling.TestPlanStructure;
+using Lesse.Modeling.TestPlanStructure;
 
 namespace Coc.Data.Xml.SequenceModelExport
 {

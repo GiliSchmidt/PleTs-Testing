@@ -60,29 +60,29 @@
     <Compile Include="UmlToGraphTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\__projects\Coc.Modeling.FiniteStateMachine\Coc.Modeling.FiniteStateMachine.csproj">
-      <Project>{1CC27328-CE37-4147-9C53-4A530B8B3E7F}</Project>
-      <Name>Coc.Modeling.FiniteStateMachine</Name>
+    <ProjectReference Include="..\..\__projects\Lesse.Core.ControlAndConversionStructures\Lesse.Core.ControlAndConversionStructures.csproj">
+      <Project>{ac4dedf3-8bc9-4b66-92c5-858a1ab00a27}</Project>
+      <Name>Lesse.Core.ControlAndConversionStructures</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\__projects\Coc.Modeling.Uml\Coc.Modeling.Uml.csproj">
-      <Project>{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}</Project>
-      <Name>Coc.Modeling.Uml</Name>
+    <ProjectReference Include="..\..\__projects\Lesse.Core.ControlStructure\Lesse.Core.ControlStructure.csproj">
+      <Project>{ff241b72-d0b0-42a3-84e4-5b243e07f148}</Project>
+      <Name>Lesse.Core.ControlStructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\__projects\Lesse.Core.ConversionUnit\Lesse.Core.ConversionUnit.csproj">
+      <Project>{f6be6cd4-3590-40f8-b4fc-ca3341af2889}</Project>
+      <Name>Lesse.Core.ConversionUnit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\__projects\Lesse.Modeling.FiniteStateMachine\Lesse.Modeling.FiniteStateMachine.csproj">
+      <Project>{1cc27328-ce37-4147-9c53-4a530b8b3e7f}</Project>
+      <Name>Lesse.Modeling.FiniteStateMachine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\__projects\Lesse.Modeling.Uml\Lesse.Modeling.Uml.csproj">
+      <Project>{ac0ceeef-c2f2-45fa-904a-2e758a6b5a3a}</Project>
+      <Name>Lesse.Modeling.Uml</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\__utests\UTestUtil\UTestUtil.csproj">
       <Project>{4068ae81-6344-43af-8253-c4fc48215db9}</Project>
       <Name>UTestUtil</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\__projects\Coc.Data.ControlAndConversionStructures\Coc.Data.ControlAndConversionStructures.csproj">
-      <Project>{AC4DEDF3-8BC9-4B66-92C5-858A1AB00A27}</Project>
-      <Name>Coc.Data.ControlAndConversionStructures</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\__projects\Coc.Data.ControlStructure\Coc.Data.ControlStructure.csproj">
-      <Project>{FF241B72-D0B0-42A3-84E4-5B243E07F148}</Project>
-      <Name>Coc.Data.ControlStructure</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\__projects\Coc.Data.ConversionUnit\Coc.Data.ConversionUnit.csproj">
-      <Project>{F6BE6CD4-3590-40F8-B4FC-CA3341AF2889}</Project>
-      <Name>Coc.Data.ConversionUnit</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

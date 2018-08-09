@@ -1,6 +1,7 @@
 ﻿using System;
+using Lesse.Core.ControlAndConversionStructures;
+using Lesse.OATS.OgmaJParser;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ControlAndConversionStructures;
 using UTestUtil;
 
 namespace OgmaJOATSParser.UTest

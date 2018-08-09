@@ -54,6 +54,38 @@
             <param name="field">Campo que devera receber o novo valor.</param>
             <param name="configValue">Novo valor para a configuracao.</param>
         </member>
+        <member name="P:Coc.Data.Xmi.Script.DatabankConfigForm.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Coc.Data.Xmi.Script.DatabankConfigForm.Repository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Coc.Data.Xmi.Script.DatabankConfigForm.DatabankPath">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Coc.Data.Xmi.Script.DatabankConfigForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Coc.Data.Xmi.Script.DatabankConfigForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Coc.Data.Xmi.Script.DatabankConfigForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
         <member name="T:Coc.Data.Xmi.Script.ScriptParser">
             <summary>
             Classe responsavel por construir o script com as tags que foram anotadas no modelo.
@@ -85,7 +117,7 @@
             <param name="tagValue">Conteudo de uma tag.</param>
             <returns></returns>
         </member>
-        <member name="M:Coc.Data.Xmi.Script.ScriptParser.extractTransitionTags(Coc.Modeling.Uml.UmlTransition)">
+        <member name="M:Coc.Data.Xmi.Script.ScriptParser.extractTransitionTags(Lesse.Modeling.Uml.UmlTransition)">
             <summary>
             Extrai da transicao passada por parametro, todas as tags 
             que foram anotadas no modelo.
@@ -154,38 +186,6 @@
             </summary>
             <param name="node"></param>
             <returns></returns>
-        </member>
-        <member name="P:Coc.Data.Xmi.DatabankConfigForm.Name">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Coc.Data.Xmi.DatabankConfigForm.Repository">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Coc.Data.Xmi.DatabankConfigForm.DatabankPath">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Coc.Data.Xmi.DatabankConfigForm.components">
-            <summary>
-            Required designer variable.
-            </summary>
-        </member>
-        <member name="M:Coc.Data.Xmi.DatabankConfigForm.Dispose(System.Boolean)">
-            <summary>
-            Clean up any resources being used.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:Coc.Data.Xmi.DatabankConfigForm.InitializeComponent">
-            <summary>
-            Required method for Designer support - do not modify
-            the contents of this method with the code editor.
-            </summary>
         </member>
     </members>
 </doc>

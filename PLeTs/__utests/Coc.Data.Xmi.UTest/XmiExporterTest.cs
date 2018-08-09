@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Xml;
 using System.Collections.Generic;
-using Coc.Data.ControlAndConversionStructures;
+using Lesse.Core.ControlAndConversionStructures;
 using UTestUtil;
 
 namespace Coc.Data.Xmi.UTest

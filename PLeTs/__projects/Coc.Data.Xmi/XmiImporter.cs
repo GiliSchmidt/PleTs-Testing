@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml;
-using Coc.Modeling.Uml;
-using Coc.Data.Interfaces;
-using Coc.Data.CSV;
 using System.IO;
-using ControlAndConversionStructures;
-using Coc.Data.ControlAndConversionStructures;
+using Lesse.Core.ControlAndConversionStructures;
+using Lesse.Core.Interfaces;
+using Lesse.Modeling.Uml;
+using Lesse.Util.CSV;
 
 namespace Coc.Data.Xmi
 {

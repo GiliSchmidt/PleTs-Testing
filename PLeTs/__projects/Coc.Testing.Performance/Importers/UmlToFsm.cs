@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
-using Coc.Modeling.Uml;
-using Coc.Modeling.FiniteStateMachine;
+using Coc.Testing.Performance.IntermediateStruct;
+using Lesse.Modeling.FiniteStateMachine;
+using Lesse.Modeling.Uml;
+using Transition = Lesse.Modeling.FiniteStateMachine.Transition;
 
 namespace Coc.Testing.Performance.Importers
 {

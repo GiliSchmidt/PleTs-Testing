@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Coc.Modeling.TestSuitStructure;
-using Coc.Modeling.FiniteStateMachine;
-using Coc.Data.ControlAndConversionStructures;
-using Coc.Modeling.Uml;
 using System.Globalization;
+using System.Linq;
+using Lesse.Core.ControlAndConversionStructures;
+using Lesse.Modeling.FiniteStateMachine;
+using Lesse.Modeling.TestSuitStructure;
+using Lesse.Modeling.Uml;
 
-namespace Coc.Data.HSI
+namespace Coc.Modeling.FiniteStateMachine.Hsi
 {
     public class GenerateTestSuit
     {
@@ -18,7 +17,7 @@ namespace Coc.Data.HSI
         int equalsTcCount = 0;
 
         #region Public Methods
-        public TestSuit PopulateTestSuit(String[][] matriz, FiniteStateMachine machine, GeneralUseStructure modelGeneralUseStructure)
+        public TestSuit PopulateTestSuit(String[][] matriz, Lesse.Modeling.FiniteStateMachine.FiniteStateMachine machine, GeneralUseStructure modelGeneralUseStructure)
         {
             UmlModel model = (UmlModel)modelGeneralUseStructure;
             foreach (UmlUseCaseDiagram ucDiagram in model.Diagrams.OfType<UmlUseCaseDiagram>())
@@ -89,7 +88,7 @@ namespace Coc.Data.HSI
         #endregion
 
         #region Private Methods
-        private Transition GetTransitionFSM(String input, FiniteStateMachine fsm)
+        private Transition GetTransitionFSM(String input, Lesse.Modeling.FiniteStateMachine.FiniteStateMachine fsm)
         {
             List<Transition> transition = fsm.Transitions.Where(x => x.Input.Equals(input)).ToList();
 
@@ -101,7 +100,7 @@ namespace Coc.Data.HSI
             return null;
         }
 
-        private TestCase FillTestCase(FiniteStateMachine machine, List<Transition> listTransition)
+        private TestCase FillTestCase(Lesse.Modeling.FiniteStateMachine.FiniteStateMachine machine, List<Transition> listTransition)
         {
             TestCase testCase = new TestCase();
             testCase.Name = machine.Name;

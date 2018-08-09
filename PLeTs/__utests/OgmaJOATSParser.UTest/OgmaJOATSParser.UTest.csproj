@@ -53,17 +53,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\OgmaJOATSParser\OgmaJOATSParser.csproj">
-      <Project>{68e304d4-109b-4c4e-a10e-e2ddcadd5d8b}</Project>
-      <Name>OgmaJOATSParser</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\__projects\Coc.Data.ControlAndConversionStructures\Coc.Data.ControlAndConversionStructures.csproj">
+    <ProjectReference Include="..\..\__projects\Lesse.Core.ControlAndConversionStructures\Lesse.Core.ControlAndConversionStructures.csproj">
       <Project>{AC4DEDF3-8BC9-4B66-92C5-858A1AB00A27}</Project>
-      <Name>Coc.Data.ControlAndConversionStructures</Name>
+      <Name>Lesse.Core.ControlAndConversionStructures</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\__projects\Coc.Data.Interfaces\Coc.Data.Interfaces.csproj">
+    <ProjectReference Include="..\..\__projects\Lesse.Core.Interfaces\Lesse.Core.Interfaces.csproj">
       <Project>{E9B148A0-E1F6-4849-9D74-1EFDB9FCC9B8}</Project>
-      <Name>Coc.Data.Interfaces</Name>
+      <Name>Lesse.Core.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\__projects\Lesse.OATS.OgmaJParser\Lesse.OATS.OgmaJParser.csproj">
+      <Project>{68E304D4-109B-4C4E-A10E-E2DDCADD5D8B}</Project>
+      <Name>Lesse.OATS.OgmaJParser</Name>
     </ProjectReference>
     <ProjectReference Include="..\UTestUtil\UTestUtil.csproj">
       <Project>{4068AE81-6344-43AF-8253-C4FC48215DB9}</Project>

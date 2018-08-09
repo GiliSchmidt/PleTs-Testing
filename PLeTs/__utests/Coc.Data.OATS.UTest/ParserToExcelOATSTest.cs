@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using Coc.Data.ControlAndConversionStructures;
+using Lesse.Core.ControlAndConversionStructures;
+using Lesse.OATS;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using UTestUtil;
 

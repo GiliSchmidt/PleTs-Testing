@@ -116,24 +116,19 @@
     <Compile Include="IntermediateStruct\Transition.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Coc.Data.ControlAndConversionStructures\Coc.Data.ControlAndConversionStructures.csproj">
+    <ProjectReference Include="..\Lesse.Core.ControlAndConversionStructures\Lesse.Core.ControlAndConversionStructures.csproj">
       <Project>{AC4DEDF3-8BC9-4B66-92C5-858A1AB00A27}</Project>
-      <Name>Coc.Data.ControlAndConversionStructures</Name>
+      <Name>Lesse.Core.ControlAndConversionStructures</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Coc.Data.ControlStructure\Coc.Data.ControlStructure.csproj">
-      <Project>{FF241B72-D0B0-42A3-84E4-5B243E07F148}</Project>
-      <Name>Coc.Data.ControlStructure</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Coc.Modeling.FiniteStateMachine\Coc.Modeling.FiniteStateMachine.csproj">
+    <ProjectReference Include="..\Lesse.Modeling.FiniteStateMachine\Lesse.Modeling.FiniteStateMachine.csproj">
       <Project>{1CC27328-CE37-4147-9C53-4A530B8B3E7F}</Project>
-      <Name>Coc.Modeling.FiniteStateMachine</Name>
+      <Name>Lesse.Modeling.FiniteStateMachine</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Coc.Modeling.Uml\Coc.Modeling.Uml.csproj">
+    <ProjectReference Include="..\Lesse.Modeling.Uml\Lesse.Modeling.Uml.csproj">
       <Project>{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}</Project>
-      <Name>Coc.Modeling.Uml</Name>
+      <Name>Lesse.Modeling.Uml</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

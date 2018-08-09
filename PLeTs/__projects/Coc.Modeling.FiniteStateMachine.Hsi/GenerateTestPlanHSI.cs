@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Web;
-using Coc.Data.CSV;
-using Coc.Modeling.FiniteStateMachine;
-using Coc.Modeling.TestPlanStructure;
+using Lesse.Modeling.FiniteStateMachine;
+using Lesse.Modeling.TestPlanStructure;
+using Lesse.Util.CSV;
 
-namespace Coc.Data.HSI
+namespace Coc.Modeling.FiniteStateMachine.Hsi
 {
     public class GenerateTestPlan
     {
@@ -22,7 +22,7 @@ namespace Coc.Data.HSI
         #endregion
 
         #region Public Methods
-        public TestPlan PopulateTestPlan(String[][] matriz, FiniteStateMachine machine, List<CsvParamFile> paramFiles)
+        public TestPlan PopulateTestPlan(String[][] matriz, Lesse.Modeling.FiniteStateMachine.FiniteStateMachine machine, List<CsvParamFile> paramFiles)
         {
             this.paramFiles = paramFiles;
             TestPlan testPlan = new TestPlan();
@@ -87,7 +87,7 @@ namespace Coc.Data.HSI
         #endregion
 
         #region Private Methods
-        private Transition GetTransitionFSM(String input, FiniteStateMachine fsm)
+        private Transition GetTransitionFSM(String input, Lesse.Modeling.FiniteStateMachine.FiniteStateMachine fsm)
         {
             List<Transition> transition = fsm.Transitions.Where(x => x.Input.Equals(input)).ToList();
             foreach (Transition t in transition)
@@ -97,7 +97,7 @@ namespace Coc.Data.HSI
             return null;
         }
 
-        private void PopulateTestCase(String[][] matriz, FiniteStateMachine machine, TestPlan testPlan)
+        private void PopulateTestCase(String[][] matriz, Lesse.Modeling.FiniteStateMachine.FiniteStateMachine machine, TestPlan testPlan)
         {
             for (int k = 0; k < matriz.Length; k++)
             {
@@ -167,7 +167,7 @@ namespace Coc.Data.HSI
             doAgain = false;
         }
 
-        private TestCase FillTestCase(FiniteStateMachine machine, List<Transition> listTransition, TestCase testCase)
+        private TestCase FillTestCase(Lesse.Modeling.FiniteStateMachine.FiniteStateMachine machine, List<Transition> listTransition, TestCase testCase)
         {
             int index = 1;
             TestStep testStep;
@@ -227,7 +227,7 @@ namespace Coc.Data.HSI
             return testCase;
         }
 
-        private Boolean CheckTestStepTags(FiniteStateMachine machine, TestCase testCase)
+        private Boolean CheckTestStepTags(Lesse.Modeling.FiniteStateMachine.FiniteStateMachine machine, TestCase testCase)
         {
             Boolean ret = false;
             foreach (KeyValuePair<String, String> pair in machine.TaggedValues)

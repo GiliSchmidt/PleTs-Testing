@@ -6,8 +6,8 @@ using System.Web;
 using System.Xml.XPath;
 using System.Reflection;
 using System.Collections;
-using Coc.Modeling.Uml;
 using Coc.Testing.Performance.IntermediateStruct;
+using Lesse.Strucuture.Uml;
 
 namespace Coc.Testing.Performance.Importers
 {

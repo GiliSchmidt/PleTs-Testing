@@ -1,4 +1,4 @@
-﻿namespace Coc.Data.Xmi
+﻿namespace Coc.Data.Xmi.Script
 {
     partial class DatabankConfigForm
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Coc.Modeling.Uml;
+using Lesse.Modeling.Uml;
 
 namespace Coc.Data.Xmi.Script
 {

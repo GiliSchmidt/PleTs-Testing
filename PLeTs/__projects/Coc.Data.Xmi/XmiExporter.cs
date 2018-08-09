@@ -5,10 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
-using Coc.Modeling.Uml;
-using Coc.Data.Interfaces;
-using Coc.Data.ControlAndConversionStructures;
-using ControlAndConversionStructures;
+using Lesse.Core.ControlAndConversionStructures;
+using Lesse.Core.Interfaces;
+using Lesse.Modeling.Uml;
 
 namespace Coc.Data.Xmi
 {

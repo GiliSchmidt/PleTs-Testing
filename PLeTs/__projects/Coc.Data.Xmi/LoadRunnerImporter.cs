@@ -5,9 +5,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
-
 using Coc.Data.Xmi;
-using Coc.Modeling.Uml;
+using Lesse.Modeling.Uml;
 
 namespace Coc.Data.Xmi
 {

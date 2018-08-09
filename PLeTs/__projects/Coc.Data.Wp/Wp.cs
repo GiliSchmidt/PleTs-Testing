@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using Coc.Modeling.FiniteStateMachine;
-using Coc.Data.Interfaces;
-using Coc.Data.ControlAndConversionStructures;
-using Coc.Modeling.TestPlanStructure;
-using Coc.Data.ControlStructure;
+using Lesse.Core.ControlAndConversionStructures;
+using Lesse.Core.ControlStructure;
+using Lesse.Core.Interfaces;
+using Lesse.Modeling.FiniteStateMachine;
+using Lesse.Modeling.TestPlanStructure;
 
-namespace Coc.Data.Wpartial
+namespace Coc.Data.Wp
 {
     //Classe onde recebe uma FSM e gera sequencia de teste utilizado
     //o metodo Wp

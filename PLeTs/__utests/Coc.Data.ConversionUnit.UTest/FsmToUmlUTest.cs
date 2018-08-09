@@ -1,10 +1,11 @@
-﻿using Coc.Data.ControlAndConversionStructures;
-using Coc.Data.ControlStructure;
-using Coc.Modeling.FiniteStateMachine;
-using Coc.Modeling.Uml;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using System.Linq;
+using Lesse.Core.ControlAndConversionStructures;
+using Lesse.Core.ControlStructure;
+using Lesse.Core.ConversionUnit;
+using Lesse.Modeling.FiniteStateMachine;
+using Lesse.Modeling.Uml;
 using UTestUtil;
 
 namespace Coc.Data.ConversionUnit.UTest

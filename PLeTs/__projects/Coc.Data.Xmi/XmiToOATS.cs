@@ -4,17 +4,15 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using System.Xml;
-using Coc.Data.ControlAndConversionStructures;
-using Coc.Data.Interfaces;
-using Coc.Modeling.Uml;
-using Coc.Modeling.FiniteStateMachine;
-using Coc.Data.ConversionUnit;
-using Coc.Modeling.Graph;
 using System.Web;
 using System.Text.RegularExpressions;
 using Coc.Data.Xmi.Script;
 using System.Reflection;
-using ControlAndConversionStructures;
+using Lesse.Core.ControlAndConversionStructures;
+using Lesse.Core.ConversionUnit;
+using Lesse.Core.Interfaces;
+using Lesse.Modeling.Graph;
+using Lesse.Modeling.Uml;
 
 namespace Coc.Data.Xmi
 {

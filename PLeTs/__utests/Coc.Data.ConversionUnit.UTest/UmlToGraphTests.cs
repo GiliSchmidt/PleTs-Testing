@@ -1,8 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
+using Lesse.Core.ControlAndConversionStructures;
 using UTestUtil;
-using Coc.Data.ControlAndConversionStructures;
-using Coc.Data.ControlStructure;
+using Lesse.Core.ControlStructure;
+using Lesse.Core.ConversionUnit;
 
 namespace Coc.Data.ConversionUnit.UTest
 {

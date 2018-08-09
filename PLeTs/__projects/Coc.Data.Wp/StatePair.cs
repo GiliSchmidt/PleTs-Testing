@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Coc.Modeling.FiniteStateMachine;
+using Lesse.Modeling.FiniteStateMachine;
 
-namespace Coc.Data.Wpartial
+namespace Coc.Data.Wp
 {
     public class StatePair
     {

@@ -1,11 +1,11 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Coc.Modeling.Uml;
 using System.Web;
-using Coc.Data.Interfaces;
-using Coc.Data.ControlStructure;
-using Coc.Data.ControlAndConversionStructures;
+using Lesse.Core.ControlAndConversionStructures;
+using Lesse.Core.Interfaces;
+using Lesse.Modeling.Uml;
 
 namespace Coc.Data.Xmi.FunctionalValidator
 {

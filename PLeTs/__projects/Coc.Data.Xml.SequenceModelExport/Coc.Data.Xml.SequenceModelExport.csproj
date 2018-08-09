@@ -105,21 +105,17 @@
     <Compile Include="TestPlanToAstah.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Coc.Data.ControlAndConversionStructures\Coc.Data.ControlAndConversionStructures.csproj">
+    <ProjectReference Include="..\Lesse.Core.ControlAndConversionStructures\Lesse.Core.ControlAndConversionStructures.csproj">
       <Project>{AC4DEDF3-8BC9-4B66-92C5-858A1AB00A27}</Project>
-      <Name>Coc.Data.ControlAndConversionStructures</Name>
+      <Name>Lesse.Core.ControlAndConversionStructures</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Coc.Data.ControlStructure\Coc.Data.ControlStructure.csproj">
-      <Project>{FF241B72-D0B0-42A3-84E4-5B243E07F148}</Project>
-      <Name>Coc.Data.ControlStructure</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Coc.Modeling.TestPlanStructure\Coc.Modeling.TestPlanStructure.csproj">
+    <ProjectReference Include="..\Lesse.Modeling.TestPlanStructure\Lesse.Modeling.TestPlanStructure.csproj">
       <Project>{877E0BDC-37F7-481D-AB9C-45752A494B49}</Project>
-      <Name>Coc.Modeling.TestPlanStructure</Name>
+      <Name>Lesse.Modeling.TestPlanStructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Coc.Modeling.Uml\Coc.Modeling.Uml.csproj">
+    <ProjectReference Include="..\Lesse.Modeling.Uml\Lesse.Modeling.Uml.csproj">
       <Project>{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}</Project>
-      <Name>Coc.Modeling.Uml</Name>
+      <Name>Lesse.Modeling.Uml</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Xml;
-using Coc.Modeling.Uml;
 using System.Text.RegularExpressions;
-using Coc.Modeling.TestPlanStructure;
+using Lesse.Modeling.TestPlanStructure;
+using Lesse.Modeling.Uml;
 
 namespace Coc.Data.Xml.SequenceModelExport
 {
