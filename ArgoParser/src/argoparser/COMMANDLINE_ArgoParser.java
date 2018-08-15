@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
 public class COMMANDLINE_ArgoParser {
 
     public static void main(String[] args) {
-        String path = "C:\\Users\\gilis\\Desktop\\Pesquisa\\PleTs\\PLeTs\\__utests\\TestFiles\\java oats script.java";
+        String path = "C:\\Users\\gilis\\Desktop\\Pesquisa\\PleTs\\Arquivos de teste\\script.java";
         try {
 
             Parser parser = new Parser();

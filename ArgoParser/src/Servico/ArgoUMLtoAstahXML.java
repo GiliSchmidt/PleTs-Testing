@@ -15,7 +15,6 @@ import Objects.UmlInitialState;
 import Objects.UmlModel;
 import Objects.UmlTransition;
 import Objects.UmlUseCase;
-import argoparser.Configuration;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -45,25 +44,16 @@ public class ArgoUMLtoAstahXML
 
             for (UmlBase umlObject : diagram.getUmlObjects())
             {
-                //verificar o conteudo para a tag tdaction e substituir
-                String action = umlObject.getTaggedValues().get("TDACTION");
-                if(action !=null){
-                    action = action.replaceAll("%", "%25");
-                    umlObject.getTaggedValues().put("TDACTION", action);
-                }
-                
                 Element EUmlObject = getElement(umlObject);
                 EDiagram.addContent(EUmlObject);
-                
             }
             Emodel.addContent(EDiagram);
             //doc.setRootElement(EDiagram);
         }
 
         //Imprimindo o XML
-        File out = File.createTempFile("IntermediateFile", ".xml");//, new File(Configuration.getInstance().getProperty("workspacepath")));
-        
-        
+        //File out = new File("IntermediateFile.xml");
+        File out = File.createTempFile("IntermediateFile", ".xml");
         try (FileWriter arquivo = new FileWriter(out))
         {
             XMLOutputter xout = new XMLOutputter();

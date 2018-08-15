@@ -114,6 +114,14 @@
       <Project>{fc478c4a-96d8-4b28-8890-17fd4c367c8b}</Project>
       <Name>Coc.Data.Xmi</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\__projects\Lesse.Core.ControlAndConversionStructures\Lesse.Core.ControlAndConversionStructures.csproj">
+      <Project>{AC4DEDF3-8BC9-4B66-92C5-858A1AB00A27}</Project>
+      <Name>Lesse.Core.ControlAndConversionStructures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\__projects\Lesse.Core.Interfaces\Lesse.Core.Interfaces.csproj">
+      <Project>{E9B148A0-E1F6-4849-9D74-1EFDB9FCC9B8}</Project>
+      <Name>Lesse.Core.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UTestUtil\UTestUtil.csproj">
       <Project>{4068AE81-6344-43AF-8253-C4FC48215DB9}</Project>
       <Name>UTestUtil</Name>
