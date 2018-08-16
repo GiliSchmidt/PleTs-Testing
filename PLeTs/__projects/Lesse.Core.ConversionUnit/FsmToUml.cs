@@ -6,7 +6,7 @@ using Lesse.Core.ControlStructure;
 using Lesse.Modeling.FiniteStateMachine;
 using Lesse.Modeling.Uml;
 
-namespace Lesse.Core.ConversionUnit
+namespace Lesse.Conversion.ConversionUnit
 {
     public class FsmToUml : ModelingStructureConverter
     {

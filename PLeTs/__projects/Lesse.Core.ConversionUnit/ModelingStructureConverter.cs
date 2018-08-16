@@ -2,7 +2,7 @@
 using Lesse.Core.ControlAndConversionStructures;
 using Lesse.Core.ControlStructure;
 
-namespace Lesse.Core.ConversionUnit
+namespace Lesse.Conversion.ConversionUnit
 {
     public interface ModelingStructureConverter
     {

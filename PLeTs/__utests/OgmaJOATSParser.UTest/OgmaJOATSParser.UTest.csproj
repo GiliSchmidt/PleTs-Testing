@@ -61,6 +61,10 @@
       <Project>{E9B148A0-E1F6-4849-9D74-1EFDB9FCC9B8}</Project>
       <Name>Lesse.Core.Interfaces</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\__projects\Lesse.Modeling.Uml\Lesse.Modeling.Uml.csproj">
+      <Project>{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}</Project>
+      <Name>Lesse.Modeling.Uml</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\__projects\Lesse.OATS.OgmaJParser\Lesse.OATS.OgmaJParser.csproj">
       <Project>{68E304D4-109B-4C4E-A10E-E2DDCADD5D8B}</Project>
       <Name>Lesse.OATS.OgmaJParser</Name>

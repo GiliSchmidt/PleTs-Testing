@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Lesse.Modeling.FiniteStateMachine;
 using Lesse.Modeling.VFSM;
 
-namespace Lesse.Core.ConversionUnit
+namespace Lesse.Conversion.ConversionUnit
 {
     public class ConvertToFSM
     {

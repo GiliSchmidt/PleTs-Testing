@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Xml;
 using Coc.Data.Xmi;
-using Lesse.Core.ConversionUnit;
+using Lesse.Conversion.ConversionUnit;
 using Lesse.Modeling.FiniteStateMachine;
 using Lesse.Modeling.Uml;
 using Microsoft.VisualStudio.TestTools.UnitTesting;

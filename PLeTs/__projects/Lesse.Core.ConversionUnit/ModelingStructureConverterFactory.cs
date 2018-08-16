@@ -4,7 +4,7 @@
 
 using Lesse.Core.ControlStructure;
 
-namespace Lesse.Core.ConversionUnit
+namespace Lesse.Conversion.ConversionUnit
 {
     public class ModelingStructureConverterFactory
     {

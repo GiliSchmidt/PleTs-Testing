@@ -7,7 +7,7 @@ using Lesse.Core.ControlStructure;
 using Lesse.Modeling.Graph;
 using Lesse.Modeling.Uml;
 
-namespace Lesse.Core.ConversionUnit
+namespace Lesse.Conversion.ConversionUnit
 {
     public class UmlToGraphOATS : ModelingStructureConverter
     {

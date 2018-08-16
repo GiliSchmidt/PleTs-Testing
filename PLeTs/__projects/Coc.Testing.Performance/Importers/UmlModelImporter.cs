@@ -7,7 +7,7 @@ using System.Xml.XPath;
 using System.Reflection;
 using System.Collections;
 using Coc.Testing.Performance.IntermediateStruct;
-using Lesse.Strucuture.Uml;
+using Lesse.Modeling.Uml;
 
 namespace Coc.Testing.Performance.Importers
 {

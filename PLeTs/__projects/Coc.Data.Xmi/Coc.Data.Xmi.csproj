@@ -125,9 +125,9 @@
       <Project>{ac4dedf3-8bc9-4b66-92c5-858a1ab00a27}</Project>
       <Name>Lesse.Core.ControlAndConversionStructures</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lesse.Core.ConversionUnit\Lesse.Core.ConversionUnit.csproj">
+    <ProjectReference Include="..\Lesse.Core.ConversionUnit\Lesse.Conversion.ConversionUnit.csproj">
       <Project>{F6BE6CD4-3590-40F8-B4FC-CA3341AF2889}</Project>
-      <Name>Lesse.Core.ConversionUnit</Name>
+      <Name>Lesse.Conversion.ConversionUnit</Name>
     </ProjectReference>
     <ProjectReference Include="..\Lesse.Core.Interfaces\Lesse.Core.Interfaces.csproj">
       <Project>{e9b148a0-e1f6-4849-9d74-1efdb9fcc9b8}</Project>

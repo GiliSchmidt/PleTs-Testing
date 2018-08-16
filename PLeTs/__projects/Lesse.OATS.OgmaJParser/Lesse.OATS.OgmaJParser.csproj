@@ -82,7 +82,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="ArgoParser\ArgoParser.jar">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="ArgoParser\lib\eclipselink.jar">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

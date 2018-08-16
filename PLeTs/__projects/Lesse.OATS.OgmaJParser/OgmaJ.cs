@@ -28,7 +28,7 @@ namespace Lesse.OATS.OgmaJParser
             StructureCollection model = new StructureCollection();
             XmlDocument document = new XmlDocument();
 
-            CleanFile(path);
+            CleanFile(ref path);
 
             ProcessStartInfo startInfo = new ProcessStartInfo("ArgoParser\\ArgoParser.jar");
 
@@ -229,12 +229,14 @@ namespace Lesse.OATS.OgmaJParser
             return null;
         }
 
-        //remove all non utf-8 chars from file
-        //needed because the ArgoParser can't parse those chars
-        private void CleanFile(string path)
+        /*
+        Remove all non utf-8 chars from file. Needed because the ArgoParser can't parse those chars.
+        */
+        private void CleanFile(ref string path)
         {
-            string cleaned = File.ReadAllText(path);
-            cleaned = Regex.Replace(cleaned, @"[^\u0020-\u007E]", "");
+            string cleaned = Regex.Replace(File.ReadAllText(path), @"[^\u0020-\u007E]", "");
+            path = System.IO.Path.GetTempPath() + "\\OGMJAtemfile.java";
+
             File.WriteAllText(path, cleaned);
         }
         #endregion

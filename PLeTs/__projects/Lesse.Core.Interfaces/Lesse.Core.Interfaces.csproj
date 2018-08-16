@@ -112,9 +112,9 @@
       <Project>{FF241B72-D0B0-42A3-84E4-5B243E07F148}</Project>
       <Name>Lesse.Core.ControlStructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lesse.Core.ConversionUnit\Lesse.Core.ConversionUnit.csproj">
+    <ProjectReference Include="..\Lesse.Core.ConversionUnit\Lesse.Conversion.ConversionUnit.csproj">
       <Project>{F6BE6CD4-3590-40F8-B4FC-CA3341AF2889}</Project>
-      <Name>Lesse.Core.ConversionUnit</Name>
+      <Name>Lesse.Conversion.ConversionUnit</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

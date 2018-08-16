@@ -1,9 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using System.Linq;
+using Lesse.Conversion.ConversionUnit;
 using Lesse.Core.ControlAndConversionStructures;
 using Lesse.Core.ControlStructure;
-using Lesse.Core.ConversionUnit;
 using Lesse.Modeling.FiniteStateMachine;
 using Lesse.Modeling.Uml;
 using UTestUtil;

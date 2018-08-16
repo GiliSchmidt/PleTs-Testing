@@ -31,7 +31,7 @@ namespace Coc.Data.Xmi.UTest
                 testOutputFolder.Create();
             }
 
-            xmiPath = "..\\..\\..\\TestFiles\\ogmaj - oats - astah.xml";
+            xmiPath = "..\\..\\..\\TestFiles\\Portal Unipampa\\astah file.xml";
 
             FileUtil.CleanFolder(testOutputFolder);
 
@@ -41,7 +41,7 @@ namespace Coc.Data.Xmi.UTest
             Assert.IsTrue((testOutputFolder.GetFiles().Length > 0), "Nothing was parsed");
             Assert.IsTrue(testOutputFolder.GetFiles()[0].Length > 0, "Nothing was parsed. File size is zero");
 
-            Assert.Fail("NOT WORKING - Generated script is empy!");
+            //TODO: add asserts to verify if script contains all taggedvalues specified in the uml model
             #endregion
         }
     }

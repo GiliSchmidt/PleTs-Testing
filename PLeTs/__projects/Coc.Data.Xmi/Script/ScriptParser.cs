@@ -69,7 +69,6 @@ namespace Coc.Data.Xmi.Script
             browser,
             captureScreenshot,
             forms,
-            
             abstractWindow,
             alertDialog,
             appletAdapter,
@@ -85,6 +84,7 @@ namespace Coc.Data.Xmi.Script
             hGridApp,
             helpDialog,
             imageItem,
+            image,
             infoBox,
             list,
             listOfValues,

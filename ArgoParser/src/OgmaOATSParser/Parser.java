@@ -473,7 +473,7 @@ final static String yyrule[] = {
 		GenerateUseCaseDiagram();
 
 		acdiagram = new UmlActivityDiagram();
-		acdiagram.setName("UseCase0");
+		acdiagram.setName("ActivityDiagram0");
 		UmlInitialState initial = new UmlInitialState();
 		initial.setName("InitialNode");
 		lastActivity = initial;
@@ -520,6 +520,8 @@ final static String yyrule[] = {
 			lastAssociation.setTarget(newActivity);
 			lastAssociation.addTag("TDOBJECT", tagValue);
 			lastAssociation.addTag("TDACTION", tdAction);
+                        lastAssociation.addTag("TDPROTOCOL", "web");
+                        
 			acdiagram.addUmlObject(lastAssociation);
 
 			lastActivity = newActivity;
@@ -885,43 +887,43 @@ break;
 case 69:
 //#line 240 "oatsy.y"
 {
-							CreateActivity("{window;" + val_peek(1).sval + "}");
+							CreateActivity("{window;\"" + val_peek(1).sval + "\"}");
 						}
 break;
 case 70:
 //#line 246 "oatsy.y"
 {
-							CreateActivity("{textbox;" + val_peek(1).sval + "}");
+							CreateActivity("{textBox;\"" + val_peek(1).sval + "\"}");
 						}
 break;
 case 71:
 //#line 252 "oatsy.y"
 {
-							CreateActivity("{button;" + val_peek(1).sval + "}");
+							CreateActivity("{button;\"" + val_peek(1).sval + "\"}");
 						}
 break;
 case 72:
 //#line 258 "oatsy.y"
 {
-							CreateActivity("{image;" + val_peek(1).sval + "}");
+							CreateActivity("{image;\"" + val_peek(1).sval + "\"}");
 						}
 break;
 case 73:
 //#line 264 "oatsy.y"
 {
-							CreateActivity("{alertdialog;" + val_peek(1).sval + "}");
+							CreateActivity("{alertDialog;\"" + val_peek(1).sval + "\"}");
 						}
 break;
 case 74:
 //#line 270 "oatsy.y"
 {
-							CreateActivity("{link;" + val_peek(1).sval + "}");
+							CreateActivity("{link;\"" + val_peek(1).sval + "\"}");
 						}
 break;
 case 75:
 //#line 276 "oatsy.y"
 {
-							CreateActivity("{element;" + val_peek(1).sval + "}");
+							CreateActivity("{element;\"" + val_peek(1).sval + "\"}");
 						}
 break;
 //#line 850 "Parser.java"

@@ -8,8 +8,8 @@ using System.Web;
 using System.Text.RegularExpressions;
 using Coc.Data.Xmi.Script;
 using System.Reflection;
+using Lesse.Conversion.ConversionUnit;
 using Lesse.Core.ControlAndConversionStructures;
-using Lesse.Core.ConversionUnit;
 using Lesse.Core.Interfaces;
 using Lesse.Modeling.Graph;
 using Lesse.Modeling.Uml;
@@ -69,8 +69,8 @@ namespace Coc.Data.Xmi
             String name = "";
             model = importer.FromXmi(xmiDoc, ref name);
 
-            string[] parts = xmiDoc.BaseURI.Split(new char[]{'/'});
-            string fName = parts[parts.Length-1];
+            string[] parts = xmiDoc.BaseURI.Split(new char[] { '/' });
+            string fName = parts[parts.Length - 1];
             fName = fName.Substring(0, fName.IndexOf('.'));
             filterToActDiagOnly(ref model);
             try
@@ -82,6 +82,7 @@ namespace Coc.Data.Xmi
                     //sw = new StreamWriter(Configuration.getInstance().getConfiguration(Configuration.Fields.workspacepath) + fname + "_OATS.java");
                     //sw = new StreamWriter(Configuration.getInstance().getConfiguration(Configuration.Fields.workspacepath) + actDiag.Name + "_OATS.java");
                     sw = new StreamWriter(".//TestOutput//script.java");
+
                     dg = umlToGraphOATS.ActivityDiagramToGraph(actDiag, model);
                     OrderEdges(dg);
                     OrderActDiagramTransitions(actDiag);
@@ -89,7 +90,7 @@ namespace Coc.Data.Xmi
                     curActDiag = actDiag;
                     S();
                     sw.Close();
-                   // break;
+                    // break;
                 }
             }
             catch (Exception e)
@@ -107,9 +108,9 @@ namespace Coc.Data.Xmi
         {
             UmlModel aux = new UmlModel();
 
-            foreach(UmlDiagram ud in u.Diagrams)
+            foreach (UmlDiagram ud in u.Diagrams)
             {
-                if(ud is UmlActivityDiagram)
+                if (ud is UmlActivityDiagram)
                 {
                     aux.AddDiagram(ud);
                 }
@@ -169,9 +170,9 @@ namespace Coc.Data.Xmi
             //   sw.WriteLine(s + "@ScriptService oracle.oats.scripting.modules.formsFT.api.FormsService forms;");
             //   sw.WriteLine();
 
-            sw.WriteLine(s+"@ScriptService oracle.oats.scripting.modules.utilities.api.UtilitiesService utilities;");
+            sw.WriteLine(s + "@ScriptService oracle.oats.scripting.modules.utilities.api.UtilitiesService utilities;");
             sw.WriteLine(s + "@ScriptService oracle.oats.scripting.modules.browser.api.BrowserService browser;");
-            sw.WriteLine(s + "@ScriptService oracle.oats.scripting.modules.functionalTest.api.FunctionalTestService ft;"); 
+            sw.WriteLine(s + "@ScriptService oracle.oats.scripting.modules.functionalTest.api.FunctionalTestService ft;");
             sw.WriteLine(s + "@ScriptService oracle.oats.scripting.modules.webdom.api.WebDomService web;");
             sw.WriteLine();
         }
@@ -212,7 +213,7 @@ namespace Coc.Data.Xmi
             ScriptParser scriptParser = new ScriptParser(tab, sequence);
 
             //agrupa as transicoes de acordo com o nome...
-            IEnumerable<IGrouping<string, UmlTransition>> groups = 
+            IEnumerable<IGrouping<string, UmlTransition>> groups =
                 curActDiag.UmlObjects.OfType<UmlTransition>()
                 .GroupBy(t => getFriendlyName(t.Source.Name), t => t);
 
@@ -235,7 +236,7 @@ namespace Coc.Data.Xmi
 
                 gn.Transitions = group.ToList();
                 lista.Add(gn);
-              // root.SubGroups.Add(gn);
+                // root.SubGroups.Add(gn);
             }
 
 
@@ -243,16 +244,16 @@ namespace Coc.Data.Xmi
             GroupNode next = null;
             GroupNode prev = null;
 
-            for(int j=0; j < root.SubGroups.Count; j++)
+            for (int j = 0; j < root.SubGroups.Count; j++)
             {
                 if (root.SubGroups[j] != null)
                 {
                     //ajusta os passos que estao desalinhados ate este ponto
-                   // if ((j + 1 < root.SubGroups.Count) && root.SubGroups[j].Transitions.Last().Target.Name.Contains(root.SubGroups[j + 1].GroupName))
-                   // {
-                  //      root.SubGroups[j + 1].Transitions.Insert(0, root.SubGroups[j].Transitions.Last());
-                  //      root.SubGroups[j].Transitions.RemoveAt(root.SubGroups[j].Transitions.Count - 1);
-                  //  }
+                    // if ((j + 1 < root.SubGroups.Count) && root.SubGroups[j].Transitions.Last().Target.Name.Contains(root.SubGroups[j + 1].GroupName))
+                    // {
+                    //      root.SubGroups[j + 1].Transitions.Insert(0, root.SubGroups[j].Transitions.Last());
+                    //      root.SubGroups[j].Transitions.RemoveAt(root.SubGroups[j].Transitions.Count - 1);
+                    //  }
 
                     //seleciona o pai, este pai, pois caso o proximo seja filho, este ja é o pai dos proximos
                     if (root.SubGroups[j].Transitions.Count > 0 &&
@@ -282,8 +283,8 @@ namespace Coc.Data.Xmi
 
             //remove os realocados
             root.SubGroups.RemoveAll(g => g == null);
-            
-            foreach(GroupNode g in lista)
+
+            foreach (GroupNode g in lista)
             {
                 sw.WriteLine(scriptParser.parse(g));
             }
@@ -751,7 +752,7 @@ namespace Coc.Data.Xmi
         {
             return element is UmlTransition;
         }
-        
+
         #endregion
     }
 }

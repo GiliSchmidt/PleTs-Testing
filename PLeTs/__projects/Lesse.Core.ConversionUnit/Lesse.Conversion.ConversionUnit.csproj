@@ -5,70 +5,80 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A0EAA259-ABCC-4E3B-B283-B8F8D4B6876B}</ProjectGuid>
+    <ProjectGuid>{F6BE6CD4-3590-40F8-B4FC-CA3341AF2889}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Lesse.OATS</RootNamespace>
-    <AssemblyName>Lesse.OATS</AssemblyName>
+    <RootNamespace>Lesse.Conversion.ConversionUnit</RootNamespace>
+    <AssemblyName>Lesse.Conversion.ConversionUnit</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Default|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>..\..\__output\plets\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'OATS-Based FTT|AnyCPU'">
     <OutputPath>..\..\__output\plets\</OutputPath>
-    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;DFS</DefineConstants>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'MTM-Based FTT %28DFS%29|AnyCPU'">
     <OutputPath>..\..\__output\plets\</OutputPath>
-    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;DFS</DefineConstants>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'MTM-Based FTT %28HSI%29|AnyCPU'">
     <OutputPath>..\..\__output\plets\</OutputPath>
-    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;HSI</DefineConstants>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'MTM-Based FTT %28DFS-HSI%29|AnyCPU'">
     <OutputPath>..\..\__output\plets\</OutputPath>
-    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;DFS,HSI</DefineConstants>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'MTM-Based FTT %28DFS-HSI-WP%29|AnyCPU'">
     <OutputPath>..\..\__output\plets\</OutputPath>
+    <DefineConstants>DFS,HSI,WP</DefineConstants>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'MTM-Based FTT %28WP%29|AnyCPU'">
     <OutputPath>..\..\__output\plets\</OutputPath>
-    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;WP</DefineConstants>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'LR-Based PTT %28HSI|AnyCPU'">
     <OutputPath>..\..\__output\plets\</OutputPath>
+    <DefineConstants>HSI</DefineConstants>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TCC_Edemar|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\__output\plets\</OutputPath>
-    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;DFS</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <CodeAnalysisLogFile>..\..\__output\plets\Coc.Data.OATS.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisLogFile>..\..\__output\plets\Coc.Data.ConversionUnit.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
     <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
     <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -79,73 +89,52 @@
     <OutputPath>bin\OATS_Giliardi\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>.\DocumentFormat.OpenXml.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
-    <Reference Include="SpreadsheetLight, Version=3.4.0.0, Culture=neutral, PublicKeyToken=32fbb46dc1730c57, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>.\SpreadsheetLight.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ParserToExcelOATS.cs" />
-    <Compile Include="ParserToOATS.cs" />
-    <Compile Include="ParserToXmi.cs" />
+    <Compile Include="ConvertToFSM.cs" />
+    <Compile Include="FsmToUml.cs" />
+    <Compile Include="UmlToGraphForTCC.cs" />
+    <Compile Include="UmlToGraphOATS.cs" />
+    <Compile Include="VfsmToFsm.cs" />
+    <Compile Include="ModelingStructureConverter.cs" />
+    <Compile Include="ModelingStructureConverterFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Lesse.Core.ControlAndConversionStructures\Lesse.Core.ControlAndConversionStructures.csproj">
-      <Project>{AC4DEDF3-8BC9-4B66-92C5-858A1AB00A27}</Project>
-      <Name>Lesse.Core.ControlAndConversionStructures</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Lesse.Core.ConversionUnit\Lesse.Conversion.ConversionUnit.csproj">
-      <Project>{F6BE6CD4-3590-40F8-B4FC-CA3341AF2889}</Project>
-      <Name>Lesse.Conversion.ConversionUnit</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Lesse.Core.Interfaces\Lesse.Core.Interfaces.csproj">
-      <Project>{E9B148A0-E1F6-4849-9D74-1EFDB9FCC9B8}</Project>
-      <Name>Lesse.Core.Interfaces</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Lesse.Util.Xlsx\Lesse.Util.Xlsx.csproj">
-      <Project>{9CCD0DF0-0C54-434E-B0C2-170132A66D1D}</Project>
-      <Name>Lesse.Util.Xlsx</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Coc.Data.Xmi\Coc.Data.Xmi.csproj">
-      <Project>{FC478C4A-96D8-4B28-8890-17FD4C367C8B}</Project>
-      <Name>Coc.Data.Xmi</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Lesse.Modeling.FiniteStateMachine\Lesse.Modeling.FiniteStateMachine.csproj">
-      <Project>{1CC27328-CE37-4147-9C53-4A530B8B3E7F}</Project>
-      <Name>Lesse.Modeling.FiniteStateMachine</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Lesse.Modeling.Graph\Lesse.Modeling.Graph.csproj">
-      <Project>{9DE5D444-FA7C-4C03-B70B-17B681F07B67}</Project>
-      <Name>Lesse.Modeling.Graph</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Lesse.Modeling.Uml\Lesse.Modeling.Uml.csproj">
-      <Project>{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}</Project>
-      <Name>Lesse.Modeling.Uml</Name>
-    </ProjectReference>
+    <Compile Include="UmlToFsm.cs" />
+    <Compile Include="UmlToGraph.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="KeyWords_2_2.xlsx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <ProjectReference Include="..\Lesse.Core.ControlAndConversionStructures\Lesse.Core.ControlAndConversionStructures.csproj">
+      <Project>{ac4dedf3-8bc9-4b66-92c5-858a1ab00a27}</Project>
+      <Name>Lesse.Core.ControlAndConversionStructures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lesse.Core.ControlStructure\Lesse.Core.ControlStructure.csproj">
+      <Project>{ff241b72-d0b0-42a3-84e4-5b243e07f148}</Project>
+      <Name>Lesse.Core.ControlStructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lesse.Modeling.FiniteStateMachine\Lesse.Modeling.FiniteStateMachine.csproj">
+      <Project>{1cc27328-ce37-4147-9c53-4a530b8b3e7f}</Project>
+      <Name>Lesse.Modeling.FiniteStateMachine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lesse.Modeling.Graph\Lesse.Modeling.Graph.csproj">
+      <Project>{9de5d444-fa7c-4c03-b70b-17b681f07b67}</Project>
+      <Name>Lesse.Modeling.Graph</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lesse.Modeling.Uml\Lesse.Modeling.Uml.csproj">
+      <Project>{ac0ceeef-c2f2-45fa-904a-2e758a6b5a3a}</Project>
+      <Name>Lesse.Modeling.Uml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lesse.Modeling.VFSM\Lesse.Modeling.VFSM.csproj">
+      <Project>{6CC099A9-3B48-4BC4-9076-34B47EB0BB64}</Project>
+      <Name>Lesse.Modeling.VFSM</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
