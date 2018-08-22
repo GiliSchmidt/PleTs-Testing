@@ -108,11 +108,11 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\__projects\Coc.Apps.PLeTs.ControlUnit\Coc.Apps.PLeTs.ControlUnit.csproj">
+    <ProjectReference Include="..\__projects\Lesse.Core.ControlUnit\Lesse.Core.ControlUnit.csproj">
       <Project>{34614D88-1C0F-4DAE-B7E2-927D90D8AAC4}</Project>
       <Name>Coc.Apps.PLeTs.ControlUnit</Name>
     </ProjectReference>
-    <ProjectReference Include="..\__projects\Coc.Data.ControlStructure\Coc.Data.ControlStructure.csproj">
+    <ProjectReference Include="..\__projects\Lesse.Core.ControlStructure\Lesse.Core.ControlStructure.csproj">
       <Project>{FF241B72-D0B0-42A3-84E4-5B243E07F148}</Project>
       <Name>Coc.Data.ControlStructure</Name>
     </ProjectReference>

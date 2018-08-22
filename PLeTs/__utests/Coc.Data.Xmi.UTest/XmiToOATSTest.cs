@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using Lesse.OATS.OATSScriptGenerator;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using UTestUtil;
 

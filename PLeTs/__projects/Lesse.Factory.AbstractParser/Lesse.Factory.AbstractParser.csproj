@@ -112,6 +112,10 @@
       <Project>{FC478C4A-96D8-4B28-8890-17FD4C367C8B}</Project>
       <Name>Coc.Data.Xmi</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Lesse.OATS.OATSScriptGenerator\Lesse.OATS.OATSScriptGenerator.csproj">
+      <Project>{c1d9008d-47e4-4f4a-9068-569f8e6df31b}</Project>
+      <Name>Lesse.OATS.OATSScriptGenerator</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Lesse.OATS.OgmaJParser\Lesse.OATS.OgmaJParser.csproj">
       <Project>{68E304D4-109B-4C4E-A10E-E2DDCADD5D8B}</Project>
       <Name>Lesse.OATS.OgmaJParser</Name>

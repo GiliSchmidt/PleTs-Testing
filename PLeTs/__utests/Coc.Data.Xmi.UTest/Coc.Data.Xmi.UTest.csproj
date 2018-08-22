@@ -122,6 +122,10 @@
       <Project>{E9B148A0-E1F6-4849-9D74-1EFDB9FCC9B8}</Project>
       <Name>Lesse.Core.Interfaces</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\__projects\Lesse.OATS.OATSScriptGenerator\Lesse.OATS.OATSScriptGenerator.csproj">
+      <Project>{C1D9008D-47E4-4F4A-9068-569F8E6DF31B}</Project>
+      <Name>Lesse.OATS.OATSScriptGenerator</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UTestUtil\UTestUtil.csproj">
       <Project>{4068AE81-6344-43AF-8253-C4FC48215DB9}</Project>
       <Name>UTestUtil</Name>

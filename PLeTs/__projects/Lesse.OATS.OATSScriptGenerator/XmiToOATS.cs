@@ -4,17 +4,18 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using System.Xml;
-using System.Web;
 using System.Text.RegularExpressions;
 using Coc.Data.Xmi.Script;
 using System.Reflection;
-using Lesse.Conversion.ConversionUnit;
 using Lesse.Core.ControlAndConversionStructures;
-using Lesse.Core.Interfaces;
-using Lesse.Modeling.Graph;
 using Lesse.Modeling.Uml;
+using Lesse.Core.Interfaces;
+using Coc.Data.Xmi;
+using Lesse.Conversion.ConversionUnit;
+using Lesse.Modeling.Graph;
+using System.Web;
 
-namespace Coc.Data.Xmi
+namespace Lesse.OATS.OATSScriptGenerator
 {
     public class XmiToOATS : Parser
     {

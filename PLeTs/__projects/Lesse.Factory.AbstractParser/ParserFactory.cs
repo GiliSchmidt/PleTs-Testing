@@ -7,6 +7,7 @@
 using System;
 using Coc.Data.Xmi;
 using Lesse.Core.Interfaces;
+using Lesse.OATS.OATSScriptGenerator;
 
 
 #if PL_OATS
@@ -31,7 +32,7 @@ namespace Lesse.Factory.AbstractParser
 #endif
 #if PL_XMI
                 case "Astah SeqDiag XML":
-                    return new SequenceDiagramImporter();
+                    return new XmiToOATS();
                 case "Astah XML":
                     return new SequenceDiagramImporter();
                 case "Argo XML":
