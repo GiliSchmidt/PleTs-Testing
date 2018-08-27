@@ -12,4 +12,4 @@ PLeTs is an acronym for "Product Line of Testing Tools", which means that PLeTs 
 
 **Which tools are currently supported?** PLeTs' products currently support the extraction of system information from UML models using XMI notation. We tested our parsers with ASTAH Professional and ArgoUML tools, but more tools may be supported. Regarding testing tools, testing scripts can be generated for Microsoft's VisualStudio 2010 Web Test, HP's LoadRunner, and JMeter tools. A more comprehensive overview on PLeTs features can be seen in the picture below.
 
-![Image](Image_icon.png)
+![Image](https://raw.githubusercontent.com/GiliSchmidt/PleTs-Testing/master/resources/plets_img.png)
