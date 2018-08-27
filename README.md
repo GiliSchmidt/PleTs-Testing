@@ -2,7 +2,7 @@
 
 PLeTs is an acronym for "Product Line of Testing Tools", which means that PLeTs is not a tool, but many! A very tiny overview on the PLeTs project is provided below.
 
-**What is PLeTs?** PLeTs is a product line of testing tools. A software product line is a family of software products that have a common core.
+**What is PLeTs?** PLeTs is a product line of testing tools. A software product line is a family of software products that have a common core. PLeTs provide a set of testing tools that aid in the automation of software testing.
 
 **What kind of products does PLeTs provide?** For now, our project aims to provide tools for funcional, performance (web) and unitary testing. These tools do not execute test by themselves and, instead, they generate scripts for running is most of the renowed, on-the-shelf and FOSS tools.
 
