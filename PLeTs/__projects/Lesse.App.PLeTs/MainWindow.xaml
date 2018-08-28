@@ -8,7 +8,9 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="24" />
             <RowDefinition Height="0" />
-            <RowDefinition Height="394*" />
+            <RowDefinition Height="95*" />
+            <RowDefinition Height="97*"/>
+            <RowDefinition Height="157*"/>
             <!--<RowDefinition Height="24" />-->
             <RowDefinition Height="0" />
         </Grid.RowDefinitions>
@@ -16,7 +18,7 @@
             <MenuItem Header="_File">
                 <!-- <MenuItem Header="Parse XMI to OATS Excel" Name="buttonParseXMItoXLS"/>-->
                 <MenuItem Header="Parse LoadRunner Script to XMI" Name="buttonParseLRtoXMI"/>
-                <MenuItem Header="Export Xml" Name="buttonXmiExport" Click="buttonXmiExport_Click" />
+                <MenuItem Header="Export Xml" Name="buttonXmiExport" />
                 <MenuItem Header="_Close" Name="buttonClose" Click="buttonClose_Click" />
             </MenuItem>
             <MenuItem Header="_Configuration">
@@ -31,44 +33,44 @@
             </MenuItem>
         </Menu>
         <!-- <ToolBar Grid.Row="1" Name="toolBarShortcuts" Margin="315,0,0,0">-->
-            <!--<Button Name="buttonLoadData" Click="buttonLoadData_Click" ToolTip="Load file to be parsed...">
+        <!--<Button Name="buttonLoadData" Click="buttonLoadData_Click" ToolTip="Load file to be parsed...">
                 <Image Source="/TestingTool;component/Images/folder.gif" ImageFailed="Image_ImageFailed" />
             </Button>-->
         <!--<Separator />-->
-            <!-- <Button Name="buttonGenerateTestCases" ToolTip="Generate test cases from loaded test data."
+        <!-- <Button Name="buttonGenerateTestCases" ToolTip="Generate test cases from loaded test data."
                     Click="buttonGenerateTestCases_Click" IsEnabled="False">
             <Image Source="/TestingTool;component/Images/base.gif" Stretch="Uniform" /> 
             </Button> -->
 
         <!--<Separator />-->
-            <!-- TOOLS! BEWARE THE CHIPREL-->
-            <!-- FUNC -->
-            <!-- <Button Name="buttonMTM" ToolTip="Export to Microsoft Test Manager..." IsEnabled="False">
+        <!-- TOOLS! BEWARE THE CHIPREL-->
+        <!-- FUNC -->
+        <!-- <Button Name="buttonMTM" ToolTip="Export to Microsoft Test Manager..." IsEnabled="False">
                 <Image Source="/TestingTool;component/Images/mtm_32512.ico" Stretch="Uniform" />
             </Button>-->
-            <!-- <Button Name="buttonOpenScript" ToolTip="Export to Oracle ATS Open Script...">-->
-                <!-- Open Script icon is ugly :( So we apply some anti-alias effect -->
-            <!-- <Image Source="/TestingTool;component/Images/OpenScript_401.ico" Stretch="Uniform" RenderOptions.BitmapScalingMode="HighQuality" />
+        <!-- <Button Name="buttonOpenScript" ToolTip="Export to Oracle ATS Open Script...">-->
+        <!-- Open Script icon is ugly :( So we apply some anti-alias effect -->
+        <!-- <Image Source="/TestingTool;component/Images/OpenScript_401.ico" Stretch="Uniform" RenderOptions.BitmapScalingMode="HighQuality" />
             </Button>-->
-            <!-- PERF -->
-            <!--<Button Name="buttonLoadRunner" ToolTip="Export to HP LoadRunner scenarios..." IsEnabled="False">
+        <!-- PERF -->
+        <!--<Button Name="buttonLoadRunner" ToolTip="Export to HP LoadRunner scenarios..." IsEnabled="False">
                 <Image Source="/TestingTool;component/Images/Wlrun_2.ico" Stretch="Uniform" />
             </Button>-->
         <!--</ToolBar> -->
-        <TabControl Grid.Row="2" Margin="213,6,12,12">
+        <TabControl Grid.Row="2" Margin="288,6,12,12" Grid.RowSpan="3">
             <TabItem Header="Status">
                 <!-- <ScrollViewer> -->
-                    <RichTextBox Padding="5" IsReadOnly="True" FontFamily="Consolas" Name="textBlockLogContainer" VerticalScrollBarVisibility="Auto" Height="299" Width="546">
-                        <RichTextBox.Resources>
-                            <Style TargetType="{x:Type Paragraph}">
-                                <Setter Property="Margin" Value="0"/>
-                            </Style>
-                        </RichTextBox.Resources>
-                    </RichTextBox>
+                <RichTextBox Padding="5" IsReadOnly="True" FontFamily="Consolas" Name="textBlockLogContainer" VerticalScrollBarVisibility="Auto" Height="299">
+                    <RichTextBox.Resources>
+                        <Style TargetType="{x:Type Paragraph}">
+                            <Setter Property="Margin" Value="0"/>
+                        </Style>
+                    </RichTextBox.Resources>
+                </RichTextBox>
                 <!-- </ScrollViewer> -->
             </TabItem>
         </TabControl>
-        <StatusBar Grid.Row="3" Background="#eee">
+        <StatusBar Grid.Row="5" Background="#eee">
             <StatusBarItem>
                 <ProgressBar Name="progressStatus" Width="100" Height="16" IsEnabled="False"/>
             </StatusBarItem>
@@ -77,19 +79,22 @@
                            Text="This is a status caption. Use MainWindow.SetStatus(String p) to update this value." />
             </StatusBarItem>
         </StatusBar>
-        <ComboBox Grid.Row="2" Height="35" HorizontalAlignment="Left" Margin="20,41,0,0" ToolTip="Choose the method" Name="SequenceGeneratorType" VerticalAlignment="Top" Width="175" SelectionChanged="SequenceGeneratorType_SelectionChanged" ItemsSource="{Binding}" VerticalContentAlignment="Center" >
-            <ComboBoxItem Content="Choose the method" IsSelected="True" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        </ComboBox>
-        <!-- <Button Content="XmiExport" Height="30" HorizontalAlignment="Left" Margin="525,0,0,0" Name="buttonXmiExport" VerticalAlignment="Top" Width="75" Click="buttonXmiExport_Click" Grid.Row="1" /> -->
-        <ComboBox Grid.Row="2" Height="35" HorizontalAlignment="Left" Margin="20,96,0,0" ToolTip="Choose the type of import" Name="Parser" VerticalAlignment="Top" Width="175" IsEnabled="False" SelectionChanged="Parser_SelectionChanged" VerticalContentAlignment="Center"  >
-            <ComboBoxItem Content="Choose the type of import" IsSelected="True" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        </ComboBox>
-        <ComboBox Grid.Row="2" Height="35" HorizontalAlignment="Left" Margin="20,252,0,0" ToolTip= "choose the file generation method" Name="GenerateFile" VerticalAlignment="Top" Width="175"  SelectionChanged="GenerateFile_SelectionChanged" Text="Generate" IsSynchronizedWithCurrentItem="{x:Null}" DataContext="{Binding ElementName=GenerateFile, StringFormat=Generate File}" VerticalContentAlignment="Center">
-            <ComboBoxItem Content="Select type to export" IsSelected="True" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        </ComboBox>
-        <Button Name="buttonLoadData" Content="Load File" Click="buttonLoadData_Click" ToolTip="Load file to be parsed..." Grid.Row="2" Height="35" HorizontalAlignment="Left" Margin="20,147,0,0" VerticalAlignment="Top" Width="175" HorizontalContentAlignment="Left" />
+
+        <Label Content="Tool:" Margin="40,33,675,27" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="79" ></Label>
+        <ComboBox Height="35" HorizontalAlignment="Left" Margin="99,33,0,0" ToolTip="Choose the product" Name="Product" VerticalAlignment="Top" Width="175" SelectionChanged="ProductType_SelectionChanged" DisplayMemberPath="Key" VerticalContentAlignment="Center" Grid.Row="2" Text="Choose the product" SelectedIndex="1" IsReadOnly="True" IsSynchronizedWithCurrentItem="True" />
+
+        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Content="Import Type:&#xD;&#xA;" RenderTransformOrigin="-6.248,2.111" Margin="15,81,695,76" Grid.Row="2" Width="84" Height="35" Grid.RowSpan="2" ></Label>
+        <ComboBox Grid.Row="2" Height="35" HorizontalAlignment="Left" Margin="99,81,0,0" ToolTip="Choose the type of import" Name="Parser" VerticalAlignment="Top" Width="175" SelectionChanged="Parser_SelectionChanged" VerticalContentAlignment="Center" DisplayMemberPath="Value" IsSynchronizedWithCurrentItem="True" Text="Choose the type of import" SelectedIndex="-1" IsReadOnly="True" Grid.RowSpan="2"/>
+       
+        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Content="Seq Gen Method:" Margin="0,36,694,26" Grid.Row="3" Height="35" ></Label>
+        <ComboBox Grid.Row="3" Height="35" HorizontalAlignment="Left" Margin="99,36,0,0" ToolTip="Choose the method" Name="SequenceGeneratorType" VerticalAlignment="Top" Width="175" SelectionChanged="SequenceGeneratorType_SelectionChanged" VerticalContentAlignment="Center" DisplayMemberPath="Value" IsReadOnly="True" IsSynchronizedWithCurrentItem="True" SelectedIndex="-1" />
+
+        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Content="Export Type:" Margin="15,98,704,35" Grid.Row="4" />
+        <ComboBox Grid.Row="4" Height="35" HorizontalAlignment="Left" Margin="99,98,0,0" ToolTip= "choose the file generation method" Name="GenerateFile" VerticalAlignment="Top" Width="175"  SelectionChanged="GenerateFile_SelectionChanged" VerticalContentAlignment="Center" DisplayMemberPath="Value" SelectedIndex="-1" IsReadOnly="True" IsSynchronizedWithCurrentItem="True"/>
+
+        <Button Name="buttonLoadData" Content="Load File" Click="buttonLoadData_Click" ToolTip="Load file to be parsed..." Grid.Row="3" Height="35" HorizontalAlignment="Left" Margin="99,87,0,0" VerticalAlignment="Top" Width="175" HorizontalContentAlignment="Left" Grid.RowSpan="2" />
 
         <Button Content="Generate Test Cases" Name="buttonGenerateTestCases" ToolTip="Generate test cases from loaded test data."
-                    Click="buttonGenerateTestCases_Click" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,199,0,0" Grid.Row="2" Height="35" Width="175" HorizontalContentAlignment="Left" />
+                    Click="buttonGenerateTestCases_Click" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="99,43,0,0" Grid.Row="4" Height="35" Width="175" HorizontalContentAlignment="Left" />
     </Grid>
 </Window>

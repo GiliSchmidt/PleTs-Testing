@@ -12,6 +12,7 @@ using Lesse;
 
 #if PL_OATS
 using Lesse.OATS;
+using Lesse.OATS.OATSScriptGenerator;
 #endif
 
 
@@ -29,7 +30,7 @@ namespace Lesse.Factory.AbstractSequenceGenerator
             return new MTMScriptGenerator();
 #endif
 #if PL_OATS
-            return new ParserToExcelOATS();
+            return new XmiToOATS();
 #endif
             return null;
         }

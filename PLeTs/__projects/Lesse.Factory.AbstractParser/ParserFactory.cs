@@ -32,7 +32,7 @@ namespace Lesse.Factory.AbstractParser
 #endif
 #if PL_XMI
                 case "Astah SeqDiag XML":
-                    return new XmiToOATS();
+                    return new SequenceDiagramImporter();
                 case "Astah XML":
                     return new SequenceDiagramImporter();
                 case "Argo XML":

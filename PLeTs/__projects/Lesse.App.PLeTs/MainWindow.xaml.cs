@@ -19,11 +19,19 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Media;
 using System.Xml;
 using Lesse.Core.ControlStructure;
 using Lesse.Core.ControlUnit;
+using Lesse.Core.ProductControlUnit;
+using Lesse.OATS.OATSProductControlUnit;
 using Microsoft.Win32;
+using ComboBox = System.Windows.Controls.ComboBox;
+using MessageBox = System.Windows.Forms.MessageBox;
+using OpenFileDialog = Microsoft.Win32.OpenFileDialog;
+using RichTextBox = System.Windows.Controls.RichTextBox;
+using SaveFileDialog = Microsoft.Win32.SaveFileDialog;
 
 namespace Lesse.App.PLeTs
 {
@@ -40,41 +48,101 @@ namespace Lesse.App.PLeTs
             Message,
             Green
         }
+
         private ControlUnit control;
         private Boolean fatalError = false;
-        private String cFilePath;
-        private String prmFilePath;
         private String value = "";
         private String parserType = "";
         private StructureType type;
-        /// <summary>
-        /// Removes encapsulation from status field. Allows
-        /// to modify status field from anywhere.
-        /// </summary>
-        private static TextBlock textBlockStatus;
-        /// <summary>
-        /// Stores current exe folder.
-        /// </summary>
-        private static String CurrentPath;
-        /// <summary>
-        /// Static reference for internal text block. Used by Log* functions.
-        /// </summary>
-        private static RichTextBox textBlockLog;
 
+        private static TextBlock textBlockStatus;
+        private static String CurrentPath;
+        private static RichTextBox textBlockLog;
         #endregion
 
-        /// <summary>
-        /// Default constructor.
-        /// </summary>
+        private Dictionary<String, ProductControlUnit> productControllers;
+        private ProductControlUnit selectedProduct;
+
+
+
         public MainWindow()
         {
+            productControllers = new Dictionary<string, ProductControlUnit>();
+#if PL_OATS
+            productControllers.Add("OATS", new OATSControlUnit());
+#endif
+
             InitializeComponent();
             MainWindow.SetInstance(this);
-            MainWindow.CurrentPath = System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            MainWindow.SetStatus("Ready.");
+            MainWindow.CurrentPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            MainWindow.LogAppend("Ready!", ErrorLevel.Green);
             ButtonsInitialization();
 
-            #region TITLE HANDLING
+            SetProductOption();
+        }
+
+
+        private void SetProductOption()
+        {
+            foreach (var item in productControllers)
+            {
+                Product.Items.Add(item);
+            }
+
+            Product.Items.Refresh();
+
+            if (productControllers.Count == 1)
+            {
+                Product.SelectedIndex = 0;
+                Product.IsEnabled = false;
+            }
+        }
+
+        private void SetParserOptions()
+        {
+            if (Parser != null)
+            {
+                PopulateCombobox(Parser, selectedProduct.GetParserOptions());
+            }
+        }
+
+        private void SetSequenceGeneratorOptions()
+        {
+            Dictionary<Enum, String> options = selectedProduct.GetSequenceGeneratorOptions();
+
+            if (options == null || options.Count == 0)
+            {
+                SequenceGeneratorType.IsEnabled = false;
+                buttonGenerateTestCases.IsEnabled = false;
+                GenerateFile.IsEnabled = true;
+
+                SetExportOptions();
+            }
+            else
+            {
+                SequenceGeneratorType.IsEnabled = true;
+                PopulateCombobox(SequenceGeneratorType, options);
+            }
+        }
+
+        private void SetExportOptions()
+        {
+            if (GenerateFile != null)
+            {
+                PopulateCombobox(GenerateFile, selectedProduct.GetExportOptions(GetSelectedParseType()));
+            }
+        }
+
+        private void ButtonsInitialization()
+        {
+            buttonLoadData.IsEnabled = false;
+            buttonGenerateTestCases.IsEnabled = false;
+            GenerateFile.IsEnabled = false;
+            buttonXmiExport.IsEnabled = false;
+        }
+
+        private void SetTitle()
+        {
 #if PL_FUNCTIONAL_TESTING
             this.Title = "Functional Testing Tool for ";
 #elif PL_PERFORMANCE_TESTING
@@ -85,99 +153,9 @@ namespace Lesse.App.PLeTs
             Version v = Assembly.GetExecutingAssembly().GetName().Version;
             this.Title += (" - v" + v.Major + "." + v.Minor);//+ " " + v.Build + "." + v.Revision);
             this.buttonClearLog_Click(null, null);
-            #endregion
-
-            #region EXPORT TYPE
-            #region MTM
-#if PL_MTM
-            //this.buttonMTM.Click += new RoutedEventHandler(this.buttonMTM_Click);
-            GenerateFile.Items.Insert(1, "MTM - Script");
-            this.Title += "Microsoft Test Manager";
-            this.GenerateFile.IsEnabled = false;
-#endif
-#if PL_JUNIT
-            GenerateFile.Items.Insert(1, "JUnit - Script");
-            this.Title += "JUnit Framework";
-            this.GenerateFile.IsEnabled = false;
-#endif
-            #endregion
-            #region OATS
-#if PL_OATS
-            //this.buttonOpenScript.Click += new RoutedEventHandler(this.buttonOpenScript_Click);
-            //this.buttonParseXMItoXLS.Click += new RoutedEventHandler(this.buttonParseXMItoXLS_Click);
-
-            GenerateFile.Items.Insert(1, "Astah - XMI");
-            GenerateFile.Items.Insert(2, "Excel - OATS");
-
-            this.Title += "Oracle ATM Open Script";
-            this.GenerateFile.IsEnabled = false;
-#endif
-            #endregion
-            #region LOADRUNNER
-#if PL_LR
-            //this.buttonLoadRunner.Click += new RoutedEventHandler(this.buttonLoadRunner_Click);
-            //this.buttonParseLRtoXMI.Click += new RoutedEventHandler(this.buttonParseLRtoXMI_Click);
-            GenerateFile.Items.Insert(1, "LoadRunner Script");
-            this.Title += "HP Load Runner ";
-            this.GenerateFile.IsEnabled = false;
-#else
-            //this.toolBarShortcuts.Items.Remove(this.buttonLoadRunner);
-            ((MenuItem)this.buttonParseLRtoXMI.Parent).Items.Remove(this.buttonParseLRtoXMI);
-#endif
-            #endregion
-            #endregion
-
-            #region SEQUENCE GEREATOR METHODS
-#if PL_OATS
-            SequenceGeneratorType.Items.Add("OATS");
-#endif
-
-#if PL_JUNIT
-            SequenceGeneratorType.Items.Add("DFS for TCC Method");
-#endif
-#if PL_DFS
-            SequenceGeneratorType.Items.Add("DFS Method");
-#endif
-#if PL_HSI
-            SequenceGeneratorType.Items.Add("HSI Method");
-#endif
-#if PL_WP
-            SequenceGeneratorType.Items.Add("Wp Method");
-#endif
-            #endregion
-
-            #region PARSE TYPE
-#if PL_LR
-            Parser.Items.Add("Astah XML");
-            //Alterar a atual implementação do LRtoXMI
-            //Parser.Items.Add("LoadRunnerToXMI");
-#endif
-#if PL_OATS
-            Parser.Items.Add("Script JAVA");
-            Parser.Items.Add("Astah XML");
-#endif
-#if PL_MTM
-            Parser.Items.Add("Astah XML");
-            Parser.Items.Add("Argo XML");
-#endif
-#if PL_JUNIT
-            Parser.Items.Add("Astah SeqDiag XML");
-#endif
-            #endregion
-
         }
 
-        private void ButtonsInitialization()
-        {
-            buttonLoadData.IsEnabled = false;
-            buttonGenerateTestCases.IsEnabled = false;
-            GenerateFile.IsEnabled = false;
-            buttonXmiExport.IsEnabled = false;
-            //buttonMTM.IsEnabled = false;
-            //buttonParseXMItoXLS.IsEnabled = false;
-            //buttonOpenScript.IsEnabled = false;
-        }
-
+        #region View related methods
         /// <summary>
         /// Singleton implementation.
         /// </summary>
@@ -195,207 +173,349 @@ namespace Lesse.App.PLeTs
             MainWindow.textBlockStatus.Text = p;
         }
 
-        private void SequenceGeneratorType_SelectionChanged(Object sender, SelectionChangedEventArgs e)
-        {
-            value = SequenceGeneratorType.SelectedValue.ToString();
 
-            switch (value)
-            {
-#if PL_OATS
-                case "OATS":
-                    control = new ControlUnit(StructureType.OATS);
-                    type = StructureType.OATS;
-                    Parser.IsEnabled = true;
-                    break;
-#endif
-#if PL_JUNIT
-                case "DFS for TCC Method":
-                    control = new ControlUnit.ControlUnit(StructureType.DFS_TCC);
-                    type = StructureType.DFS_TCC;
-                    Parser.IsEnabled = true;
-                    break;
-#endif
-#if PL_DFS
-                case "DFS Method":
-                    control = new ControlUnit.ControlUnit(StructureType.DFS);
-                    type = StructureType.DFS;
-                    Parser.IsEnabled = true;
-                    break;
-#endif
-#if PL_HSI
-                case "HSI Method":
-                    control = new ControlUnit.ControlUnit(StructureType.HSI);
-                    type = StructureType.HSI;
-                    Parser.IsEnabled = true;
-                    GenerateFile.IsEnabled = false;
-                    break;
-#endif
-#if PL_WP
-                case "Wp Method":
-                    control = new ControlUnit.ControlUnit(StructureType.Wp);
-                    type = StructureType.Wp;
-                    Parser.IsEnabled = true;
-                    break;
-#endif
-            }
+        /// <summary>
+        /// Appends a message to log window.
+        /// </summary>
+        public static void LogAppend(String s)
+        {
+            MainWindow.LogAppend(s, ErrorLevel.Message);
         }
 
         /// <summary>
-        /// Load an UML model from given XMI file.
+        /// Appends a message to log window.
         /// </summary>
-        private void buttonLoadData_Click(Object sender, RoutedEventArgs e)
+        public static void LogAppend(String s, MainWindow.ErrorLevel level)
         {
-            //shows file dialog
-            OpenFileDialog dialog = new OpenFileDialog();
+            //as users are unforeseen beings, we need to have sure that the pointer is at the log's end
+            MainWindow.textBlockLog.CaretPosition = MainWindow.textBlockLog.Document.ContentEnd;
+            MainWindow.textBlockLog.ScrollToEnd();
+            TextRange range = new TextRange(textBlockLog.CaretPosition, textBlockLog.Document.ContentEnd);
 
-            switch (parserType)
+            //adjust coloring according to log level.
+            switch (level)
             {
-#if PL_OATS
-                case "Script JAVA":
-                    dialog.Filter = "Open Java files (*.java) |*.java|All files (*.*)|*.*";
+                case ErrorLevel.Critical:
+                    range.ApplyPropertyValue(TextElement.ForegroundProperty, Brushes.OrangeRed);
                     break;
-#if PL_XMI
-                case "Astah XML":
-                    dialog.Filter = "Open XMI project files (*.xmi, *.xml) |*.xmi;*.xml|All files (*.*)|*.*";
+                case ErrorLevel.Warning:
+                    range.ApplyPropertyValue(TextElement.ForegroundProperty, Brushes.Brown);
                     break;
-#endif
-#elif PL_XMI
-#if PL_JUNIT
-                case "Astah SeqDiag XML":
-                    dialog.Filter = "Open XMI project files (*.xmi, *.xml) |*.xmi;*.xml|All files (*.*)|*.*";
+                case ErrorLevel.Green:
+                    range.ApplyPropertyValue(TextElement.ForegroundProperty, Brushes.Green);
                     break;
-#else
-                case "Astah XML":
-                    dialog.Filter = "Open XMI project files (*.xmi, *.xml) |*.xmi;*.xml|All files (*.*)|*.*";
+                default:
+                    range.ApplyPropertyValue(TextElement.ForegroundProperty, Brushes.Black);
                     break;
-                case "Argo XML":
-                    dialog.Filter = "Open XMI project files (*.xmi, *.xml) |*.xmi;*.xml|All files (*.*)|*.*";
-                    break;
-#endif
-#if PL_LR
-                case "LoadRunnerToXMI":
-                    dialog.Filter = "All files (*.*)|*.*";
-                    break;
-#endif
-#endif
             }
+
+            //appends a new line to current document.
+            MainWindow.textBlockLog.AppendText("[" + DateTime.Now.ToShortTimeString() + "] " + s + Environment.NewLine);
+            MainWindow.textBlockLog.CaretPosition = MainWindow.textBlockLog.Document.ContentEnd;
+            MainWindow.textBlockLog.ScrollToEnd();
+        }
+
+        /// <summary>
+        /// Save log to file.
+        /// </summary>
+        private void buttonSaveLog_Click(Object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog dialog = new SaveFileDialog();
+            dialog.Filter = "Text file (*.txt) | *.txt";
 
             if (dialog.ShowDialog() != true)
             {
                 return;
             }
 
-            Boolean parsedSuccessfully = true;
-            MainWindow.LogAppend(dialog.FileName);
-            MainWindow.LogAppend("Initializing file parsing...");
+            TextRange textRange = new TextRange(
+               this.textBlockLogContainer.Document.ContentStart,//TextPointer to the start of content in the RichTextBox.
+               this.textBlockLogContainer.Document.ContentEnd   //TextPointer to the end of content in the RichTextBox.
+            );
+            File.WriteAllText(dialog.FileName, textRange.Text);
+        }
+
+        /// <summary>
+        /// Clears log window.
+        /// </summary> 
+        private void buttonClearLog_Click(Object sender, RoutedEventArgs e)
+        {
+            TextRange textRange = new TextRange(
+               this.textBlockLogContainer.Document.ContentStart,//TextPointer to the start of content in the RichTextBox.
+               this.textBlockLogContainer.Document.ContentEnd   //TextPointer to the end of content in the RichTextBox.
+            );
+
+            this.textBlockLogContainer.Document.Blocks.Clear();
+            MainWindow.LogAppend("Waiting for file containing test data.\n");
+        }
+
+        /// <summary>
+        /// Opens configuration file.
+        /// </summary>
+        private void buttonConfigure_Click(Object sender, RoutedEventArgs e)
+        {
+            Process p = new Process();
+
+            ProcessStartInfo i = new ProcessStartInfo();
+            i.Arguments = System.IO.Path.Combine(MainWindow.CurrentPath + "\\Configuration.cfg");
+            i.FileName = "notepad.exe";
+
+            p.StartInfo = i;
+            p.Start();
+        }
+
+        /// <summary>
+        /// Quits.
+        /// </summary>
+        private void buttonClose_Click(Object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+        #endregion
+
+        #region Selection Change methods
+        private void ProductType_SelectionChanged(Object sender, SelectionChangedEventArgs e)
+        {
+            if ((Product.SelectedItem != null || GetSelectedProduct() != null))
+            {
+                productControllers.TryGetValue(GetSelectedProduct(), out selectedProduct);
+                Parser.IsEnabled = true;
+                SequenceGeneratorType.IsEnabled = false;
+                GenerateFile.IsEnabled = false;
+                buttonLoadData.IsEnabled = false;
+                buttonGenerateTestCases.IsEnabled = false;
+
+
+                SetParserOptions();
+
+                MainWindow.LogAppend("Select an import file to continue.", ErrorLevel.Green);
+            }
+        }
+
+        private void Parser_SelectionChanged(Object sender, SelectionChangedEventArgs e)
+        {
+            if (Parser != null && Parser.SelectedItem != null)
+            {
+                Parser.IsEnabled = true;
+                SequenceGeneratorType.IsEnabled = false;
+                GenerateFile.IsEnabled = false;
+                buttonLoadData.IsEnabled = true;
+                buttonGenerateTestCases.IsEnabled = false;
+
+                SetSequenceGeneratorOptions();
+
+                MainWindow.LogAppend("Select the file you want to parse.", ErrorLevel.Green);
+            }
+        }
+
+        private void SequenceGeneratorType_SelectionChanged(Object sender, SelectionChangedEventArgs e)
+        {
+            if (SequenceGeneratorType != null && SequenceGeneratorType.SelectedItem != null)
+            {
+                Parser.IsEnabled = true;
+                GenerateFile.IsEnabled = false;
+                buttonLoadData.IsEnabled = true;
+                buttonGenerateTestCases.IsEnabled = true;
+            }
+        }
+
+
+
+        private void GenerateFile_SelectionChanged(Object sender, SelectionChangedEventArgs e)
+        {
+            String path = "";
+
+            if (selectedProduct == null || GenerateFile.SelectedItem == null)
+            {
+                return;
+            }
+
+            if (selectedProduct.ExportIsFile(GetSelectedExportType()))
+            {
+                path = GetExportPathForFile();
+            }
+            else
+            {
+                path = GetExportPathForFolder();
+            }
 
             try
             {
-                GenerateFile.SelectedIndex = 0;
-                control.LoadModelingStructure(dialog.FileName, parserType);
-                Validate(dialog.FileName, parsedSuccessfully);
-                SequenceGeneratorType.IsEnabled = true;
+                if (path == null || path == "")
+                {
+                    return;
+                }
+
+                selectedProduct.SaveResult(GetSelectedExportType(), path);
+
+                MainWindow.LogAppend("Result exported successfully to " + path);
+
+                GenerateFile.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                MainWindow.LogAppend("Couldn't export result: " + ex.Message, ErrorLevel.Critical);
+                //TODO: block buttons
+                return;
+            }
+        }
+        #endregion
+
+        #region Button click methods
+        private void buttonLoadData_Click(Object sender, RoutedEventArgs e)
+        {
+
+            OpenFileDialog dialog = new OpenFileDialog();
+
+            dialog.Filter = selectedProduct.GetImportFileFilter(GetSelectedParseType());
+
+            if (dialog.ShowDialog() != true)
+            {
+                return;
+            }
+
+            MainWindow.LogAppend("Selected file: "+dialog.FileName);
+            MainWindow.LogAppend("Initializing file parsing...", ErrorLevel.Green);
+
+            try
+            {
+                selectedProduct.ParseFile(GetSelectedParseType(), dialog.FileName);
+                //TODO: call validate
+
+                SetSequenceGeneratorOptions();
+
+                MainWindow.LogAppend("File successfully parsed!", ErrorLevel.Green);
+                MainWindow.LogAppend("Generate test cases if necessary or select an export option.", ErrorLevel.Green);
             }
             catch (IOException ioe)
             {
-                parsedSuccessfully = false;
                 SequenceGeneratorType.IsEnabled = false;
                 GenerateFile.IsEnabled = false;
                 buttonXmiExport.IsEnabled = true;
-                //buttonParseXMItoXLS.IsEnabled = false;
                 MainWindow.LogAppend(ioe.Message, ErrorLevel.Critical);
                 MainWindow.LogAppend("Correlation file is being used by another process. Please close it and reload the XMI file.", ErrorLevel.Critical);
             }
             catch (Exception ex)
             {
                 MainWindow.LogAppend("[ERROR] " + ex.Message, ErrorLevel.Critical);
-#if DEBUG
-                MainWindow.LogAppend("[ERROR] " + ex.StackTrace, ErrorLevel.Critical);
-#endif
-
-                parsedSuccessfully = false;
                 SequenceGeneratorType.IsEnabled = false;
                 GenerateFile.IsEnabled = false;
                 buttonXmiExport.IsEnabled = true;
-                //buttonParseXMItoXLS.IsEnabled = false;
             }
         }
 
-        private void GenerateFile_SelectionChanged(Object sender, SelectionChangedEventArgs e)
+        private void buttonGenerateTestCases_Click(Object sender, RoutedEventArgs e)
         {
-            value = GenerateFile.SelectedValue.ToString();
-
-            switch (value)
+            try
             {
-#if PL_JUNIT
-                case "JUnit - Script":
-                    buttonJUnit(sender, e);
-                    break;
-#endif
-#if PL_MTM
-                case "MTM - Script":
-                    buttonMTM_Click(sender, e);
-                    break;
-#endif
-#if PL_OATS
-                case "OATS - Excel":
-                    buttonParseXMItoXLS_Click(sender, e);  
-                    break;
-                case "Astah - XMI":
-                    buttonXmiExport_Click(sender, e);
-                    break;
-#endif
-#if PL_LR
-                case "LoadRunner Script":
-                    //NOT IMPLEMENTED
-                    break;
-#endif
+                selectedProduct.GenerateSequence(GetSelectedParseType());
+
+                GenerateFile.IsEnabled = true;
+                buttonGenerateTestCases.IsEnabled = false;
+                buttonXmiExport.IsEnabled = false;
+
+                MainWindow.LogAppend(control.TestCaseCount + " test cases have been generated.", ErrorLevel.Message);
+                MainWindow.LogAppend("There are test cases ready to be generated. Press {Export...} to proceed.", ErrorLevel.Green);
+            }
+            catch (Exception ex)
+            {
+                MainWindow.LogAppend("Error generating test plans: " + ex.Message, ErrorLevel.Critical);
+
+                buttonGenerateTestCases.IsEnabled = false;
+                buttonXmiExport.IsEnabled = false;
             }
         }
+        #endregion
 
-        private void Parser_SelectionChanged(Object sender, SelectionChangedEventArgs e)
+
+        private Enum GetSelectedParseType()
         {
-            parserType = Parser.SelectedValue.ToString();
-
-            switch (parserType)
+            try
             {
-#if PL_OATS
-                case "Script JAVA":
-                    buttonLoadData.IsEnabled = true;
-                    Parser.IsEnabled = true;
-                    break;
-#endif
-#if PL_XMI
-#if PL_JUNIT
-                case "Astah SeqDiag XML":
-                    buttonLoadData.IsEnabled = true;
-                    Parser.IsEnabled = true;
-                    break;
-#else
-                case "Astah XML":
-                    buttonLoadData.IsEnabled = true;
-                    Parser.IsEnabled = true;
-                    break;
-                case "Argo XML":
-                    buttonLoadData.IsEnabled = true;
-                    Parser.IsEnabled = true;
-                    break;
-#endif
-#if PL_LR
-                case "LoadRunnerToXMI":
-                    buttonLoadData.IsEnabled = true;
-                    Parser.IsEnabled = true;
-                    break;
-#endif
-#endif
+
+                return ((KeyValuePair<Enum, string>)Parser.SelectedItem).Key;
+            }
+            catch (Exception ex)
+            {
+                return null;
             }
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="filename"></param>
-        /// <param name="parsedSuccessfully"></param>
+        private Enum GetSelectedExportType()
+        {
+            try
+            {
+
+                return ((KeyValuePair<Enum, string>)GenerateFile.SelectedItem).Key;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        private String GetSelectedProduct()
+        {
+            try
+            {
+                return ((KeyValuePair<String, ProductControlUnit>)Product.SelectedItem).Key;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        private void PopulateCombobox(ComboBox comboBox, Dictionary<Enum, String> values)
+        {
+            comboBox.Items.Clear();
+
+            foreach (var item in values)
+            {
+                comboBox.Items.Add(item);
+            }
+
+            comboBox.Items.Refresh();
+        }
+
+        private String GetExportPathForFile()
+        {
+            SaveFileDialog dialog = new SaveFileDialog();
+
+            dialog.Filter = selectedProduct.GetExportFileFilter(GetSelectedExportType());
+
+            if (dialog.ShowDialog() != true)
+            {
+                return null;
+            }
+
+            return dialog.FileName;
+        }
+
+        private String GetExportPathForFolder()
+        {
+            FolderBrowserDialog dlg = new FolderBrowserDialog();
+            dlg.Description = "Choose destination folder";
+            dlg.ShowNewFolderButton = true;
+            dlg.Reset();
+            dlg.SelectedPath = Environment.CurrentDirectory;
+
+            if (System.Windows.Forms.DialogResult.OK == dlg.ShowDialog())
+            {
+                if (new DirectoryInfo(dlg.SelectedPath).GetFiles().Length > 0)
+                {
+                    if (MessageBox.Show("The selected folder is not empty! Some files may be overrited! Do you want to continue?",
+                        "Confirm action", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.No)
+                    {
+                        return null;
+                    }
+                }
+                return dlg.SelectedPath;
+            }
+
+            return null;
+        }
+
         private void Validate(String filename, Boolean parsedSuccessfully)
         {
             if (parsedSuccessfully)
@@ -499,457 +619,6 @@ namespace Lesse.App.PLeTs
                 buttonXmiExport.IsEnabled = false;
                 return;
             }
-        }
-
-        /// <summary>
-        /// Appends a message to log window.
-        /// </summary>
-        public static void LogAppend(String s)
-        {
-            MainWindow.LogAppend(s, ErrorLevel.Message);
-        }
-
-        /// <summary>
-        /// Appends a message to log window.
-        /// </summary>
-        public static void LogAppend(String s, MainWindow.ErrorLevel level)
-        {
-            //as users are unforeseen beings, we need to have sure that the pointer is at the log's end
-            MainWindow.textBlockLog.CaretPosition = MainWindow.textBlockLog.Document.ContentEnd;
-            MainWindow.textBlockLog.ScrollToEnd();
-            TextRange range = new TextRange(textBlockLog.CaretPosition, textBlockLog.Document.ContentEnd);
-
-            //adjust coloring according to log level.
-            switch (level)
-            {
-                case ErrorLevel.Critical:
-                    range.ApplyPropertyValue(TextElement.ForegroundProperty, Brushes.OrangeRed);
-                    break;
-                case ErrorLevel.Warning:
-                    range.ApplyPropertyValue(TextElement.ForegroundProperty, Brushes.Brown);
-                    break;
-                case ErrorLevel.Green:
-                    range.ApplyPropertyValue(TextElement.ForegroundProperty, Brushes.Green);
-                    break;
-                default:
-                    range.ApplyPropertyValue(TextElement.ForegroundProperty, Brushes.Black);
-                    break;
-            }
-
-            //appends a new line to current document.
-            MainWindow.textBlockLog.AppendText("[" + DateTime.Now.ToShortTimeString() + "] " + s + Environment.NewLine);
-            MainWindow.textBlockLog.CaretPosition = MainWindow.textBlockLog.Document.ContentEnd;
-            MainWindow.textBlockLog.ScrollToEnd();
-        }
-
-        /// <summary>
-        /// Save log to file.
-        /// </summary>
-        private void buttonSaveLog_Click(Object sender, RoutedEventArgs e)
-        {
-            SaveFileDialog dialog = new SaveFileDialog();
-            dialog.Filter = "Text file (*.txt) | *.txt";
-
-            if (dialog.ShowDialog() != true)
-            {
-                return;
-            }
-
-            TextRange textRange = new TextRange(
-               this.textBlockLogContainer.Document.ContentStart,//TextPointer to the start of content in the RichTextBox.
-               this.textBlockLogContainer.Document.ContentEnd   //TextPointer to the end of content in the RichTextBox.
-            );
-            File.WriteAllText(dialog.FileName, textRange.Text);
-        }
-
-        /// <summary>
-        /// Clears log window.
-        /// </summary> 
-        private void buttonClearLog_Click(Object sender, RoutedEventArgs e)
-        {
-            TextRange textRange = new TextRange(
-               this.textBlockLogContainer.Document.ContentStart,//TextPointer to the start of content in the RichTextBox.
-               this.textBlockLogContainer.Document.ContentEnd   //TextPointer to the end of content in the RichTextBox.
-            );
-
-            this.textBlockLogContainer.Document.Blocks.Clear();
-            MainWindow.LogAppend("Waiting for file containing test data.\n");
-        }
-
-        /// <summary>
-        /// Opens configuration file.
-        /// </summary>
-        private void buttonConfigure_Click(Object sender, RoutedEventArgs e)
-        {
-            Process p = new Process();
-
-            ProcessStartInfo i = new ProcessStartInfo();
-            i.Arguments = System.IO.Path.Combine(MainWindow.CurrentPath + "\\Configuration.cfg");
-            i.FileName = "notepad.exe";
-
-            p.StartInfo = i;
-            p.Start();
-        }
-
-        /// <summary>
-        /// Quits.
-        /// </summary>
-        private void buttonClose_Click(Object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
-        /// <summary>
-        /// Generate test cases from loaded structure. Note that
-        /// generation depends on active features.
-        /// </summary>
-        private void buttonGenerateTestCases_Click(Object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                control.GenerateSequence(type);
-                GenerateFile.IsEnabled = true;
-                //buttonMTM.IsEnabled = true;
-                buttonGenerateTestCases.IsEnabled = false;
-                buttonXmiExport.IsEnabled = false;
-                MainWindow.LogAppend(control.TestCaseCount + " test cases have been generated.", ErrorLevel.Message);
-                MainWindow.LogAppend("There are test cases ready to be generated. Press {Export...} to proceed.", ErrorLevel.Green);
-            }
-            catch (Exception asss)
-            {
-                String message = asss.Message;
-                MainWindow.LogAppend("Error generating test plans.", ErrorLevel.Critical);
-                buttonGenerateTestCases.IsEnabled = false;
-                buttonXmiExport.IsEnabled = false;
-            }
-        }
-#if PL_JUNIT
-        private void buttonJUnit(Object sender, RoutedEventArgs e)
-        {
-            String destPath = null;
-            try
-            {
-                if (control.TestCaseCount < 1)
-                {
-                    MainWindow.LogAppend("No test plan is ready to be generated. Aborting.", ErrorLevel.Critical);
-                    return;
-                }
-
-                destPath = String.Empty;
-                destPath = saveFile("GeneratedJUnitDriver");
-                //destPath = saveFile(HttpUtility.UrlDecode(control.Name));
-                //If is a valid path
-                if (destPath != null)
-                {
-                    String archiveName = verifyOpenFiles(destPath);
-
-                    if (archiveName == "dontHave")
-                    {
-                        control.GenerateScript(destPath);
-                        buttonXmiExport.IsEnabled = false;
-                        MainWindow.LogAppend("Saved in " + destPath, ErrorLevel.Green);
-                        //System.Diagnostics.Process.Start("explorer.exe", destPath);
-                    }
-                    else
-                    {
-                        MessageBox.Show(archiveName + " is opened");
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Directory.Delete(destPath, true);
-                MainWindow.LogAppend("Error exporting files: " + ex.Message, ErrorLevel.Critical);
-            }
-        }
-#endif
-#if PL_MTM
-        private void buttonMTM_Click(Object sender, RoutedEventArgs e)
-        {
-            String destPath = null;
-            try
-            {
-                if (control.TestCaseCount < 1)
-                {
-                    MainWindow.LogAppend("No test plan is ready to be generated. Aborting.", ErrorLevel.Critical);
-                    return;
-                }
-
-                destPath = String.Empty;
-                destPath = saveFile(HttpUtility.UrlDecode(control.Name));
-                //If is a valid path
-                if (destPath != null)
-                {
-                    String archiveName = verifyOpenFiles(destPath);
-
-                    if (archiveName == "dontHave")
-                    {
-                        control.GenerateScript(destPath);
-                        buttonXmiExport.IsEnabled = false;
-                        MainWindow.LogAppend("Saved in " + destPath, ErrorLevel.Green);
-                        System.Diagnostics.Process.Start("explorer.exe", destPath);
-                    }
-                    else
-                    {
-                        MessageBox.Show(archiveName + " is opened");
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Directory.Delete(destPath, true);
-                MainWindow.LogAppend("Error exporting files: " + ex.Message, ErrorLevel.Critical);
-            }
-        }
-#endif
-        /// <summary>
-        /// Save File dialog
-        /// </summary>
-        /// <param name="modelName"></param>
-        /// <returns></returns>
-        private String saveFile(String modelName)
-        {
-            String directory = Environment.CurrentDirectory + "\\Result Files";
-            String directory_aux = "";
-            //verifica se diretório não existe
-            //control.listScriptGenerator
-
-            if (!Directory.Exists(directory + "\\" + modelName))
-            {
-                directory_aux = directory + "\\" + modelName;
-                Directory.CreateDirectory(directory_aux);
-            }
-            else
-            {
-                String name;
-                String[] sub;
-                int i = 1;
-                //se ele existe cria um só que com numeração diferente
-                String[] filePaths = Directory.GetDirectories(directory);
-                foreach (String path in filePaths)
-                {
-                    name = System.IO.Path.GetFileNameWithoutExtension(path);
-                    if (name.Contains("("))
-                    {
-                        char[] splitTokens = { '(', ')' };
-
-                        sub = name.Split(splitTokens);
-
-                        if (sub[0] == modelName)
-                        {
-                            //descubro o maior index
-                            if (Convert.ToInt16(sub[1]) > i)
-                            {
-                                i = Convert.ToInt16(sub[1]);
-                            }
-                        }
-                    }
-                }
-                directory_aux = Environment.CurrentDirectory + "\\Result Files\\" + modelName + "(" + (i + 1) + ")";
-                Directory.CreateDirectory(directory_aux);
-                i++;
-            }
-
-            var dlg = new System.Windows.Forms.FolderBrowserDialog();
-            dlg.Description = "Choose destiny folder";
-            dlg.ShowNewFolderButton = true;
-            dlg.Reset();
-            dlg.SelectedPath = directory;
-
-            if (System.Windows.Forms.DialogResult.OK == dlg.ShowDialog())
-            {
-                String folder = dlg.SelectedPath;
-                if (folder == directory)
-                {
-                    return directory_aux;
-                }
-                else
-                {
-                    Directory.Delete(directory_aux, true);
-
-                    if (Directory.GetDirectories(directory).Length == 0)
-                    {
-                        Directory.Delete(directory, true);
-                    }
-
-                    if (!folder.Contains("Result Files"))
-                    {
-                        folder = folder + "\\Result Files";
-                    }
-
-                    String folder_aux = "";
-
-                    //verifica se diretório não existe
-                    if (!Directory.Exists(folder + "\\" + modelName))
-                    {
-                        folder_aux = folder + "\\" + modelName;
-                        Directory.CreateDirectory(folder_aux);
-                        return folder_aux;
-                    }
-                    else
-                    {
-                        String name;
-                        String[] sub;
-                        int i = 1;
-                        //se ele existe cria um só que com numeração diferente
-                        String[] filePaths = Directory.GetDirectories(folder);
-                        foreach (String path in filePaths)
-                        {
-                            name = System.IO.Path.GetFileNameWithoutExtension(path);
-                            if (name.Contains("("))
-                            {
-                                char[] splitTokens = { '(', ')' };
-
-                                sub = name.Split(splitTokens);
-
-                                if (sub[0] == modelName)
-                                {
-                                    //descubro o maior index
-                                    if (Convert.ToInt16(sub[1]) > i)
-                                    {
-                                        i = Convert.ToInt16(sub[1]);
-                                    }
-                                }
-                            }
-                        }
-                        folder_aux = folder + "\\" + modelName + "(" + (i + 1) + ")";
-                        Directory.CreateDirectory(folder_aux);
-                        i++;
-
-                        return folder_aux;
-                    }
-                }
-            }
-            else
-            {
-                Directory.Delete(directory_aux);
-            }
-            return null;
-        }
-
-        /// <summary>
-        /// Verify if have equals open files in system
-        /// </summary>
-        /// <param name="filePath"></param>
-        /// <returns></returns>
-        private String verifyOpenFiles(String filePath)
-        {
-            String fileOpened = "dontHave";
-
-            if (Directory.GetFiles(filePath) == null)
-            {
-                return fileOpened;
-            }
-
-            String[] filePaths = Directory.GetFiles(filePath);
-
-            foreach (String path in filePaths)
-            {
-                try
-                {
-                    System.IO.FileStream fs = System.IO.File.OpenWrite(path);
-                    fs.Close();
-                }
-                catch (System.IO.IOException)
-                {
-                    return path;
-                }
-            }
-            return fileOpened;
-        }
-#if PL_OATS
-        private void buttonParseXMItoXLS_Click(Object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                String directory = Environment.CurrentDirectory + "\\Result Files\\";
-                //verifica se diretório não existe
-                if (!Directory.Exists(directory))
-                    Directory.CreateDirectory(directory);
-
-                control.GenerateSequence(type);
-                control.GenerateScript("");
-                MainWindow.LogAppend("XLS files saved at " + directory, ErrorLevel.Green);
-                MainWindow.SetStatus("Done.");
-                System.Diagnostics.Process.Start("explorer.exe", directory);
-            }
-            catch (Exception ex)
-            {
-                MainWindow.LogAppend(ex.Message, ErrorLevel.Critical);
-            }
-        }
-#endif
-        private void buttonParseLRtoXMI_Click(Object sender, RoutedEventArgs e)
-        {
-            Boolean cSelected = false;
-            Boolean prmSelected = false;
-            OpenFileDialog cDialog = new OpenFileDialog();
-            cDialog.Filter = "Open .C files (*.c) |*.c;";
-
-            if (cDialog.ShowDialog() != true)
-            {
-                cFilePath = null;
-                return;
-            }
-            else
-            {
-                cFilePath = cDialog.FileName;
-                cSelected = true;
-                MessageBox.Show(".c file successfully loaded.", "Load .c file", MessageBoxButton.OK, MessageBoxImage.Asterisk);
-            }
-
-            if (cSelected)
-            {
-                OpenFileDialog prmDialog = new OpenFileDialog();
-                prmDialog.Filter = "Open .PRM files (*.prm) |*.prm;";
-
-                if (prmDialog.ShowDialog() != true)
-                {
-                    cFilePath = null;
-                    prmFilePath = null;
-                    return;
-                }
-                else
-                {
-                    prmFilePath = prmDialog.FileName;
-                    prmSelected = true;
-                    MessageBoxResult result = MessageBox.Show(".prm file successfully loaded. Do you want to generate the .xmi file?", "Load .prm File", MessageBoxButton.YesNo, MessageBoxImage.Asterisk);
-                    switch (result)
-                    {
-                        case MessageBoxResult.Yes:
-                            //do something
-                            break;
-                        case MessageBoxResult.No:
-                            //do something
-                            break;
-                        default:
-                            break;
-                    }
-                }
-            }
-        }
-
-        private void buttonXmiExport_Click(Object sender, RoutedEventArgs e)
-        {
-            XmlDocument document = new XmlDocument();
-            XmlWriterSettings settings = new XmlWriterSettings();
-
-            document = control.ExportParsedStructure();
-
-            SaveFileDialog dialog = new SaveFileDialog();
-            dialog.Filter = "XML file (*.xml) | *.xml";
-            if (dialog.ShowDialog() != true)
-            {
-                return;
-            }
-
-            settings.Encoding = new UTF8Encoding(false);
-            settings.Indent = true;
-            settings.CheckCharacters = true;
-            using (XmlWriter writer = XmlWriter.Create(dialog.FileName, settings))
-                document.Save(writer);
-
-            MainWindow.LogAppend("XMI file saved in " + dialog.FileName, ErrorLevel.Green);
         }
     }
 }

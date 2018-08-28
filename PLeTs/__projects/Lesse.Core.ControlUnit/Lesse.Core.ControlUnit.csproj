@@ -93,9 +93,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ControlUnit.cs" />
+    <Compile Include="ProductControlUnit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Coc.Data.Xmi\Coc.Data.Xmi.csproj">
+      <Project>{FC478C4A-96D8-4B28-8890-17FD4C367C8B}</Project>
+      <Name>Coc.Data.Xmi</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Lesse.Core.ControlAndConversionStructures\Lesse.Core.ControlAndConversionStructures.csproj">
       <Project>{ac4dedf3-8bc9-4b66-92c5-858a1ab00a27}</Project>
       <Name>Lesse.Core.ControlAndConversionStructures</Name>

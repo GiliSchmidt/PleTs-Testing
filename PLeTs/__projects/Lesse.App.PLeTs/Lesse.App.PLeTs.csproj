@@ -177,6 +177,10 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Lesse.OATS.ProductControlUnit\Lesse.OATS.OATSProductControlUnit.csproj">
+      <Project>{1238aef8-2338-45bc-82a1-61859a512da0}</Project>
+      <Name>Lesse.OATS.OATSProductControlUnit</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Lesse.Core.ControlUnit\Lesse.Core.ControlUnit.csproj">
       <Project>{34614D88-1C0F-4DAE-B7E2-927D90D8AAC4}</Project>
       <Name>Lesse.Core.ControlUnit</Name>

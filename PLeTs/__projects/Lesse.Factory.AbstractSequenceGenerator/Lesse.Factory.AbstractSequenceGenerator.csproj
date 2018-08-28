@@ -124,6 +124,10 @@
       <Project>{2B279868-95A8-4854-B505-62FEF2737ABB}</Project>
       <Name>Coc.Data.HSI</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Lesse.OATS.OATSScriptGenerator\Lesse.OATS.OATSScriptGenerator.csproj">
+      <Project>{C1D9008D-47E4-4F4A-9068-569F8E6DF31B}</Project>
+      <Name>Lesse.OATS.OATSScriptGenerator</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Lesse.OATS\Lesse.OATS.csproj">
       <Project>{A0EAA259-ABCC-4E3B-B283-B8F8D4B6876B}</Project>
       <Name>Lesse.OATS</Name>

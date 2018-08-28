@@ -46,7 +46,7 @@
     </ProjectReference>
     <ProjectReference Include="..\..\__projects\Lesse.Modeling.FiniteStateMachine\Lesse.Modeling.FiniteStateMachine.csproj">
       <Project>{1CC27328-CE37-4147-9C53-4A530B8B3E7F}</Project>
-      <Name>Coc.Modeling.FiniteStateMachine</Name>
+      <Name>Lesse.Modeling.FiniteStateMachine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

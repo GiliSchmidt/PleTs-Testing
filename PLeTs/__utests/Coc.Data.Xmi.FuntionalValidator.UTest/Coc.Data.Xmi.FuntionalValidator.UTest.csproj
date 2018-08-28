@@ -76,11 +76,11 @@
   <ItemGroup>
     <ProjectReference Include="..\..\__projects\Lesse.Core.Interfaces\Lesse.Core.Interfaces.csproj">
       <Project>{E9B148A0-E1F6-4849-9D74-1EFDB9FCC9B8}</Project>
-      <Name>Coc.Data.Interfaces</Name>
+      <Name>Lesse.Core.Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\__projects\Lesse.Factory.Xmi.AbstractValidator\Lesse.Factory.Xmi.AbstractValidator.csproj">
       <Project>{FDAFD084-C879-4ADF-84F1-7C1D5E21016A}</Project>
-      <Name>Coc.Data.Xmi.AbstractValidator</Name>
+      <Name>Lesse.Factory.Xmi.AbstractValidator</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\__projects\Coc.Data.Xmi.FunctionalValidator\Coc.Data.Xmi.FunctionalValidator.csproj">
       <Project>{11FDF78F-E031-4C25-81A1-7E24344DC133}</Project>
@@ -96,11 +96,11 @@
     </ProjectReference>
     <ProjectReference Include="..\..\__projects\Lesse.Modeling.FiniteStateMachine\Lesse.Modeling.FiniteStateMachine.csproj">
       <Project>{1CC27328-CE37-4147-9C53-4A530B8B3E7F}</Project>
-      <Name>Coc.Modeling.FiniteStateMachine</Name>
+      <Name>Lesse.Modeling.FiniteStateMachine</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\__projects\Lesse.Modeling.Uml\Lesse.Modeling.Uml.csproj">
       <Project>{AC0CEEEF-C2F2-45FA-904A-2E758A6B5A3A}</Project>
-      <Name>Coc.Modeling.Uml</Name>
+      <Name>Lesse.Modeling.Uml</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\__projects\Coc.Testing.Performance\Coc.Testing.Performance.csproj">
       <Project>{1D82C00C-F55F-41CC-83A7-63A18B017E85}</Project>

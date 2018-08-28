@@ -19,8 +19,8 @@ namespace Lesse.OATS
         {
             UmlModel model = structure.OfType<UmlModel>().First();
             CleanModel(model);
-            GenerateXlsTestScript(model);
-            GenerateXlsTestData(model);
+            GenerateXlsTestScript(model, OATSExcelPath);
+            GenerateXlsTestData(model, OATSExcelPath) ;
         }
 
         #endregion
@@ -28,11 +28,11 @@ namespace Lesse.OATS
         #region Private Methods
 
         //TestScript excel generation
-        private void GenerateXlsTestScript(UmlModel model)
+        private void GenerateXlsTestScript(UmlModel model, string path)
         {
             int currentLine = 0;
             String modelName = model.Name;
-            String directory = CreateTestScriptDirectory();
+            String directory = CreateTestScriptDirectory(path);
 
             #region Styles and SLDocument
             SLDocument xlsx = new SLDocument();
@@ -227,13 +227,13 @@ namespace Lesse.OATS
         }
 
         //TestData excel generation
-        private void GenerateXlsTestData(UmlModel model)
+        private void GenerateXlsTestData(UmlModel model, string path)
         {
             int currentColumn = 0;
             String modelName = model.Name;
 
             //Verifica se diretorio existe, se não existe cria um novo.
-            String directory = CreateTestDataDirectory();
+            String directory = CreateTestDataDirectory(path);
 
             #region Styles and SLDocument
             SLDocument xlsx = new SLDocument();
@@ -345,9 +345,9 @@ namespace Lesse.OATS
             }
         }
 
-        private String CreateTestScriptDirectory()
+        private String CreateTestScriptDirectory(string path)
         {
-            String directory = Environment.CurrentDirectory + "\\Result Files\\TestScript";
+            String directory = path + "\\Result Files\\TestScript";
             //verifica se diretório não existe
             if (!Directory.Exists(directory))
             {
@@ -356,9 +356,9 @@ namespace Lesse.OATS
             return directory;
         }
 
-        private String CreateTestDataDirectory()
+        private String CreateTestDataDirectory(string path)
         {
-            String directory = Environment.CurrentDirectory + "\\Result Files\\TestData";
+            String directory = path + "\\Result Files\\TestData";
             //verifica se diretório não existe
             if (!Directory.Exists(directory))
             {

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1238AEF8-2338-45BC-82A1-61859A512DA0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lesse.OATS.OATSProductControlUnit</RootNamespace>
+    <AssemblyName>Lesse.OATS.OATSProductControlUnit</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OATSControlUnit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\__projects\Coc.Data.Xmi\Coc.Data.Xmi.csproj">
+      <Project>{FC478C4A-96D8-4B28-8890-17FD4C367C8B}</Project>
+      <Name>Coc.Data.Xmi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\__projects\Lesse.Core.ControlAndConversionStructures\Lesse.Core.ControlAndConversionStructures.csproj">
+      <Project>{AC4DEDF3-8BC9-4B66-92C5-858A1AB00A27}</Project>
+      <Name>Lesse.Core.ControlAndConversionStructures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\__projects\Lesse.Core.ControlUnit\Lesse.Core.ControlUnit.csproj">
+      <Project>{34614d88-1c0f-4dae-b7e2-927d90d8aac4}</Project>
+      <Name>Lesse.Core.ControlUnit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\__projects\Lesse.Core.Interfaces\Lesse.Core.Interfaces.csproj">
+      <Project>{E9B148A0-E1F6-4849-9D74-1EFDB9FCC9B8}</Project>
+      <Name>Lesse.Core.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\__projects\Lesse.OATS.OATSScriptGenerator\Lesse.OATS.OATSScriptGenerator.csproj">
+      <Project>{C1D9008D-47E4-4F4A-9068-569F8E6DF31B}</Project>
+      <Name>Lesse.OATS.OATSScriptGenerator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\__projects\Lesse.OATS.OgmaJParser\Lesse.OATS.OgmaJParser.csproj">
+      <Project>{68E304D4-109B-4C4E-A10E-E2DDCADD5D8B}</Project>
+      <Name>Lesse.OATS.OgmaJParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\__projects\Lesse.OATS\Lesse.OATS.csproj">
+      <Project>{a0eaa259-abcc-4e3b-b283-b8f8d4b6876b}</Project>
+      <Name>Lesse.OATS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
