@@ -10,16 +10,6 @@ using Lesse.Modeling.Uml;
 
 namespace Coc.Data.Xmi.Script
 {
-    /*
-    /// <summary>
-    /// <img src="images/Xmi.Script.PNG"/>
-    /// </summary>
-    public static class NamespaceDoc
-    {
-    }*/
-
-
-
 
     /// <summary>
     /// Classe responsavel por construir o script com as tags que foram anotadas no modelo.
@@ -39,8 +29,6 @@ namespace Coc.Data.Xmi.Script
             public string path;
             public string repoName;
         }
-
-
 
         /// <summary>
         /// Esta enumeracao contem o nome das tags presentes no modelo
@@ -268,29 +256,14 @@ namespace Coc.Data.Xmi.Script
                 }
 
                 tagTDIterations = string.IsNullOrEmpty(tagTDIterations) || tagTDIterations.Equals("null") ? "0" : tagTDIterations;
-                /*
-                string verifyAll = Configuration.getInstance().getConfiguration("verifyall");
-                verifyAll = verifyAll.Equals("") ? "false" : verifyAll;
-                */
                 bool tagVerifyAux =  false;
+
                 try
                 {
                     tagVerifyAux = bool.Parse(tagTDVerify);
                 }
                 catch (ArgumentNullException e) { }
                 catch (FormatException e) { }
-                /*
-                try
-                {
-                    bool verifyAllAux = bool.Parse(verifyAll);
-                    if (verifyAllAux)
-                    {
-                        tagVerifyAux = verifyAllAux;
-                    }
-                }
-                catch (ArgumentNullException e) { }
-                catch (FormatException e) { }
-                */
                 tagTDVerify = tagVerifyAux.ToString();
 
             }
